@@ -9,20 +9,6 @@
   		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" charset="utf-8">
 			document.addEventListener("deviceready", onDeviceReady, false);
-			
-			function onDeviceReady() {
-				if(isAndroid()) {
-					$("script").attr("src", "../../../js/cordova-2.5.0").appendTo("head");
-				}
-			}
-
-			function isAndroid(){
-				return navigator.userAgent.indexOf("Android") > 0;
-			}
-
-			function isiOS(){
-				return (navigator.userAgent.indexOf("iPhone") > 0 || navigator.userAgent.indexOf("iPad") > 0 || navigator.userAgent.indexOf("iPod") > 0); 
-			}
 	
 			function showAlert(title, message) {
 				navigator.notification.alert(
