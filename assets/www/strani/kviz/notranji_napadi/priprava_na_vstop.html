@@ -5,6 +5,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/cordova.ios.js"></script>
   		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" charset="utf-8">
 			document.addEventListener("deviceready", onDeviceReady, false);
@@ -12,10 +13,6 @@
 			function onDeviceReady() {
 				if(isAndroid()) {
 					$("script").attr("src", "../../../js/cordova-2.5.0").appendTo("head");
-					alert("ANDROID");
-				} else if(isiOS()) {
-					$("script").attr("src", "../../../js/cordova.ios.js").appendTo("head");
-					alert("IOS");
 				}
 			}
 
