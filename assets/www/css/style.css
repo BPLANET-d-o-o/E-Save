@@ -26,9 +26,23 @@ body {
 }
 
 #content {
-	margin: 150px auto 0px auto;
+	margin: 100px auto 100px auto;
 	width: 90%;
 	text-align: left;
+}
+
+#footer {
+	width: 100%;
+	padding: 10px 0px 10px 0px;
+	background-image: url('../img/buttonbg.png');
+	font-size: 200%;
+	position: fixed;
+	bottom: 0px;
+}
+
+#footer a {
+	color: #ffffff;
+	text-decoration: none;
 }
 
 .opis {
@@ -64,9 +78,9 @@ body {
 }
 
 .button_error {
-	color: #E47B41;
+	color: #ffffff;
 	padding: 15px;
-	background-image: url('../img/buttonbg.png');
+	background-image: url('../img/buttonbgwrong.png');
 	text-align: center;
 	margin: 5px auto 5px auto;
 	width: 65%;
