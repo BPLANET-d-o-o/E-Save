@@ -8,6 +8,18 @@
 		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
   		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" charset="utf-8">
+			document.addEventListener("deviceready", onDeviceReady, false);
+
+			// Cordova is ready
+			//
+			function onDeviceReady() {
+				alert('READY');
+			}
+			
+			function playBeep() {
+				navigator.notification.beep(5);
+			}
+			
 			function alertDismissed() {
 				// do something
 			}
@@ -60,6 +72,7 @@
 					$('#nn_io_odg2').attr('class', 'button_error');
 					window.localStorage.setItem('nn_io_odg2', '1');
 					showAlert('ČEPKI ZA UŠESA', 'ČEPKI ZMANJŠAJO SLIŠNOST IN LAHKO POŠKUDUJEJO UŠESA');
+					playBeep();
 				">ČEPKI ZA UŠESA</div>
 				
 			<div class="button" id="nn_io_odg3" 
