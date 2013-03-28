@@ -4,8 +4,8 @@
 		<title>E-Save</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" charset="utf-8" src="../../../js/cordova.ios.js"></script>
   		<script type="text/javascript" charset="utf-8" src="../../../js/cordova-2.5.0.js"></script>
-  		<script type="text/javascript" charset="utf-8" src="../../../js/cordova.ios.js"></script>
 		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
   		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" charset="utf-8">
@@ -55,7 +55,6 @@
 					$('#nn_io_odg2').attr('class', 'button_error');
 					window.localStorage.setItem('nn_io_odg2', '1');
 					showAlert('ČEPKI ZA UŠESA', 'ČEPKI ZMANJŠAJO SLIŠNOST IN LAHKO POŠKUDUJEJO UŠESA');
-					playBeep();
 				">ČEPKI ZA UŠESA</div>
 				
 			<div class="button" id="nn_io_odg3" 
@@ -108,6 +107,14 @@
 				">IDA</div>
 			
 			<div class="button" id="nadaljuj" style="display: none"><a href="priprava_na_vstop.html">NADALJUJ</a></div>
+		</div>
+		<div id="footer">
+			<table width="100%">
+				<tr>
+					<td width="50%"><a href="../../../index.html"><img src="../../../img/nazaj.png" /> NAZAJ</a></td>
+					<td width="50%"></td>
+				</tr>
+			</table>
 		</div>
  	</body>
 </html>
