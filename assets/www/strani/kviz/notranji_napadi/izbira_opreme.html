@@ -8,17 +8,13 @@
 		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
   		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" charset="utf-8">
-			document.addEventListener("deviceready", onDeviceReady, false);
-
-			function onDeviceReady() {
-				if(isAndroid()) {
-					alert("ANDROID DETECTED!!!!");
-					//$("script").attr("src", "../../../js/cordova-2.5.0").appendTo("head");
-				}
-				
-				if(isiOS()) {
-					alert("IOS DETECTED!!!!");
-				}
+			if(isAndroid()) {
+				alert("ANDROID DETECTED!!!!");
+				//$("script").attr("src", "../../../js/cordova-2.5.0").appendTo("head");
+			}
+			
+			if(isiOS()) {
+				alert("IOS DETECTED!!!!");
 			}
 			
 			function isAndroid(){
