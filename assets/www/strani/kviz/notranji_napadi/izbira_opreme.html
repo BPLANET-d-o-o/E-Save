@@ -9,9 +9,26 @@
   		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" charset="utf-8">
 			document.addEventListener("deviceready", onDeviceReady, false);
+
+			function onDeviceReady() {
+				if(isAndroid()) {
+					alert("ANDROID DETECTED!!!!");
+					//$("script").attr("src", "../../../js/cordova-2.5.0").appendTo("head");
+				}
+				
+				if(isiOS()) {
+					alert("IOS DETECTED!!!!");
+				}
+			}
 			
-			function onDeviceReady() {}
-	
+			function isAndroid(){
+				return navigator.userAgent.indexOf("Android") > 0;
+			}
+			
+			function isiOS(){
+				return (navigator.userAgent.indexOf("iPhone") > 0 || navigator.userAgent.indexOf("iPad") > 0 || navigator.userAgent.indexOf("iPod") > 0); 
+			}
+
 			function showAlert(title, message) {
 				navigator.notification.alert(
 					message,
@@ -38,7 +55,7 @@
 		</script>
   	</head>
   	<body>
-    	<div id="header">E-SAVE <span style="color: #e47b41">-</span> NOTRANJI NAPADI</div></h1>
+    	<div id="header">E-SAVE <span style="color: #e47b41">-</span> NOTRANJI NAPADI v2.0</div></h1>
 		<div id="content">
 			<div class="opis">IZBERI OPREMO, KI JE POTREBNA ZA VARNO GAŠENJE</div>
 			
