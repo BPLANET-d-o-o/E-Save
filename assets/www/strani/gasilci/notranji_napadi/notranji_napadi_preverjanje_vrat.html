@@ -9,8 +9,6 @@
   		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
 		<link href="../../../js/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" charset="utf-8">
-			window.localStorage.clear();
-			
 			if(isAndroid()) {
 				$("script").attr("src", "../../../js/cordova-2.5.0.js").appendTo("head");
 			}
@@ -51,7 +49,6 @@
 				var odg12 = window.localStorage.getItem('nn_pv_odg12');
 				
 				if(odg == 1) {
-					alert(odg1);alert(odg2);alert(odg3);alert(odg4);alert(odg5);
 					if(odg2 != 1 || odg7 != 1 || odg8 != 1) {
 						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
 					} else {
@@ -204,7 +201,7 @@
 					preveriOdgovore('12');
 				">PRVI NAPADELC SPUSTI RAHLO RAZPŠEN OHLJAEVLNI CUREK, ŠIRINE 45-75</div>
 			
-			<div class="button" id="nadaljuj" style="display: none"><a href="notranji_napadi_preverjanje_vrat.html">NADALJUJ</a></div>
+			<div class="button" id="nadaljuj" style="display: none"><a href="notranji_napadi_napredovanje.html">NADALJUJ</a></div>
 		</div>
 		<div id="footer">
 			<table width="100%" cellspacing="0px" cellpadding="0px">

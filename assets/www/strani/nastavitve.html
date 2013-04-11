@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link href="../css/style.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">
+			if(isAndroid()) {
+				$("script").attr("src", "../js/cordova-2.5.0.js").appendTo("head");
+			}
+			
+			if(isiOS()) {
+				$("script").attr("src", "../js/cordova.ios.js").appendTo("head");
+			}
+			
+			function isAndroid(){
+				return navigator.userAgent.indexOf("Android") > 0;
+			}
+			
+			function isiOS(){
+				return (navigator.userAgent.indexOf("iPhone") > 0 || navigator.userAgent.indexOf("iPad") > 0 || navigator.userAgent.indexOf("iPod") > 0); 
+			}
+			
+			function showAlert(title, message) {
+				navigator.notification.alert(
+					message,
+					null,
+					title,
+					'V REDU'
+				);
+			}
+			
+			function pocistiPomnilnik() {
+				window.localStorage.clear();
+				
+				showAlert('ČIŠČENJE POMNILNIKA', 'POMNILNIK JE PRAZEN!');
+			}
+		</script>
+  	</head>
+  	<body>
+    	<div id="header">E<span style="color: #e47b41">-</span>SAVE</div></h1>
+		<div id="content">
+			<div class="opis">S klikom na počisti pomnilnik boste ponastavili dokončane sklope.</div>
+			
+			<div class="button" onclick="pocistiPomnilnik">POČISTI POMNILNIK</div>
+		</div>
+		<div id="footer">
+			<table width="100%" cellspacing="0px" cellpadding="0px">
+				<tr>
+					<td width="50%"><a href="../index.html"><img src="../img/nazaj.png" /> NAZAJ</a></td>
+					<td width="50%"></td>
+				</tr>
+			</table>
+		</div>
+ 	</body>
+</html>
