@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/mediaelement/mediaelement-and-player.js"></script>
+  		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../../../js/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">
+			if(isAndroid()) {
+				$("script").attr("src", "../../../js/cordova-2.5.0.js").appendTo("head");
+			}
+			
+			if(isiOS()) {
+				$("script").attr("src", "../../../js/cordova.ios.js").appendTo("head");
+			}
+			
+			function isAndroid(){
+				return navigator.userAgent.indexOf("Android") > 0;
+			}
+			
+			function isiOS(){
+				return (navigator.userAgent.indexOf("iPhone") > 0 || navigator.userAgent.indexOf("iPad") > 0 || navigator.userAgent.indexOf("iPod") > 0); 
+			}
+
+			function showAlert(title, message) {
+				navigator.notification.alert(
+					message,
+					null,
+					title,
+					'V REDU'
+				);
+			}
+	
+			function preveriOdgovore(odg) {
+				var odg1 = window.localStorage.getItem('nn_pv_odg1');
+				var odg2 = window.localStorage.getItem('nn_pv_odg2');
+				var odg3 = window.localStorage.getItem('nn_pv_odg3');
+				var odg4 = window.localStorage.getItem('nn_pv_odg4');
+				var odg5 = window.localStorage.getItem('nn_pv_odg5');
+				var odg6 = window.localStorage.getItem('nn_pv_odg6');
+				var odg7 = window.localStorage.getItem('nn_pv_odg7');
+				var odg8 = window.localStorage.getItem('nn_pv_odg8');
+				var odg9 = window.localStorage.getItem('nn_pv_odg9');
+				var odg10 = window.localStorage.getItem('nn_pv_odg10');
+				var odg11 = window.localStorage.getItem('nn_pv_odg11');
+				var odg12 = window.localStorage.getItem('nn_pv_odg12');
+				
+				if(odg == 1) {
+					if(odg2 == 0 || odg7 == 0 || odg8 == 0) {
+						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
+					} else {
+						$('#nn_pv_odg1').attr('class', 'button_success');
+					}
+				} else if(odg == 2) {
+					$('#nn_pv_odg2').attr('class', 'button_success');
+				} else if(odg == 3) {
+					if(odg1 == 0 || odg2 == 0 || odg7 == 0 || odg8 == 0 || odg9 == 0) {
+						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
+					} else {
+						$('#nn_pv_odg3').attr('class', 'button_success');
+					}
+				} else if(odg == 4) {
+					$('#nn_pv_odg4').attr('class', 'button_error');
+					showAlert('PRVI NAPADALEC', 'SLABA IZBIRA, TAKO NE MORE DELOVATI');
+				} else if(odg == 5) {
+					if(odg1 == 0 || odg2 == 0 || odg3 == 0 || odg7 == 0 || odg8 == 0 || odg9 == 0 || odg10 == 0 || odg11 == 0 || odg12 == 0) {
+						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
+					} else {
+						$('#nadaljuj').show();
+						$('#nn_pv_odg5').attr('class', 'button_success');
+					}
+				} else if(odg == 6) {
+					$('#nn_pv_odg6').attr('class', 'button_error');
+					showAlert('POLNI CUREK', 'NEPRIMEREN CUREK, PROSTOR SLABO HLADIŠ');
+				} else if(odg == 7) {
+					if(odg2 == 0) {
+						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
+					} else {
+						$('#nn_pv_odg7').attr('class', 'button_success');
+					}
+				} else if(odg == 8) {
+					if(odg2 == 0 || odg7 == 0) {
+						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
+					} else {
+						$('#nn_pv_odg8').attr('class', 'button_success');
+					}
+				} else if(odg == 9) {
+					if(odg1 == 0 || odg2 == 0 || odg7 == 0 || odg8 == 0) {
+						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
+					} else {
+						$('#nn_pv_odg9').attr('class', 'button_success');
+					}
+				} else if(odg == 10) {
+					if(odg1 == 0 || odg2 == 0 || odg3 == 0 || odg7 == 0 || odg8 == 0 || odg9 == 0 || odg11 == 0 || odg12 == 0) {
+						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
+					} else {
+						$('#nn_pv_odg10').attr('class', 'button_success');
+					}
+				} else if(odg == 11) {
+					if(odg1 == 0 || odg2 == 0 || odg3 == 0 || odg7 == 0 || odg8 == 0 || odg9 == 0) {
+						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
+					} else {
+						$('#nn_pv_odg11').attr('class', 'button_success');
+					}
+				} else if(odg == 12) {
+					if(odg1 == 0 || odg2 == 0 || odg3 == 0 || odg7 == 0 || odg8 == 0 || odg9 == 0 || odg11 == 0) {
+						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
+					} else {
+						$('#nn_pv_odg12').attr('class', 'button_success');
+					}
+				}
+			}
+		</script>
+  	</head>
+  	<body>
+    	<div id="header">E-SAVE <span style="color: #e47b41">-</span> NOTRANJI NAPADI</div></h1>
+		<div id="content">
+			<!--<div width="60%" align="center">
+				<video width="400px" height="200px" src="http://bplanet.si/esave/oceans.mp4" type="video/mp4" id="player1" poster="../../../img/filmi/oceans.jpg" controls="controls" preload="none"></video>
+				<script>$('audio,video').mediaelementplayer({});</script>
+			</div>-->
+			<div style="margin: 30px 0px 30px 0px">
+				Ob vstopu in gibanju po prostoru se gasilec srečuje z številnimi nevarnostmi in neprijetnostmi predvsem pa je njegova naloga odstraniti tri krovne težave. Ob vstopu prekiniti oziroma preprečiti povratni udar, med gibanjem po objektu le tega dovolj ohladiti in posledično preprečiti požarni preskok v kolikor se še ni zgodil. 
+				Za preprečevanje povratnega udara, napadalna skupina ob vstopu izvede manever tipanja in preverjanja temperature vrat od spodaj navzgor, ter za tem ohlajevanje prostora z dolgimi razpršenimi curki po liniji nevtralne cone. Na ta način napadalna skupina znižuje energijo v prostoru le ta pa je ključnega pomena za nastanek povratnega ognja.
+			</div>
+			
+			<div class="opis">PRIPRAVA NA VSTOP IN RAZPORED OPREME</div>
+			
+			<div class="button" id="nn_pv_odg1"
+				onclick="
+					window.localStorage.setItem('nn_pv_odg1', '1');
+					preveriOdgovore('1');
+				">DRUGI NAPADALEC PREVERI TEMPERATURO VRAT Z HRBTNO STRANJO ROKE</div>
+				
+			<div class="button" id="nn_pv_odg2" 
+				onclick="
+					window.localStorage.setItem('nn_pv_odg2', '1');
+					preveriOdgovore('2');
+				">PRVI NAPADALEC ZAVZAME POLOŽAJ TAKO DA VIDI V PROSTOR, ŽE OB NAJMANJŠI ODPRTINI</div>
+				
+			<div class="button" id="nn_pv_odg3" 
+				onclick="
+					window.localStorage.setItem('nn_pv_odg3', '1');
+					preveriOdgovore('3');
+				">PRI LESENIH IN MOTAŽNIH OBJEKTIH Z VODO RAHLO OHLADIMO ZGORNJI ROB VRAT IN PODBOJA NAD VRATI</div>
+				
+			<div class="button" id="nn_pv_odg4" 
+				onclick="
+					window.localStorage.setItem('nn_pv_odg4', '1');
+					preveriOdgovore('4');
+				">PRVI NAPADALEC SE POSTAVI ZA VRATA</div>
+				
+			<div class="button" id="nn_pv_odg5" 
+				onclick="
+					window.localStorage.setItem('nn_pv_odg5', '1');
+					preveriOdgovore('5');
+				">PONOVNO ODPREMO VRATA IN VSTOPAMO, OZIROMA PONOVIMO GIBANJE</div>
+				
+			<div class="button" id="nn_pv_odg6" 
+				onclick="
+					window.localStorage.setItem('nn_pv_odg6', '1');
+					preveriOdgovore('6');
+				">Z POLNIM CURKOM OHLADIMO NOTRANJOST OBJKTA</div>
+				
+			<div class="button" id="nn_pv_odg7" 
+				onclick="
+					window.localStorage.setItem('nn_pv_odg7', '1');
+					preveriOdgovore('7');
+				">DRUGI NAPADALEC UPORABI VRATA ZA ZAŠČITO (KO SE ODPREJO JE ZA NJIMI)</div>
+				
+			<div class="button" id="nn_pv_odg8" 
+				onclick="
+					window.localStorage.setItem('nn_pv_odg8', '1');
+					preveriOdgovore('8');
+				">OBA NAPADALCA STA V NIZKI PREŽI V POČEPU ALI POLPOČEPU</div>
+				
+			<div class="button" id="nn_pv_odg9" 
+				onclick="
+					window.localStorage.setItem('nn_pv_odg9', '1');
+					preveriOdgovore('9');
+				">Z ROKO SE NAKAŽE RAZLIKO TEMPERATURE IN OZNAČI NEVTRALNO CONO</div>
+				
+			<div class="button" id="nn_pv_odg10" 
+				onclick="
+					window.localStorage.setItem('nn_pv_odg10', '1');
+					preveriOdgovore('10');
+				">ZAPREMO VRATA IN POČAKAMO 3-5 SEKUND</div>
+				
+			<div class="button" id="nn_pv_odg11" 
+				onclick="
+					window.localStorage.setItem('nn_pv_odg11', '1');
+					preveriOdgovore('11');
+				">NA ZNAK DRUGI NAPADALEC ODPRE VRATA DOVOLJ ŠIROKO DA LAHKO PRIČNEMO Z OHLAJEVANJEM</div>
+				
+			<div class="button" id="nn_pv_odg12" 
+				onclick="
+					window.localStorage.setItem('nn_pv_odg12', '1');
+					preveriOdgovore('12');
+				">PRVI NAPADELC SPUSTI RAHLO RAZPŠEN OHLJAEVLNI CUREK, ŠIRINE 45-75</div>
+			
+			<div class="button" id="nadaljuj" style="display: none"><a href="notranji_napadi_preverjanje_vrat.html">NADALJUJ</a></div>
+		</div>
+		<div id="footer">
+			<table width="100%" cellspacing="0px" cellpadding="0px">
+				<tr>
+					<td width="50%"><a href="../../../index.html"><img src="../../../img/nazaj.png" /> NAZAJ</a></td>
+					<td width="50%"></td>
+				</tr>
+			</table>
+		</div>
+ 	</body>
+</html>

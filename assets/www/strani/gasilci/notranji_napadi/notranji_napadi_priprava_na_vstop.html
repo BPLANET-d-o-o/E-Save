@@ -5,11 +5,26 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
-		<script type="text/javascript" charset="utf-8" src="../../../js/cordova.ios.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/mediaelement/mediaelement-and-player.js"></script>
   		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../../../js/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" charset="utf-8">
-			document.addEventListener("deviceready", onDeviceReady, false);
-	
+			if(isAndroid()) {
+				$("script").attr("src", "../../../js/cordova-2.5.0.js").appendTo("head");
+			}
+			
+			if(isiOS()) {
+				$("script").attr("src", "../../../js/cordova.ios.js").appendTo("head");
+			}
+			
+			function isAndroid(){
+				return navigator.userAgent.indexOf("Android") > 0;
+			}
+			
+			function isiOS(){
+				return (navigator.userAgent.indexOf("iPhone") > 0 || navigator.userAgent.indexOf("iPad") > 0 || navigator.userAgent.indexOf("iPod") > 0); 
+			}
+
 			function showAlert(title, message) {
 				navigator.notification.alert(
 					message,
@@ -38,6 +53,15 @@
   	<body>
     	<div id="header">E-SAVE <span style="color: #e47b41">-</span> NOTRANJI NAPADI</div></h1>
 		<div id="content">
+			<!--<div width="60%" align="center">
+				<video width="400px" height="200px" src="http://bplanet.si/esave/oceans.mp4" type="video/mp4" id="player1" poster="../../../img/filmi/oceans.jpg" controls="controls" preload="none"></video>
+				<script>$('audio,video').mediaelementplayer({});</script>
+			</div>-->
+			<div style="margin: 30px 0px 30px 0px">
+				Pogoj za uspešno delo so tudi pravilna izbira gasilskih armatur in gasilnega sredstva. V osnovi lahko gasilec izbira visokotlačne sisteme, ki so nekoliko lažji za rokovanje in zaradi visokih tlakov gašenje porabijo manjšo količino vode. Ali pa se odloči za izbiro klasični cevi z normalnimi tlaki kjer je delo morda nekoliko težje vendar ob pravilni rabi izredno učinkovito.
+				Za gasilni mediji se najpogosteje priporoča uporaba vode saj je dostopna, cenovno ugodna in enostavna za uporabo. Vsak notranji napadalec bi moral uporabljati univerzalne ročnike (možnost prehajanja iz polnega curka v razpršen in nazaj) z pretokom med 200 in 300 litri in vstopnim tlakom 5 do 7 barov. Ob takšni uporabi je učinkovitost najboljša in hkrati najlažja.
+			</div>
+			
 			<div class="opis">PRIPRAVA NA VSTOP IN RAZPORED OPREME</div>
 			
 			<div class="button" id="nn_pnv_odg1"
@@ -59,14 +83,14 @@
 					$('#nn_pnv_odg3').attr('class', 'button_success');
 					window.localStorage.setItem('nn_pnv_odg3', '1');
 					preveriOdgovore();
-				">ROČNIK NASTAVI NA 200-300 L</div>
+				">ROČNIK NASTAVI NA 200-300L</div>
 				
 			<div class="button" id="nn_pnv_odg4" 
 				onclick="
 					$('#nn_pnv_odg4').attr('class', 'button_error');
 					window.localStorage.setItem('nn_pnv_odg4', '1');
-					showAlert('PRVI NAPADALEC - SEKIRA', 'NAPAKA, ON IMA ŽE ROČNIK');
-				">PRVI NAPADALEC VZAME SEKIRO</div>
+					showAlert('GASILSKA SEKIRA', 'PRVI NAPADALEC IMA ŽE ROČNIK!');
+				">PRVI NAPADELC VZAME SEKIRO</div>
 				
 			<div class="button" id="nn_pnv_odg5" 
 				onclick="
@@ -80,13 +104,13 @@
 					$('#nn_pnv_odg6').attr('class', 'button_error');
 					window.localStorage.setItem('nn_pnv_odg6', '1');
 					showAlert('TLAK NA ROČNIKU', 'CEV JE PREMEHKA IN ROČNIK NE DA PRAVE OBLIKE CURKA');
-				">TLAK NA ROČNIKU NAJ BO 3-5 BAROV</div>
+				">TLAK NA ROČNKU NAJ BO 3-5 BAROV</div>
 				
 			<div class="button" id="nn_pnv_odg7" 
 				onclick="
 					$('#nn_pnv_odg7').attr('class', 'button_success');
 					window.localStorage.setItem('nn_pnv_odg7', '1');
-					preveriodgovore();
+					preveriOdgovore();
 				">DRUGI NAPADALEC VZAME SEKIRO IN VRV</div>
 				
 			<div class="button" id="nn_pnv_odg8" 
@@ -94,7 +118,7 @@
 					$('#nn_pnv_odg8').attr('class', 'button_success');
 					window.localStorage.setItem('nn_pnv_odg8', '1');
 					preveriOdgovore();
-				">DRUGI PREVERI SMER ODPIRANJA VRAT</div>
+				">DRUGI PREVERI SMER ODPIRNJA VRAT</div>
 				
 			<div class="button" id="nn_pnv_odg9" 
 				onclick="
@@ -103,10 +127,10 @@
 					preveriOdgovore();
 				">TLAK NA ROČNIKU NAJ BO VSAJ 5-7 BAROV</div>
 			
-			<div class="button" id="nadaljuj" style="display: none"><a href="preverjanje_vrat.html">NADALJUJ</a></div>
+			<div class="button" id="nadaljuj" style="display: none"><a href="notranji_napadi_preverjanje_vrat.html">NADALJUJ</a></div>
 		</div>
 		<div id="footer">
-			<table width="100%">
+			<table width="100%" cellspacing="0px" cellpadding="0px">
 				<tr>
 					<td width="50%"><a href="../../../index.html"><img src="../../../img/nazaj.png" /> NAZAJ</a></td>
 					<td width="50%"></td>

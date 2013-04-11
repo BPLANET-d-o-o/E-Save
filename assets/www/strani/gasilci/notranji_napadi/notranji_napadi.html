@@ -5,8 +5,9 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
-		<script type="text/javascript" charset="utf-8" src="../../../js/mediaelement.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/mediaelement/mediaelement-and-player.js"></script>
   		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../../../js/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" charset="utf-8">
 			if(isAndroid()) {
 				$("script").attr("src", "../../../js/cordova-2.5.0.js").appendTo("head");
@@ -52,6 +53,16 @@
   	<body>
     	<div id="header">E-SAVE <span style="color: #e47b41">-</span> NOTRANJI NAPADI</div></h1>
 		<div id="content">
+			<!--<div width="60%" align="center">
+				<video width="400px" height="200px" src="http://bplanet.si/esave/oceans.mp4" type="video/mp4" id="player1" poster="../../../img/filmi/oceans.jpg" controls="controls" preload="none"></video>
+				<script>$('audio,video').mediaelementplayer({});</script>
+			</div>-->
+			<div style="margin: 30px 0px 30px 0px">
+				Za uspešno posredovanje v objektih mora vsak gasilec uporabljati zaščitno opremo, ki mora biti v prvi vrsti kakovostna in hkrati tudi pravilno nameščena. Kakovostna zaščitna oprema in ostali pripomočki gasilcu namreč omogočajo varno hitro in kvalitetno gašenje.
+				Gasilec notranji napadalec mora biti opremljen z zaščitno obleko - hlače in jakna (pod njo pa mora nositi pod obleko), gasilsko čelado, gasilskimi škornji, gasilskimi rokavicami (kvalitetnimi in nekoliko debelejšimi). Poleg osebne opreme mora vsak napadalec imeti svetilko, osebno vrvico in izolirni dihalni aparat. Celotna napadalne skupina pa mora s seboj nositi daljšo vrv (za morebitno preiskovanje, reševanje, dvigovanje…), sekiro, radijsko postajo in priporočljivo tudi termovizijsko kamero s katero si pomaga pri preiskovanju prostorov.
+				Najmanjša napadalna skupina je vselej dvojica še bolj priporočljivo pa je trojka saj je na ta način lažje delati, napredovati in vsekakor gasiti ali celo reševati.
+			</div>
+			
 			<div class="opis">IZBERI OPREMO, KI JE POTREBNA ZA VARNO GAŠENJE</div>
 			
 			<div class="button" id="nn_io_odg1"
@@ -117,10 +128,10 @@
 					preveriOdgovore();
 				">IDA</div>
 			
-			<div class="button" id="nadaljuj" style="display: none"><a href="priprava_na_vstop.html">NADALJUJ</a></div>
+			<div class="button" id="nadaljuj" style="display: none"><a href="notranji_napadi_priprava_na_vstop.html">NADALJUJ</a></div>
 		</div>
 		<div id="footer">
-			<table width="100%">
+			<table width="100%" cellspacing="0px" cellpadding="0px">
 				<tr>
 					<td width="50%"><a href="../../../index.html"><img src="../../../img/nazaj.png" /> NAZAJ</a></td>
 					<td width="50%"></td>
