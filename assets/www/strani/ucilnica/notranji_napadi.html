@@ -6,16 +6,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
   		<script type="text/javascript" charset="utf-8" src="../../js/cordova-2.5.0.js"></script>
 		<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../js/mediaelement/mediaelement-and-player.js"></script>
   		<link href="../../css/style.css" rel="stylesheet" type="text/css" />
-		<script type="text/javascript" charset="utf-8"></script>
+		<link href="../../js/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css" />
   	</head>
   	<body>
     	<div id="header">E-SAVE <span style="color: #e47b41">-</span> UČILNICA (NOTRANJI NAPADI)</div></h1>
 		<div id="content">
 			<div width="60%" align="center">
-				<video id="video" width="90%" poster="../../img/filmi/oceans.jpg" controls>
-					<source src="http://bplanet.si/esave/oceans.mp4" />
-				</video>
+				<video width="60%" src="http://bplanet.si/esave/oceans.mp4" type="video/mp4" id="player1" poster="../../img/filmi/oceans.jpg" controls="controls" preload="none"></video>
+				<script>$('audio,video').mediaelementplayer({});</script>
 			</div>
 			<div style="margin-top: 30px">
 				Lorem Ipsum je slepi tekst, ki se uporablja pri razvoju tipografij in pri pripravi za tisk. Lorem Ipsum je v uporabi že več kot petsto let saj je to kombinacijo znakov neznani tiskar združil v vzorčno knjigo že v začetku 16. stoletja. To besedilo pa ni zgolj preživelo pet stoletij, temveč se je z malenkostnimi spremembami uspešno uveljavilo tudi v elektronskem namiznem založništvu. Na priljubljenosti je Lorem Ipsum pridobil v sedemdesetih letih prejšnjega stoletja, ko so na trg lansirali Letraset folije z Lorem Ipsum odstavki. V zadnjem času se Lorem Ipsum pojavlja tudi v priljubljenih programih za namizno založništvo kot je na primer Aldus PageMaker.
