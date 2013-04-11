@@ -9,6 +9,8 @@
   		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
 		<link href="../../../js/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" charset="utf-8">
+			window.localStorage.clear();
+			
 			if(isAndroid()) {
 				$("script").attr("src", "../../../js/cordova-2.5.0.js").appendTo("head");
 			}
@@ -49,7 +51,8 @@
 				var odg12 = window.localStorage.getItem('nn_pv_odg12');
 				
 				if(odg == 1) {
-					if(odg2 == 0 || odg7 == 0 || odg8 == 0) {
+					alert(odg1);alert(odg2);alert(odg3);alert(odg4);alert(odg5);
+					if(odg2 != 1 || odg7 != 1 || odg8 != 1) {
 						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
 					} else {
 						$('#nn_pv_odg1').attr('class', 'button_success');
@@ -57,7 +60,7 @@
 				} else if(odg == 2) {
 					$('#nn_pv_odg2').attr('class', 'button_success');
 				} else if(odg == 3) {
-					if(odg1 == 0 || odg2 == 0 || odg7 == 0 || odg8 == 0 || odg9 == 0) {
+					if(odg1 != 1 || odg2 != 1 || odg7 != 1 || odg8 != 1 || odg9 != 1) {
 						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
 					} else {
 						$('#nn_pv_odg3').attr('class', 'button_success');
@@ -66,7 +69,7 @@
 					$('#nn_pv_odg4').attr('class', 'button_error');
 					showAlert('PRVI NAPADALEC', 'SLABA IZBIRA, TAKO NE MORE DELOVATI');
 				} else if(odg == 5) {
-					if(odg1 == 0 || odg2 == 0 || odg3 == 0 || odg7 == 0 || odg8 == 0 || odg9 == 0 || odg10 == 0 || odg11 == 0 || odg12 == 0) {
+					if(odg1 != 1 || odg2 != 1 || odg3 != 1 || odg7 != 1 || odg8 != 1 || odg9 != 1 || odg10 != 1 || odg11 != 1 || odg12 != 1) {
 						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
 					} else {
 						$('#nadaljuj').show();
@@ -76,37 +79,37 @@
 					$('#nn_pv_odg6').attr('class', 'button_error');
 					showAlert('POLNI CUREK', 'NEPRIMEREN CUREK, PROSTOR SLABO HLADIŠ');
 				} else if(odg == 7) {
-					if(odg2 == 0) {
+					if(odg2 != 1) {
 						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
 					} else {
 						$('#nn_pv_odg7').attr('class', 'button_success');
 					}
 				} else if(odg == 8) {
-					if(odg2 == 0 || odg7 == 0) {
+					if(odg2 != 1 || odg7 != 1) {
 						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
 					} else {
 						$('#nn_pv_odg8').attr('class', 'button_success');
 					}
 				} else if(odg == 9) {
-					if(odg1 == 0 || odg2 == 0 || odg7 == 0 || odg8 == 0) {
+					if(odg1 != 1 || odg2 != 1 || odg7 != 1 || odg8 != 1) {
 						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
 					} else {
 						$('#nn_pv_odg9').attr('class', 'button_success');
 					}
 				} else if(odg == 10) {
-					if(odg1 == 0 || odg2 == 0 || odg3 == 0 || odg7 == 0 || odg8 == 0 || odg9 == 0 || odg11 == 0 || odg12 == 0) {
+					if(odg1 != 1 || odg2 != 1 || odg3 != 1 || odg7 != 1 || odg8 != 1 || odg9 != 1 || odg11 != 1 || odg12 != 1) {
 						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
 					} else {
 						$('#nn_pv_odg10').attr('class', 'button_success');
 					}
 				} else if(odg == 11) {
-					if(odg1 == 0 || odg2 == 0 || odg3 == 0 || odg7 == 0 || odg8 == 0 || odg9 == 0) {
+					if(odg1 != 1 || odg2 != 1 || odg3 != 1 || odg7 != 1 || odg8 != 1 || odg9 != 1) {
 						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
 					} else {
 						$('#nn_pv_odg11').attr('class', 'button_success');
 					}
 				} else if(odg == 12) {
-					if(odg1 == 0 || odg2 == 0 || odg3 == 0 || odg7 == 0 || odg8 == 0 || odg9 == 0 || odg11 == 0) {
+					if(odg1 != 1 || odg2 != 1 || odg3 != 1 || odg7 != 1 || odg8 != 1 || odg9 != 1 || odg11 != 1) {
 						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
 					} else {
 						$('#nn_pv_odg12').attr('class', 'button_success');
