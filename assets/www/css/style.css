@@ -21,12 +21,10 @@ body {
 	padding: 10px 0px 10px 0px;
 	background-image: url('../img/buttonbg.png');
 	font-size: 200%;
-	position: fixed;
-	top: 0px;
 }
 
 #content {
-	margin: 100px auto 100px auto;
+	margin: 10px auto 10px auto;
 	width: 90%;
 	text-align: left;
 }
@@ -36,8 +34,6 @@ body {
 	padding: 10px 0px 10px 0px;
 	background-image: url('../img/buttonbg.png');
 	font-size: 200%;
-	position: fixed;
-	bottom: 0px;
 }
 
 #footer a {

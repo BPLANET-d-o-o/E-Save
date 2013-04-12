@@ -43,8 +43,14 @@
 				var odg6 = window.localStorage.getItem('nn_g_odg8');
 				
 				if(odg1 == 1 && odg2 == 1 && odg3 == 1 && odg4 == 1 && odg5 == 1 && odg6 == 1) {
-					$('#nadaljuj').show();
+					$('#zakljuci').show();
 				}
+			}
+			
+			function zakljuci() {
+				showAlert('ČESTITAMO', 'BRAVO, ZAKLJUČIL SI POGLAVJE - NOTRANJI NAPADI! IZBERI DRUGO POGLAVJE.');
+				
+				window.location = "../zacetek.html";
 			}
 		</script>
   	</head>
@@ -118,7 +124,7 @@
 					preveriOdgovore();
 				">Z ZMANJŠANIM PRETOKOM IN KRATKIM RAZPRŠENIM CURKOM OHLAJUJEMO JEDRO</div>
 			
-			<div class="button" id="nadaljuj" style="display: none"><a href="notranji_napadi_zakljucek.html">NADALJUJ</a></div>
+			<div class="button" id="zakljuci" style="display: none">ZAKLJUČI</div>
 		</div>
 		<div id="footer">
 			<table width="100%" cellspacing="0px" cellpadding="0px">
