@@ -6,34 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
 		<script type="text/javascript" charset="utf-8" src="../../../js/mediaelement/mediaelement-and-player.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/myjava.js"></script>
   		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
 		<link href="../../../js/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" charset="utf-8">
-			if(isAndroid()) {
-				$("script").attr("src", "../../../js/cordova-2.5.0.js").appendTo("head");
-			}
-			
-			if(isiOS()) {
-				$("script").attr("src", "../../../js/cordova.ios.js").appendTo("head");
-			}
-			
-			function isAndroid(){
-				return navigator.userAgent.indexOf("Android") > 0;
-			}
-			
-			function isiOS(){
-				return (navigator.userAgent.indexOf("iPhone") > 0 || navigator.userAgent.indexOf("iPad") > 0 || navigator.userAgent.indexOf("iPod") > 0); 
-			}
-
-			function showAlert(title, message) {
-				navigator.notification.alert(
-					message,
-					null,
-					title,
-					'V REDU'
-				);
-			}
-	
 			function preveriOdgovore() {
 				var odg1 = window.localStorage.getItem('nn_n_odg1');
 				var odg2 = window.localStorage.getItem('nn_n_odg3');

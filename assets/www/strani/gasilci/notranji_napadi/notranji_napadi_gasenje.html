@@ -6,34 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
 		<script type="text/javascript" charset="utf-8" src="../../../js/mediaelement/mediaelement-and-player.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/myjava.js"></script>
   		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
 		<link href="../../../js/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" charset="utf-8">
-			if(isAndroid()) {
-				$("script").attr("src", "../../../js/cordova-2.5.0.js").appendTo("head");
-			}
-			
-			if(isiOS()) {
-				$("script").attr("src", "../../../js/cordova.ios.js").appendTo("head");
-			}
-			
-			function isAndroid(){
-				return navigator.userAgent.indexOf("Android") > 0;
-			}
-			
-			function isiOS(){
-				return (navigator.userAgent.indexOf("iPhone") > 0 || navigator.userAgent.indexOf("iPad") > 0 || navigator.userAgent.indexOf("iPod") > 0); 
-			}
-
-			function showAlert(title, message) {
-				navigator.notification.alert(
-					message,
-					null,
-					title,
-					'V REDU'
-				);
-			}
-	
 			function preveriOdgovore() {
 				var odg1 = window.localStorage.getItem('nn_g_odg2');
 				var odg2 = window.localStorage.getItem('nn_g_odg4');
@@ -48,7 +24,7 @@
 			}
 			
 			function zakljuci() {
-				showAlert('ČESTITAMO', 'BRAVO, ZAKLJUČIL SI POGLAVJE - NOTRANJI NAPADI! IZBERI DRUGO POGLAVJE.');
+				showAlert('ČESTITAMO', 'ZAKLJUČIL SI POGLAVJE - NOTRANJI NAPADI! IZBERI DRUGO POGLAVJE.');
 				
 				window.location = "../zacetek.html";
 			}
@@ -57,10 +33,10 @@
   	<body>
     	<div id="header">E-SAVE <span style="color: #e47b41">-</span> NOTRANJI NAPADI</div></h1>
 		<div id="content">
-			<!--<div width="60%" align="center">
+			<div width="60%" align="center">
 				<video width="400px" height="200px" src="http://bplanet.si/esave/oceans.mp4" type="video/mp4" id="player1" poster="../../../img/filmi/oceans.jpg" controls="controls" preload="none"></video>
 				<script>$('audio,video').mediaelementplayer({});</script>
-			</div>-->
+			</div>
 			<div style="margin: 30px 0px 30px 0px">
 				Ob uspešnem napredovanju in ohlajevanju se napadalna skupina približa jedru požara, kjer je ključnega pomena končno gašenje s čimer napadalci ne smejo vzdigniti plamenov preko sebe in v prostor saj bi s tem dejanjem najverjetneje razširi požar ali vsaj ogrozili vse ostale napadalce v prostoru. V izogibanje temu, je potrebno gasiti z krožnim gibom pod strop s čimer v prvi fazi ognjene zublje ohladimo in predvsem zadržimo pred seboj ( v jedru požara).
 				Zaključimo lahko, da so notranji napadi izredno kompleksna in zahtevna kombinacija različnih kombinacij vodnih curkov in taktičnega gibanja po prostoru.
