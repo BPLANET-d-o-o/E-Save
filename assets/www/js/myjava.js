@@ -1,15 +1,3 @@
-if(isAndroid()) {
-	$("script").attr("src", "../../../js/cordova-2.6.0-android.js").appendTo("head");
-}
-
-if(isiOS()) {
-	$("script").attr("src", "../../../js/cordova-2.6.0-ios.js").appendTo("head");
-}
-
-if(isBlackBerry()) {
-	$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
-}
-
 function isAndroid(){
 	return navigator.userAgent.indexOf("Android") > 0;
 }

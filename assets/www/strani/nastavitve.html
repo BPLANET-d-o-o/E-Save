@@ -7,8 +7,22 @@
 		<script type="text/javascript" charset="utf-8" src="../js/myjava.js"></script>
   		<link href="../css/style.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" charset="utf-8">
+			if(isAndroid()) {
+				$("script").attr("src", "../js/cordova-2.6.0-android.js").appendTo("head");
+			}
+
+			if(isiOS()) {
+				$("script").attr("src", "../js/cordova-2.6.0-ios.js").appendTo("head");
+			}
+
+			if(isBlackBerry()) {
+				$("script").attr("src", "../js/cordova-2.6.0-blackberry.js").appendTo("head");
+			}
+			
 			function pocistiPomnilnik() {
 				window.localStorage.clear();
+				
+				showAlert('ČIŠČENJE POMNILNIKA', 'POMNILNIK JE PRAZEN!');
 			}
 		</script>
   	</head>
@@ -17,7 +31,7 @@
 		<div id="content">
 			<div class="opis">S klikom na počisti pomnilnik boste ponastavili dokončane sklope.</div>
 			
-			<div class="button" onclick="pocistiPomnilnik(); showAlert('ČIŠČENJE POMNILNIKA', 'POMNILNIK JE PRAZEN!');">POČISTI POMNILNIK</div>
+			<div class="button" onclick="pocistiPomnilnik();">POČISTI POMNILNIK</div>
 		</div>
 		<div id="footer">
 			<table width="100%" cellspacing="0px" cellpadding="0px">
