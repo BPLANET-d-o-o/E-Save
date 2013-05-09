@@ -41,6 +41,10 @@ body {
 	text-decoration: none;
 }
 
+.font1 {
+	color: #e47b41;
+}
+
 .opis {
 	color: #e47b41;
 	padding: 15px;
@@ -77,6 +81,15 @@ body {
 	color: #ffffff;
 	padding: 15px;
 	background-image: url('../img/buttonbgwrong.png');
+	text-align: center;
+	margin: 5px auto 5px auto;
+	width: 65%;
+}
+
+.button_ok {
+	color: #ffffff;
+	padding: 15px;
+	background-image: url('../img/buttonbgok.png');
 	text-align: center;
 	margin: 5px auto 5px auto;
 	width: 65%;
