@@ -4,7 +4,26 @@
 		<title>E-Save</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" charset="utf-8" src="js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/myjava.js"></script>
   		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">
+			if(isAndroid()) {
+				$("script").attr("src", "js/cordova-2.6.0-android.js").appendTo("head");
+			}
+
+			if(isiOS()) {
+				$("script").attr("src", "js/cordova-2.6.0-ios.js").appendTo("head");
+			}
+
+			if(isBlackBerry()) {
+				$("script").attr("src", "js/cordova-2.6.0-blackberry.js").appendTo("head");
+			}
+			
+			function izhod() {
+				navigator.app.exitApp();
+			}
+		</script>
   	</head>
   	<body>
     	<div id="header">E<span style="color: #e47b41">-</span>SAVE</div>
@@ -13,6 +32,7 @@
 				<div class="button"><a href="strani/gasilci/zacetek.html">ZA GASILCE</a></div>
 				<div class="button">ZA OBČANE</div>
 				<div class="button" style="margin-top: 50px"><a href="strani/nastavitve.html">NASTAVITVE</a></div>
+				<div class="button" style="margin-top: 50px" onclick="izhod();">IZHOD</div>
 			</div>
 			<div style="width: 300px; margin: 30px auto 0px auto; text-align: center; font-size: 14px">&copy; Zavod Vizija Varnosti</div>
 		</div>
