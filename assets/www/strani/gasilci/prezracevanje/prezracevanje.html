@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/mediaelement/mediaelement-and-player.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/myjava.js"></script>
+  		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../../../js/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">	
+			if(isAndroid()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-android.js").appendTo("head");
+			}
+
+			if(isiOS()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-ios.js").appendTo("head");
+			}
+
+			if(isBlackBerry()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
+			}
+			
+			function zakljuci() {
+				showAlert('ČESTITAMO', 'PREDELAL SI POGLAVJE - PREZRAČEVANJE! IZBERI DRUGO POGLAVJE.');
+				
+				window.location = "../zacetek.html";
+			}
+		</script>
+  	</head>
+  	<body>
+    	<div id="header">E-SAVE <span style="color: #e47b41">-</span> PREZRAČEVANJE</div></h1>
+		<div id="content">
+			<div style="margin: 30px 0px 30px 0px">
+				<div>Prezračevanje je element gasilskega dela, s katerim skušamo zagotoviti večjo varnost posredovalcev in ponesrečencev. Poleg povečane varnosti ob uporabi tehnike in taktike prezračevanja zagotavljamo:</div>
+				<div>- hitrejše napredovanje napadalnih skupin</div>
+				<div>- hitrejšo in uspešnejšo rešitev ujetih in ponesrečenih</div>
+				<div>- povečanje preživetja ujetih</div>
+				<div>- lažjo določitev mesta požara</div>
+				<div style="margin-bottom: 10px">- zmanjševanje požarne škode</div>
+				
+				<div>Dva pojava izmed najnevarnejših, ki spremljajo požare v zaprtih prostorih, sta dim in vročina. Dim otežuje reševanje, saj je strupen, in zmanjšuje vidljivost. Vročina povečuje nevarnost požarnega preskoka in povratnega ognja, povečuje telesno temperaturo gasilcev, ob zadostni koncentraciji kisika pa poskrbi za hitrejše širjenje požara. Da bi omenjene nevarnosti čim bolj zmanjšali, se v gasilstvu uporablja naprave za prezračevanje.</div>
+				<div style="margin-bottom: 10px">Najbolj preprosta definicija prezračevanja bi bila, da je to odstranjevanje dima in vročih plinov iz zaprtih prostorov. V gasilstvu se prezračevanje deli na umetno in naravno.</div>
+				
+				<div style="margin-bottom: 10px"><b><u>Naravno prezračevanje</u></b> se opravlja po načelu vleka zraka skozi objekt in termike ali termičnega vzgona zaradi temperaturnih razlik pri požaru.</div>
+				<div><b><u>Umetni načini prezračevanja</u></b> so nadtlačno, podtlačno in hidravlično prezračevanje. Pri nadtlačnem in podtlačnem potrebujemo namenske strojne naprave, kot so prezračevalniki in naprave za vlek dima dimovlek. Za pogon teh naprav potrebujemo določen energent (bencin, elektriko, vodo), in določeno skupino, ki upravlja omenjene naprave. V vseh primerih je treba narediti vhodno in izhodno odprtino. Obenem mora biti prezračevanje usklajeno z aktivnostmi napadalcev v objektu, upoštevati se mora vremenske razmere, predvsem smer vetra in moč. Pomembni so tudi oblika in prostori v zgradbi, ki jo prezračujemo. Pri tem moramo paziti, da zagotovimo učinek prezračevanja (nadtlak/podtlak) in da dim in vroči plini ne preideta v druga območja in prostore. S tem lahko ogrozimo napadalne skupine, ljudi, ki so še v objektu, in povečamo možnost za širjenje požara.</div>
+				<div style="margin-bottom: 10px">Omenjene naprave za prezračevanje se uporablja pri različnih vrstah intervencij in v različnih časovnih obdobjih posredovanja. Ko v postopek dela vključimo prezračevanje, je treba odgovoriti na številna vprašanja, ki nas vodijo v pravilne odločitve in uporabe ustreznega načina prezračevanja.</div>
+			
+				<div>Kakšno prezračevanje je za objekt ali prostor najkakovostnejše?</div>
+				<div>Kaj bomo pridobili glede na vrsto prezračevanja?</div>
+				<div>Kdaj začeti prezračevanje?</div>
+				<div>Ali bomo še vedno pravi gasilci, če bomo nevarnost odstranili?</div>
+				<div>Kdaj naj začnemo prezračevati, da ne bomo poslabšali razmer?</div>
+				<div style="margin-bottom: 10px">Kakšen prezračevalnik naj uporabljam?</div>
+				
+				<div>Odgovori so morda za marsikoga pričakovani in jasni, a verjamem, da kljub več vrstam prezračevanja potrebujemo oprijemljive postopke, ki jih bomo izpolnjevali. Prepričati je treba tudi najbolj skeptične  in izpolniti pravila, ki jih lahko imenujemo tudi varnostni postopki ali postopki za pomoč pri odločitvah, vodenju in načrtovanju.</div>
+			</div>
+			
+			<div class="button" id="zakljuci" onclick="zakljuci();">ZAKLJUČI</div>
+		</div>
+		<div id="footer">
+			<table width="100%" cellspacing="0px" cellpadding="0px">
+				<tr>
+					<td width="50%"><a href="../../../index.html"><img src="../../../img/nazaj.png" /> NAZAJ</a></td>
+					<td width="50%"></td>
+				</tr>
+			</table>
+		</div>
+ 	</body>
+</html>
