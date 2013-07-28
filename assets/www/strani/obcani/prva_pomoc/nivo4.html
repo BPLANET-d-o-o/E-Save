@@ -22,23 +22,98 @@
 				$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
 			}
 			
-			function zakljuci() {
-				showAlert('ČESTITAMO', 'ZAKLJUČIL SI POGLAVJE - PRVA POMOČ! IZBERI DRUGO POGLAVJE.');
+			function preveriOdgovore() {
+				var odg1 = window.localStorage.getItem('prva_pomoc_obcani_nivo4_odg2');
+				var odg2 = window.localStorage.getItem('prva_pomoc_obcani_nivo4_odg3');
 				
-				window.location = "../zacetek.html";
+				if(odg1 == 1 && odg2 == 1) {
+					$('#nadaljuj').show();
+				}
 			}
 		</script>
   	</head>
   	<body>
-    	<div id="header">E-SAVE <span style="color: #e47b41">-</span> DVOCEVNI PREDORI</div></h1>
+    	<div id="header">E-SAVE <span style="color: #e47b41">-</span> PRVA POMOČ</div></h1>
 		<div id="content">
 			<div style="margin: 30px 0px 30px 0px">
-				<div class="font1" style="margin-bottom: 10px">ZAKLJUČEK</div>
+				<div class="font1" style="margin-bottom: 10px">NEZAVEST</div>
 				
-				<div style="margin-bottom: 10px">Gasilci so eden ključnih elementov razvejane mreže sil za zaščito, reševanje in pomoč v državi. Njihova glavna naloga je gašenje požarov ter reševanje ljudi in premoženja ob naravnih in drugih nesrečah, poleg tega pa opravljajo še vrsto drugih storitev. Pomen izobraževanja in poznejšega sodelovanja gasilcev in ekip NMP je na terenu hitro viden. To pomeni boljši izid reševanja in boljši končni rezultat za ponesrečenčevo zdravstveno stanje.</div>
+				<div>Vzrokov za motnje zavesti in kasneje tudi za nezavest je veliko. Pojavi se pri:</div>
+				<div>- zmanjšani koncentraciji sladkorja v krvi, ki jo lahko zasledimo tudi pri sladkornih bolnikih, ki so prejeli prevelik odmerek inzulina ali niso zaužili dovolj hrane, in pri alkoholikih, ki imajo spremenjeno presnovo sladkorjev</div>
+				<div>- poškodbah glave in možganov, ki jih lahko spremlja krvavitev v možgane ali strukture ob njih</div>
+				<div>- težavah z dihanjem kot posledica pomanjkanja kisika</div>
+				<div>- nevroloških boleznih, na primer možganski kapi</div>
+				<div>- zlorabi alkohola, mamil in pri delovanju nekaterih zdravil</div>
+				<div>- srčni kapi zaradi zastoja srca</div>
+				<div>- hudi krvavitvi</div>
+				<div>- čezmerno povišani temperaturi in okužbah</div>
+				<div>- psihiatričnih motnjah (odtegnitev alkohola, mamil, zdravil)</div>
+				<div>- motnjah v ravnovesju nekaterih hormonov in elektrolitov v telesu</div>
+				<div>- motnjah delovanja ledvic</div>
+				<div style="margin-bottom: 10px">- poškodbah z električnim tokom</div>
+				
+				<div style="margin-bottom: 10px">Pri bolniku se lahko motnje zavesti pojavijo v različnih oblikah. Najblažja oblika je podobna zaspanosti (imenuje se somnolenca), hujša motnja je imenovana sopor ali stupor, ko bolnika iz nezavesti lahko prebudi le močnejši bolečinski dražljaj, najtežja oblika motnje zavesti pa je koma.</div>
+				
+				<div style="margin-bottom: 10px">Zelo pogosta je tudi prehodna oblika nezavesti, imenovana sinkopa ali kolaps, ki je le kratkotrajna in prehodna izguba zavesti, ki se ob ustrezni oskrbi lahko hitro povrne. Pojavi se pri motenem delovanju dela našega živčnega sistema, ki ga ne moremo nadzorovati z lastno voljo, imenujemo ga vazovagalna sinkopa; nezavest se pojavi ob različnih čustvenih pretresih, kot je pogled na kri, na iglo, neprijeten vonj ali slab zrak v prostoru.</div>
+				
+				<div class="font1" style="margin-bottom: 10px">POMOČ NEZAVESTNEMU</div>
+				
+				<div style="margin-bottom: 10px">Ob pristopu preverimo, ali je varno (za nas in poškodovanca – pomislimo na nalete vozil, električni tok, domače živali, spolzka tla, ostre predmete...).</div>
+				<div style="margin-bottom: 10px">Prva pomoč je pri nezavestnem bolniku, ki diha in ki mu normalno bije srce, vedno enaka. Treba je preprečiti zadušitev s tem, da ohranjamo prehodno dihalno pot. Ob globoki nezavesti obstaja nevarnost zadušitve z lastnim jezikom. Zadušitev preprečimo z namestitvijo bolnika v stabilni bočni položaj. Preprečiti moramo tudi podhladitev, nezavestnega pokrijemo z odejo.</div>
+				
+				<div><b>STABILNI BOČNI POLOŽAJ NEZAVESTNEGA</b></div>
+				<div>1. Nezavestnemu odstranimo morebitna očala.</div>
+				<div>2. Pokleknemo ob stran nezavestnega človeka in mu poravnamo obe nogi.</div>
+				<div>3. Njegovo roko odročimo v ramenskem sklepu in upognemo v komolčnem sklepu, tako da roka leži ob njem, z dlanjo obrnjena navzgor. Z nogami gremo čim bližje k bolniku.<div>
+				<div>4. Drugo roko položimo preko prsnega koša, dlan prve roke položimo na njegovo lice.<div>
+				<div>5. Zunanjo nogo upognemo v kolenu, stopalo je položeno na tla.<div>
+				<div>6. Hkrati z drugo roko primemo ramo nezavestnega, ga prevalimo proti sebi in ga obrnemo na bok. Ne vlečemo ga proti sebi le z močjo rok, ampak uporabimo tudi težo svojega telesa.<div>
+				<div>7. Popravimo položaj njegovih okončin:<div>
+				<div>- Roka naj podpira njegovo glavo pod licem.<div>
+				<div>- Položaj noge popravimo tako, da sta kolk in koleno upognjena v pravem kotu, da je omogočena stabilna podpora telesu.<div>
+				<div style="margin-bottom: 10px">- Glavo rahlo upognemo nazaj, tako da sta omogočena odprtost dihalnih poti in možnost odtoka morebitnih izbruhkov.<div>
+				
+				<div>Pokličemo službo nujne medicinske pomoči 112.<div>
+				<div style="margin-bottom: 10px">Ko čakamo na reševalce, moramo ves čas spremljati stanje nezavestnega; preverjamo, ali diha in ali kaže druge znake življenja. Ob prenehanju dihanja je treba začeti temeljne postopke oživljanja.<div>
+			
+				<div><img style="max-width: 100%" src="slike/3_1.jpg" /> <img style="max-width: 100%" src="slike/3_2.jpg" /> <img style="max-width: 100%" src="slike/3_3.jpg" /> <img style="max-width: 100%" src="slike/3_4.jpg" /></div>
+				<div style="margin-bottom: 10px">Slike 1, 2, 3, 4. Nameščanje v bočni stabilni položaj</div>
+				
+				<div style="margin-bottom: 10px">Posebno pozornost moramo nameniti tistim nezavestnim, pri katerih sumimo na poškodbo hrbtenice (udeležencem v prometnih nezgodah, ponesrečencem pri padcu z višine ipd.). V teh primerih moramo biti še posebno previdni pri nameščanju v bočni položaj. Vedeti moramo, da veliko poškodovancev umre prav zaradi zapore dihalne poti in zadušitve.</div>
+				<div style="margin-bottom: 10px">Nezavestnih, ki imajo kratkotrajno izgubo zavesti (vazovagalno sinkopo, kolaps), ne smemo dvigovati; zavarujemo jih na mestu nesreče, namestimo jih na hrbet, dvignemo jim noge, razrahljamo ovratnik in pas ter opazujemo do vrnitve zavesti. Ko so zavestni, jim damo piti tekočino in omogočimo dotok svežega zraka. Oskrbimo morebitne poškodbe. Po potrebi pokličemo 112.</div>
+				
+				<div class="opis" style="margin-bottom: 10px; margin-top: 10px">Kaj je največja nevarnost pri nezavesti?</div>
+				
+				<div class="button" id="prva_pomoc_obcani_nivo4_odg1" 
+				onclick="
+					$('#prva_pomoc_obcani_nivo4_odg1').attr('class', 'button_error');
+					window.localStorage.setItem('prva_pomoc_obcani_nivo4_odg1', '1');
+				">Bruhanje.</div>
+				
+				<div class="button" id="prva_pomoc_obcani_nivo4_odg2" 
+				onclick="
+					$('#prva_pomoc_obcani_nivo4_odg2').attr('class', 'button_success');
+					window.localStorage.setItem('prva_pomoc_obcani_nivo4_odg2', '1');
+					preveriOdgovore();
+				">Zapora dihalne poti ter zastoj dihanja in bitja srca.</div>
+				
+				<div class="opis" style="margin-bottom: 10px; margin-top: 10px">Ali lahko bolnika s sumom na poškodbo hrbtenice obrnem na bok?</div>
+				
+				<div class="button" id="prva_pomoc_obcani_nivo4_odg3" 
+				onclick="
+					$('#prva_pomoc_obcani_nivo4_odg3').attr('class', 'button_success');
+					window.localStorage.setItem('prva_pomoc_obcani_nivo4_odg3', '1');
+					preveriOdgovore();
+				">Da, vendar to naredim previdno, drugače se bolnik lahko zaduši.</div>
+				
+				<div class="button" id="prva_pomoc_obcani_nivo4_odg4" 
+				onclick="
+					$('#prva_pomoc_obcani_nivo4_odg4').attr('class', 'button_error');
+					window.localStorage.setItem('prva_pomoc_obcani_nivo4_odg4', '1');
+				">Ne, ker ga lahko še bolj poškodujem.</div>
+				
+				<div class="button" id="nadaljuj" style="display: none"><a href="nivo5.html">NADALJUJ</a></div>
 			</div>
-				
-			<div class="button" id="zakljuci" onclick="zakljuci();">ZAKLJUČI</div>
 		</div>
 		<div id="footer">
 			<table width="100%" cellspacing="0px" cellpadding="0px">

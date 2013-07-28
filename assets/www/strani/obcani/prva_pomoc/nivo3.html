@@ -21,62 +21,99 @@
 			if(isBlackBerry()) {
 				$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
 			}
+			
+			function preveriOdgovore() {
+				var odg1 = window.localStorage.getItem('prva_pomoc_obcani_nivo3_odg3');
+				var odg2 = window.localStorage.getItem('prva_pomoc_obcani_nivo3_odg4');
+				var odg3 = window.localStorage.getItem('prva_pomoc_obcani_nivo3_odg7');
+				
+				if(odg1 == 1 && odg2 == 1 && odg3 == 1) {
+					$('#nadaljuj').show();
+				}
+			}
 		</script>
   	</head>
   	<body>
     	<div id="header">E-SAVE <span style="color: #e47b41">-</span> PRVA POMOČ</div></h1>
 		<div id="content">
 			<div style="margin: 30px 0px 30px 0px">
-				<div class="font1" style="margin-bottom: 10px">ZASTRUPITEV Z OGLJIKOVIM MONOKSIDOM</div>
+				<div class="font1" style="margin-bottom: 10px">PRVA POMOČ PRI ZAPORI DIHALNE POTI PRI ODRASLIH</div>
 				
-				<div style="margin-bottom: 10px">Med zastrupitvami s plini so najpogostejše zastrupitve z ogljikovim monoksidom (CO), pa tudi drugače je CO najpogostejši vzrok smrti zaradi zastrupitev. CO je strupeni plin brez vonja, barve in okusa. Prav zaradi tega je še zlasti nevaren, saj ga s svojimi čutili ne moremo zaznati. Je lažji od zraka, v organizem preide z dihanjem. Nastane pri nepopolnem zgorevanju trdih, tekočih in plinastih snovi, ki vsebujejo ogljik. V krvi se že v zelo nizkih koncentracijah veže na hemoglobin, in to kar 250-krat močneje kot kisik. Pri tem nastane t. i. karboksihemoglobin (HbCO), ki ne more prenašati kisika po krvi. Kisik tako bistveno težje prehaja iz krvi v tkiva. CO se veže tudi na mioglobin (približno 40-krat močneje kot kisik), ki transportira kisik v mišicah, kar privede do mišične nemoči in motnje koordinacije. CO se veže tudi na encime dihalne verige in jih zavira. Zaradi tega se tudi kisik, ki je v tkivih še na voljo, ne more učinkovito uporabiti.</div>
+				<div style="margin-bottom: 10px">Zapora dihalne poti je lahko popolna ali delna. Vzroki za zaporo dihalne poti so lahko kri, bruhanje, tujki (denimo zobje, hrana, igrače …), neposredna poškodba obraza ali vratu, otekanje žrela (vnetje, pik žuželk …). Pri teh bolnikih je bistveno, da jim sprostimo dihalno pot.</div>
+				
+				<div style="margin-bottom: 10px">Prepoznava dušenja je bistvena, saj se na podlagi prepoznave odločimo, kako bomo ukrepali. Tujki lahko povzročijo blago ali hudo zaporo dihalne poti. Ko opazimo splošne znake dušenja (napad se začne med jedjo, žrtev se lahko prime za vrat, siljenje na kašelj …), je treba bolnika vprašati: »Ali se dušite?« Pri lažji zapori ta odgovori, kašlja in diha. Pri hudi zapori pa to ni mogoče. Takrat bolnik ne more govoriti, lahko odgovori le s prikimavanjem in kretnjami. Opazimo še, da bolnik ne more dihati, sliši se hropenje, bolnik pa zaradi zastoja dihanja izgubi zavest.</div>
+				
+				<div><u>PRVA POMOČ PRI LAŽJI ZAPORI DIHALNE POTI</u> (ta postopek je primeren tudi za otroke od enega leta dalje)</div>
+				<div style="margin-bottom: 10px">Bolnika je treba spodbujati pri kašlju.</div>
+				
+				<div><u>PRVA POMOČ PRI HUDI ZAPORI DIHALNE POTI</u></div>
+				<div style="margin-bottom: 10px">Če je bolnik pri zavesti, ga do petkrat udarimo po hrbtu. Stopimo ob bok bolniku nekoliko zadaj, podpremo prsni koš z eno roko, bolnik naj se nagne naprej, da mu tujek ne bi zdrsnil globlje v dihala. Nato s peto dlani do petkrat kratko udarimo med lopaticama. Po vsakem udarcu preverimo, ali se je dihalna pot sprostila. Cilj je sprostiti dihalno pot in ne dati vseh pet udarcev.</div>
 			
-				<table width="100%" border="1px">
-					<tr>
-						<td><b>ODSTOTEK HbCO</b></td>
-						<td><b>SIMPTOMI</b></td>
-					</tr>
-					<tr>
-						<td>0–5 %</td>
-						<td>Ni težav</td>
-					</tr>
-					<tr>
-						<td>5-10 %</td>
-						<td>Ni težav, oziroma blažji glavobol, utrujenost...</td>
-					</tr>
-					<tr>
-						<td>10-20 %</td>
-						<td>Blažji glavobol, kratka sapa ob izdihu</td>
-					</tr>
-					<tr>
-						<td>20-30 %</td>
-						<td>Glavobol, slabost</td>
-					</tr>
-					<tr>
-						<td>30-40 %</td>
-						<td>Močan glavobol, slabša razsodnost, bruhanje, vrtoglavica, motnje vida</td>
-					</tr>
-					<tr>
-						<td>40-50 %</td>
-						<td>Zmedenost, omedlevica</td>
-					</tr>
-					<tr>
-						<td>60-70 %</td>
-						<td>Nezavest, krči, težave s srcem in dihanjem</td>
-					</tr>
-					<tr>
-						<td>nad 70 %</td>
-						<td>Smrt</td>
-					</tr>
-				</table>
-				<div style="margin-bottom: 10px">Tabela 1: Simptomi, povezani z naraščanjem stopnje HbCO (Vir: Emergency Toxicology, 1998.)</div>
+				<div><img style="max-width: 100%" src="slike/2_1.jpg" /></div>
+				<div style="margin-bottom: 10px">Slika 1: Udarci po hrbtu</div>
 				
-				<div style="margin-bottom: 10px"><u>UKREPI</u></div>
-				<div style="margin-bottom: 10px">Pri ukrepanju se moramo zavedati, da je lastna varnost na prvem mestu! Če menimo, da je v prostoru prisoten CO, moramo prostor najprej odpreti in ga prezračiti. Gasilci v takšno območje vstopamo z izolirnim dihalnim aparatom. Če je zastrupljenec v bližini izhoda in nimamo na razpolago IDA, skušamo zajeti sapo, priti do zastrupljenega in ga čim prej (npr. Rautkov prijem) evakuirati iz nevarnega prostora (npr. garaže). Kadar je tveganje preveliko, je bolje, da ne rešujemo, saj ne smemo ogrožati svojega življenja. Ko je zastrupljenec evakuiran in na varnem, skušamo najprej ugotoviti njegovo zdravstveno stanje (ABC). Nato začnemo čim prej opravljati temeljne postopke oživljanja. (narediti povezavo na TPO od Remškarja) Če zastrupljenec samostojno diha, mu moramo čim prej omogočiti vdihavanje 100-odstotnega kisika s t. i. masko Ohio in poklicati nujno medicinsko pomoč, ki bo nadaljevala ukrepe in zdravljenje. Pri vdihavanju atmosferskega zraka je razpolovna doba HbCO od štiri do šest ur. Pri vdihavanju 100-odstotnega kisika je ta čas ena ura in pol, v hiperbarični komori pa le 20 do 25 minut.</div>
-				<div style="margin-bottom: 10px">Zelo pomembno je, da znamo zastrupitev s CO prepoznati. Poznati moramo tudi potencialno nevarna mesta, kjer bi CO lahko nastajal, znake zastrupitve (tudi prikrite) in pravilno ukrepanje, kadar dejansko ugotovimo zastrupitev. Smotrno bi bilo razmisliti, da bi vsaj osrednje gasilske enote v svoji opreme imele tudi kisik in maske Ohio, morda tudi pulzne CO-metre.</div>
+				<div style="margin-bottom: 10px">Če s petimi udarci nismo bili uspešni, poskusimo s petimi pritiski na trebuh. Postavimo se za bolnika in položimo obe roki na zgornji del trebuha. (Pri nosečnicah ne pritiskamo na trebuh!) Bolnika nagnemo naprej, eno roko stisnemo v pest in jo položimo na sredino med popkom in žličko. Z drugo roko primemo prvo in na kratko, močno potisnemo navznoter in navzgor. Postopek ponovimo do petkrat.</div>
+				
+				<div><img style="max-width: 100%" src="slike/2_2.jpg" /></div>
+				<div style="margin-bottom: 10px">Slika 2: Pritiski na trebuh</div>
+				
+				<div style="margin-bottom: 10px">Če dihalna pot še ni sproščena, izmenično ponavljamo po pet udarcev med lopaticama in po pet pritiskov na trebuh, dokler nismo uspešni, če ponesrečeni izgubi zavest, postopek končamo in pokličemo reševalce.</div>
+				<div style="margin-bottom: 10px">Pritisk na trebuh lahko opravimo tudi pri sebi tako, da položimo pest nad popek, z drugo roko zgrabimo svojo pest in se sklonimo čez trdo površino (na primer stol) in nato potisnemo svojo pest proti sebi in navzgor.</div>
+				<div style="margin-bottom: 10px">Če bolnik izgubi zavest, ga pazljivo položimo na tla. Takoj pokličemo 112 in začnemo temeljne postopke oživljanja.</div>
+				
+				<div class="opis" style="margin-bottom: 10px; margin-top: 10px">Kako prepoznamo lažjo zaporo dihalne poti?</div>
+				
+				<div class="button" id="prva_pomoc_obcani_nivo3_odg1" 
+				onclick="
+					$('#prva_pomoc_obcani_nivo3_odg1').attr('class', 'button_error');
+					window.localStorage.setItem('prva_pomoc_obcani_nivo3_odg1', '1');
+				">Poškodovani ne more dihati, se duši, ne da nam nobenega odgovora.</div>
+				
+				<div class="button" id="prva_pomoc_obcani_nivo3_odg2" 
+				onclick="
+					$('#prva_pomoc_obcani_nivo3_odg2').attr('class', 'button_error');
+					window.localStorage.setItem('prva_pomoc_obcani_nivo3_odg2', '1');
+				">Poškodovani se duši in ne more kašljati.</div>
+				
+				<div class="button" id="prva_pomoc_obcani_nivo3_odg3" 
+				onclick="
+					$('#prva_pomoc_obcani_nivo3_odg3').attr('class', 'button_success');
+					window.localStorage.setItem('prva_pomoc_obcani_nivo3_odg3', '1');
+					preveriOdgovore();
+				">Poškodovani nam odgovori na vprašanje in lahko kašlja.</div>
+				
+				<div class="opis" style="margin-bottom: 10px; margin-top: 10px">Kako prepoznamo hudo zaporo dihalne poti?</div>
+				
+				<div class="button" id="prva_pomoc_obcani_nivo3_odg4" 
+				onclick="
+					$('#prva_pomoc_obcani_nivo3_odg4').attr('class', 'button_success');
+					window.localStorage.setItem('prva_pomoc_obcani_nivo3_odg4', '1');
+					preveriOdgovore();
+				">Poškodovani ne more dihati, se duši, ne da nam nobenega odgovora.</div>
+				
+				<div class="button" id="prva_pomoc_obcani_nivo3_odg5" 
+				onclick="
+					$('#prva_pomoc_obcani_nivo3_odg5').attr('class', 'button_error');
+					window.localStorage.setItem('prva_pomoc_obcani_nivo3_odg5', '1');
+				">Poškodovani nam odgovori na vprašanje in lahko kašlja.</div>
+				
+				<div class="opis" style="margin-bottom: 10px; margin-top: 10px">Kako ukrepamo pri prvi pomoči ob hudi zapori dihalne poti pri odraslih?</div>
+				
+				<div class="button" id="prva_pomoc_obcani_nivo3_odg6" 
+				onclick="
+					$('#prva_pomoc_obcani_nivo3_odg6').attr('class', 'button_error');
+					window.localStorage.setItem('prva_pomoc_obcani_nivo3_odg6', '1');
+				">Najprej pritiskamo na trebuh, nato udarjamo po hrbtu.</div>
+				
+				<div class="button" id="prva_pomoc_obcani_nivo3_odg7" 
+				onclick="
+					$('#prva_pomoc_obcani_nivo3_odg7').attr('class', 'button_success');
+					window.localStorage.setItem('prva_pomoc_obcani_nivo3_odg7', '1');
+					preveriOdgovore();
+				">Najprej petkrat udarimo po hrbtu, nato naredimo pet pritiskov na trebuh. Če poškodovani izgubi zavest, začnemo TPO.</div>
+				
+				<div class="button" id="nadaljuj" style="display: none"><a href="nivo4.html">NADALJUJ</a></div>
 			</div>
-			
-			<div class="button" id="nadaljuj"><a href="nivo4.html">NADALJUJ</a></div>
 		</div>
 		<div id="footer">
 			<table width="100%" cellspacing="0px" cellpadding="0px">
