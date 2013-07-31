@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/mediaelement/mediaelement-and-player.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/myjava.js"></script>
+  		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../../../js/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">	
+			if(isAndroid()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-android.js").appendTo("head");
+			}
+
+			if(isiOS()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-ios.js").appendTo("head");
+			}
+
+			if(isBlackBerry()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
+			}
+			
+			function zakljuci() {
+				showAlert('ČESTITAMO', 'PREDELAL SI POGLAVJE - IDA! IZBERI DRUGO POGLAVJE.');
+				
+				window.location = "../zacetek.html";
+			}
+		</script>
+  	</head>
+  	<body>
+    	<div id="header"><img height="50px" src="../../../img/esavelogo.png" /></div>
+		<div id="content">
+			<div style="margin: 30px 0px 30px 0px">
+				<div class="font1">DELO Z APARATOM</div>
+				<div style="margin-bottom: 10px">Okoliščine dela z aparatom so različne, zato je v prvi fazi najpomembnejše delo po navodilih proizvajalca. Vsak uporabnik mora opraviti osnovni tečaj iz nošenja tega aparata, nato pa upoštevati vse druge dejavnike. Kar nekaj je standardov, ki so pri IDA, ampak vedno začnemo s klasičnim testom aparata pred uporabo.</div>
+				
+				<div>1. Odpremo ventil tlačne posode in preverimo stanje na manometru, ki ne sme biti manjše kot 90 odstotkov nazivnega tlaka tlačne posode.</div>
+				<div>2. Tlačno posodo zapremo in počakamo 20 sekund. Kazalnik na manometru ne sme upadati.</div>
+				<div>3. Močno vdihnemo skozi pljučni avtomat, da preverimo, ali se odpira, in počasi praznimo srednjetlačno linijo.</div>
+				<div style="margin-bottom: 10px">4. Preverimo, ali se je oglasila piščal pri ca. 50 barih.</div>
+				
+				<div style="margin-bottom: 10px">Poznamo kar nekaj različnih podatkov o delu v ekstremnih razmerah, predvsem pri delu gasilcev. Delo in okolice, v katerih aparati delujejo, so različni.</div>
+				
+				<div>Aparati morajo biti odporni proti visokim temperaturam.</div>
+				<div>- Testira se jih na suho vročino, pri čemer guma in drugi deli ne smejo zagoreti ali se stopiti, čeprav toplota seva skozi vizir, zrak, ki vdira v masko ob vizirju navzgor, le tega ohlaja.</div>
+				<div>- Potek zraka ob vizirju ima nalogo, da ne rosi vizirja, kajti različni geli in spreji proti rosenju v takih razmerah ne delujejo, poleg tega so gorljivi.</div>
+				<div style="margin-bottom: 10px">- Ventili morajo delovati nemoteno pri visokih temperaturah.</div>
+				
+				<div>Aparati morajo biti odporni proti nizkim temperaturam.</div>
+				<div>- Guma in drugi deli ne smejo zmrzovati, ampak morajo ohranjati prožnost. Ob prehodu s toplega območja na hladno se temperaturna razlika zelo hitro povečuje, to pa ne sme vplivati na materiale.</div>
+				<div>- Vsi ventili morajo delovati pri nizkih temperaturah (tudi pri –40 stopinj Celzija), prav tako ne sme otrdeti disk varovalnega ventila.</div>
+				<div style="margin-bottom: 10px">- Nizka temperatura nastaja tudi pri reducirnem ventilu, ko se zrak razteza in se močno ohlaja. Ventil je na zunaj videti zamrznjen, toda mora delovati.</div>
+				
+				<div><b>Aparati v vodi</b></div>
+				<div style="margin-bottom: 10px">IDA ni namenjen uporabi pod vodo, je pa res, da so aparati testirani zaradi primerov, ko so določeni reševalci nehote pristali v vodi, in so varni tudi, ko reševalce obdaja voda. Standard predpisuje, da mora aparat zdržati do enega metra globine. <u>Poudarek: IDA ni namenjen uporabi pod vodo.</u></div>
+				
+				<div style="margin-bottom: 10px">Aparat je treba pravilno namestiti, drugače nam povzroča veliko težav, poleg tega škoduje predvsem hrbtenici, tehta namreč šest do 18 kilogramov. Poleg pravilnega nameščanja je nujno tudi pravilno gibanje, ki ga usvojimo na tečajih in vajah.</div>
+				
+				<div class="font1">POVZETEK</div>
+				<div>Dihalni aparat je naprava, ki je namenjena pomoči pri delu in je resnično zadnja zaščitna oprema, ki nam preostane pri nevarnem reševanju. Aparat je nepogrešljiv pripomoček v gasilstvu, je pa tudi zelo nevaren, če ni pravilno in sprotno vzdrževan.</div>
+				<div>Zavedati se moramo, da aparat ponuja zaščito dihalom in notranjemu organizmu, nikakor pa ne daje zaščite proti mehanskim poškodbam, opeklinam in tako dalje, vendar je po drugi strani izredno kakovostno zaščitno sredstvo v kombinaciji z drugo zaščitno opremo.</div>
+			</div>
+			
+			<div class="button" id="zakljuci" onclick="zakljuci();">ZAKLJUČI</div>
+		</div>
+		<div id="footer">
+			<table width="100%" cellspacing="0px" cellpadding="0px">
+				<tr>
+					<td width="50%"><a href="ida.html"><img src="../../../img/nazaj.png" /> NAZAJ</a></td>
+					<td width="50%"></td>
+				</tr>
+			</table>
+		</div>
+ 	</body>
+</html>

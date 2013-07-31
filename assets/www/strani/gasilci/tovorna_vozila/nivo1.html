@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/mediaelement/mediaelement-and-player.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/myjava.js"></script>
+  		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../../../js/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">	
+			if(isAndroid()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-android.js").appendTo("head");
+			}
+
+			if(isiOS()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-ios.js").appendTo("head");
+			}
+
+			if(isBlackBerry()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
+			}
+			
+			function zakljuci() {
+				showAlert('ČESTITAMO', 'PREDELAL SI POGLAVJE - TOVORNA VOZILA! IZBERI DRUGO POGLAVJE.');
+				
+				window.location = "../zacetek.html";
+			}
+		</script>
+  	</head>
+  	<body>
+    	<div id="header">E-SAVE <span style="color: #e47b41">-</span> TOVORNA VOZILA</div></h1>
+		<div id="content">
+			<div style="margin: 30px 0px 30px 0px">
+				<div class="font1">POSREDOVANJE OB PROMETNIH NESREČAH AVTOBUSOV</div>
+				<div style="margin-bottom: 10px">Avtobus je s stališča varnosti med najvarnejšimi transportnimi sredstvi na evropskih cestah. Pred leti so v Nemčiji pripravili statistično primerjavo prometnih nesreč različnih prevoznih sredstev. Rezultat primerjave je zanimiv, saj je glede na število prevoženih kilometrov in število potnikov avtobus najvarnejši način transporta. Statistika je pokazala, da je število smrtnih žrtev ob prometnih nesrečah na en milijon prevoženih potniških kilometrov z različnimi prevoznimi sredstvi naslednje: sedem mrtvih v osebnih vozilih, pet v tovornih vozilih, trije v vlakih, eden s potniškim letalom in 0,28 mrtvih v avtobusu. Statistika nam torej pove, da smo v avtobusu dokaj varni. Vendar se je treba kot gasilec in reševalec zavedati, da je posredovanje nekoliko drugačno kot pri osebnih vozilih. Srečujemo se namreč z večjimi in težjimi vozili ter predvsem z večjim številom ljudi, ki so lahko nepoškodovani, poškodovani, ukleščeni ipd.</div>
+				
+				<div class="font1">Varnostni elementi avtobusov</div>
+				<div style="margin-bottom: 10px">Avtobusi imajo tako kot osebna in tovorna vozila ogromno varnostnih elementov in pripomočkov, ki jih delimo na pasivno in aktivno varnost. Pasivni varnostni elementi na avtobusih so predvsem varnostni pasovi. Namestitev varnostnih pasov je odvisna od modela oziroma namembnosti avtobusa. Avtobus za lokalni potniški promet ni opremljen z varnostnimi pasovi (razen voznik). Vozila, namenjena za medkrajevni in turistični prevoz potnikov, pa imajo na sedežih nameščene varnostne pasove. Na žalost se je v zadnjih nekaj prometnih nesrečah v Sloveniji ugotovilo, da potniki tega varnostnega elementa ne uporabljajo. Naslednji pasivni varnostni element je vgrajen v konstrukcijo vozila, v varnostni lok, ki ima nalogo zaščite potniškega dela vozila pri prevrnitvi vozila. Ta element se vgrajuje predvsem v avtobuse, namenjene za turistični prevoz, v drugih manjših avtobusih je redkejši, pri mestnih avtobusih pa sploh ni nameščen. Aktivna varnost v avtobusih zajema širši spekter in služi predvsem vozniku in sovozniku in ne toliko potnikom. Vozila so opremljena z zračnimi vrečami za voznika (nekateri modeli imajo tudi zračne vreče za sovoznika), z zavornim sistemom ABS, z elektronskimi pripomočki za bočno stabilizacijo vozila, s sistemom proti zdrsu pogonskih koles, z varnostnim tempomatom s funkcijo radarja proti približevanju, nadzornim sistemom za zapuščanje smeri vožnje ipd. Seveda so to predvsem dodatki, ki omogočajo, da so avtobusi varno prevozno sredstvo, niso pa to ovire (razen zračne vreče) ali pripomočki za gasilske enote, ki bodo posredovale ob prometnih nesrečah. Proizvajalci poskušajo z določenimi ukrepi povečati varnost potnikov, zato denimo na sedežih ni več ostrih robov, v naslonjalih ni kovinskih pepelnikov, uporabljajo se materiali, ki blažijo udarce ob trkih, itd.</div>
+				
+				<div class="font1">Konstrukcija in ojačitve v avtobusih</div>
+				<div style="margin-bottom: 10px">Glede na namembnost avtobusa imamo različne osnovne konstrukcije. Na prvi pogled je konstrukcija avtobusa preprosta, vendar ni. Na osnovno kovinsko konstrukcijo je na notranji strani vozila nameščena plošča iz vezanega lesa ali iz umetne mase. Med notranjo in zunanjo steno (zunanje stene so iz pločevine, iz aluminija, nekateri proizvajalci uporabljajo že karbonsko umetno maso ali steklena vlakna) so nameščeni izolacijski materiali, ki so pri starejših avtobusih zelo gorljivi in se lahko med našim posredovanjem z alternativnim orodjem tudi vnamejo. Treba je upoštevati dejstvo, da so pri nekaterih modelih vozil v stranicah vozila, skrito pod okrasno notranjo steno in zunanjo steno avtobusa, nameščeni različni električni vodniki, napeljave ogrevalnih sistemov, napeljava zračne instalacije, ena večjih nevarnosti pa je dovod in odvod goriva med motorjem v zadnjem predelu avtobusa in rezervoarjem goriva, ki je večinoma nameščen v sprednjem delu avtobusa (zaradi porazdelitve težišča vozila). Večina novejših avtobusov ima oskrbovalne linije (zrak, gorivo, elektrika) nameščene pod pohodno površino potniškega predela avtobusa. Pri prej omenjenih ogrevalnih sistemih je treba opozoriti na možnost opeklin, saj je v bakrenih ceveh, ki služijo za ogrevanje steklenih površin, vroča voda, ki ima povprečno temperaturo 90 stopinj Celzija. Obstajajo modeli avtobusov, ki imajo klimatske in ogrevalne razvodne sisteme nameščene v predelu nad potniki (polica za prtljago), kar je dodatna težava.</div>
+				<div style="margin-bottom: 10px">Avtobus lahko grobo razdelimo na 60 odstotkov konstrukcije in 40 odstotkov steklenih površin. Konstrukcijsko ločujemo potniške in mestne avtobuse. Za mestne avtobuse je značilno, da so nižji, imajo manj prostorov za prtljago pod potniškim delom vozila, da so potniki v vozilu razporejeni deloma sede, večina pa jih med vožnjo stoji. Na mestnih avtobusih lahko naletimo na večje število potnikov (največji potniški avtobusi omogočajo transport tudi do 180 potnikov), ki pa bodo v primeru prometne nesreče izpostavljeni veliko večjim poškodbam zaradi načina namestitve potnikov v vozilu. Deformacije konstrukcije vozila pa so nekoliko manjše, saj se mestni avtobusi praviloma uporabljajo pri nižjih hitrostih.</div>
+				<div style="margin-bottom: 10px">Potniški avtobusi so konstrukcijsko višji, pod potniškim prostorom je prostor za prtljago, za spalno kabino, potniki med vožnjo večinoma sedijo, so pa tudi avtobusi, ki imajo dve nadstropji, kar poveča težavnost pri reševanju, potnikov je do sto. Posebnost pri avtobusih so vrata vozila. So pnevmatska, kar pomeni, da za delovanje potrebujejo zrak. Glede na smer odpiranja poznamo dva modela (odpiranje v vozilo, odpiranje iz vozila). Vsi krmilni mehanizmi za odpiranje vrat so nameščeni v armaturni plošči pri vozniku, dodatno so lahko krmilni gumbi za odpiranje ali zapiranje (predvsem pri mestnih avtobusih) skriti v predelu kabine vozila. Novejši avtobusi imajo nameščene zasilne krmilne mehanizme, ki so na zunanji in na notranji strani vozila v neposredni bližini vrat (stikala so primerno označena). Naloga teh mehanizmov je, da spustijo zrak iz pnevmatskih cilindrov vrat in omogočijo ročno odpiranje mehanizmov vrat.</div>
+				
+				<div class="font1">Pogonska goriva za avtobuse</div>
+				<div style="margin-bottom: 10px">Večina avtobusov je opremljenih z dizelskimi agregati. Predvsem potniški avtobusi imajo večje rezervoarje goriva, da lahko premagujejo ogromne razdalje. Tako so rezervoarji potniških avtobusov (avtobusi s povprečno 50 sedeži in več) napolnjeni tudi z do 1000 litri dizelskega goriva. Na trgu so tudi manjši rezervoarji do 400 litrov, ki so namenjeni izključno za ogrevalni sistem vozila (npr. Webasto). Rezervoarja imata skupaj večjo količino goriva, ki ob intervenciji lahko predstavlja dodatne nevarnosti. Naslednja težava pri pogonskem gorivu je, da gasilci nimamo informacije, kje je rezervoar natančno nameščen, saj je to prepuščeno proizvajalcu vozila, ki poišče optimalne rešitve v zvezi s porazdelitvijo težišča. V teh primerih izrednega pomena informacija voznika ali sovoznika (če je mogoče z njima govoriti – tuji jezik, poškodbe …). Je pa pri potniških avtobusih večinoma glavni rezervoar nameščen pri sprednji osi vozila in je dostopen iz notranjosti vozila tako, da se odstranijo pohodne površine. Poleg dizelskih pogonskih goriv se uporabljajo tudi zemeljski plin, vodik (Nemčija), hibridi (plin in dizel, dizel in elektrika), vendar so to večinoma vozila, namenjena mestnemu transportu potnikov. Trenutno tovrstnih mestnih avtobusov v Sloveniji ni veliko, se pa njihovo število iz leta v leto povečuje, tako da lahko gasilci prej ali slej naletimo na težave s tovrstnimi pogonskimi sredstvi.</div>
+			
+				<div class="font1">Oskrba z električno napetostjo</div>
+				<div style="margin-bottom: 10px">Avtobusi so večinoma opremljeni z 24V električno napeljavo. Akumulatorji so nameščeni na različnih položajih v vozilu, na primer v spodnjih predalih vozila, nekateri proizvajalci (Volvo) pa akumulatorje vozila nameščajo v predel pri sprednji osi in so dostopni samo iz notranjosti avtobusa. V avtobusih so (predvsem pri potniških) tudi dodatni električni sistemi, kot so generatorji ali pretvorniki električne napetosti, ki oskrbujejo hladilnike, video- in avdiosisteme, minikuhinje (električne kuhalne plošče, avtomate za čaj in kavo …). Posebnost pri električni energiji so avtobusi na hibridni pogon, pri katerih imajo nekateri za električni vir dizelski agregat, pogonski motor je elektromotor, na strehi vozila ali tudi drugje (odvisno od proizvajalca) pa je nameščeno večje število akumulatorjev za shranjevanje električne energije.</div>
+			
+				<div class="font1">Oprema posredovalcev</div>
+				<div style="margin-bottom: 10px">Osebna zaščitna sredstva se ne razlikujejo od drugih tehničnih intervencij. Mogoče bo treba v skladu z večjim številom poškodovanih ali samo udeleženih ljudi omogočiti večkratno zamenjavo osnovne zaščite pri delu s poškodovanci. Zavedati se je treba, da bodo pri teh intervencijah sile prej iztrošene in da bo nujno omogočiti ustrezno zamenjavo in počitek.</div>
+			
+				<div class="font1">Dostop do ponesrečenih v avtobusu</div>
+				<div style="margin-bottom: 10px">V normalnih razmerah so vstopne in izstopne površine avtobusa zadostne, da vsi nemoteno zapustijo vozilo. Vendar so v tujini imeli že več negativnih primerov, ko se ljudje niso uspeli pravočasno rešiti iz vozila zaradi »pretočnosti« evakuacijskih poti v vozilu in vratih. Tako je pred leti v bližini Hamburga (Nemčija) nastal požar med vožnjo. Ko se je voznik ustavil, so takoj začeli evakuacijo iz vozila, žal se skoraj 20 potnikom ni uspelo rešiti in so zgoreli v vozilu. Primer nam jasno pove, da je zapuščanje polnega avtobusa ob nesrečah zamuden in kaotičen postopek.</div>
+			
+				<div class="font1">Stabilizacija</div>
+				<div style="margin-bottom: 10px">Za stabilizacijo vozila, proti premikom, se uporablja osnovna oprema vsakega tovornega vozila (zagozde) oziroma avtobusa. Upoštevati je treba, da morajo zagozde ustrezati velikosti in masi vozila. Stabilizacija avtobusa se opravlja na več načinov, vendar vedno v vseh položajih! Posebno če govorimo o položaju vozila na strehi. V teh primerih je treba konstrukcijo vozila podpreti od znotraj, saj obstaja velika nevarnost, da se vozilo pod težo sesede in s tem poškoduje  ljudi in posredovalce. V vseh drugih položajih vozila se uporablja taktični pristop pri prometnih nesrečah osebnih in drugih vozil, zavedati se je le treba, da je masa avtobusa veliko večja.</div>
+				
+				<div class="font1">Požarno varovanje</div>
+				<div style="margin-bottom: 10px">Izbere dve različni gasilni sredstvi. Glede na velikost vozila in večjega požarnega se najmanj tveganja je vsekakor treba zagotoviti ustrezno količino gasilnega sredstva. Avtobus je izredno veliko požarno tveganje. Večina vozil ima motorje zadaj, rezervoarje spredaj ali na sredini, kar pomeni, da je dovod od motorja do rezervoarja nameščen po konstrukciji vozila. Če zagori, se ogenj hitro razširi v potniški del. Evakuacijo potnikov iz vozila pri požaru je nadvse težka, saj je razvoj požara lahko hitrejši od treh minut.</div>
+				
+				<div class="font1">Prometno varovanje</div>
+				<div style="margin-bottom: 10px">Prometno varovanje se opravlja v skladu s predpisi o prometni varnosti. Dolžni smo zavarovati kraj dogodka do prihoda zato odgovornih služb. Zavedati se je treba, da bo pri nesrečah avtobusov velikokrat zaradi velikosti in razsežnosti dogodka treba cesto popolnoma zapreti in s tem povečati varnost posredovalcev ob nesreči. Treba je razmišljati o možnosti postavitve večje logistične oskrbe za delo reševalcev in zdravnikov, ki bodo pomagali pri množični nesreči, kar lahko pri avtobusu zagotovo nastane, na mestu morajo opraviti določene postopke triaže in oskrbe ter kasneje pripraviti transport do najbližje bolnišnice.</div>
+			
+				<div class="font1">Zaključek</div>
+				<div style="margin-bottom: 10px">Iz napisanega lahko sklepamo, da je posredovanje ob prometnih nesrečah tovornih vozil lahko preprosto ali pa izredno zahtevno. Vse je odvisno od spleta okoliščin. Ko govorimo o masi vozila, velikosti vozila, dodatnih elementih, tovoru, količini goriva itd., vemo, da nam bo lahko tovorno vozilo ob nesreči povzročalo veliko preglavic. Gasilske enote bodo v nekaterih primerih naletele na maksimalno zmogljivost svojega orodja in opreme ter maksimalno zmogljivost posredovalcev. Usposabljanje in priprave so ključni del za uspešno posredovanje.</div>
+			</div>
+			
+			<div class="button" id="zakljuci" onclick="zakljuci();">ZAKLJUČI</div>
+		</div>
+		<div id="footer">
+			<table width="100%" cellspacing="0px" cellpadding="0px">
+				<tr>
+					<td width="50%"><a href="tovorna_vozila.html"><img src="../../../img/nazaj.png" /> NAZAJ</a></td>
+					<td width="50%"></td>
+				</tr>
+			</table>
+		</div>
+ 	</body>
+</html>

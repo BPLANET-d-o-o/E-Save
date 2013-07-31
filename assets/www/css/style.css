@@ -54,6 +54,11 @@ body {
 	width: 65%;
 }
 
+.box {
+	margin: auto;
+	width: 66%;
+}
+
 .button {
 	color: #ffffff;
 	padding: 15px;
@@ -130,6 +135,19 @@ body {
 	background-image: url('../img/buttonbgok.png');
 	margin: 5px auto 5px auto;
 	width: 65%;
+}
+
+.button2 {
+	width: 46%;
+	color: #ffffff;
+	padding: 15px;
+	background-image: url('../img/buttonbg.png');
+	text-align: center;
+}
+
+.button2 a {
+	text-decoration: none;
+	color: #ffffff;
 }
 
 .attention {
