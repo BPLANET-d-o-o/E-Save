@@ -25,7 +25,7 @@ body {
 
 #content {
 	margin: 10px auto 10px auto;
-	width: 90%;
+	width: 95%;
 	text-align: left;
 }
 
@@ -51,12 +51,12 @@ body {
 	background-image: url('../img/buttonbg.png');
 	text-align: center;
 	margin: 5px auto 5px auto;
-	width: 90%;
+	width: 95%;
 }
 
 .box {
 	margin: auto;
-	width: 90%;
+	width: 96%;
 }
 
 .button {
@@ -65,7 +65,7 @@ body {
 	background-image: url('../img/buttonbg.png');
 	text-align: center;
 	margin: 5px auto 5px auto;
-	width: 90%;
+	width: 95%;
 }
 
 .button a {
@@ -79,7 +79,7 @@ body {
 	background-image: url('../img/buttonbgsuccess.png');
 	text-align: center;
 	margin: 5px auto 5px auto;
-	width: 90%;
+	width: 95%;
 }
 
 .button_error {
@@ -88,7 +88,7 @@ body {
 	background-image: url('../img/buttonbgwrong.png');
 	text-align: center;
 	margin: 5px auto 5px auto;
-	width: 90%;
+	width: 95%;
 }
 
 .button_ok {
@@ -97,7 +97,7 @@ body {
 	background-image: url('../img/buttonbgok.png');
 	text-align: center;
 	margin: 5px auto 5px auto;
-	width: 90%;
+	width: 95%;
 }
 
 .button1 {
@@ -105,7 +105,7 @@ body {
 	padding: 15px;
 	background-image: url('../img/buttonbg.png');
 	margin: 5px auto 5px auto;
-	width: 90%;
+	width: 95%;
 }
 
 .button1 a {
@@ -118,7 +118,7 @@ body {
 	padding: 15px;
 	background-image: url('../img/buttonbgsuccess.png');
 	margin: 5px auto 5px auto;
-	width: 90%;
+	width: 95%;
 }
 
 .button1_error {
@@ -126,7 +126,7 @@ body {
 	padding: 15px;
 	background-image: url('../img/buttonbgwrong.png');
 	margin: 5px auto 5px auto;
-	width: 90%;
+	width: 95%;
 }
 
 .button1_ok {
@@ -134,7 +134,7 @@ body {
 	padding: 15px;
 	background-image: url('../img/buttonbgok.png');
 	margin: 5px auto 5px auto;
-	width: 90%;
+	width: 95%;
 }
 
 .button2 {
@@ -156,16 +156,16 @@ body {
 	background-color: #f8ebae;
 	padding: 2px 5px 2px 5px;
 	margin: 5px auto 5px auto;
-	width: 90%;
+	width: 95%;
 }
 
 .success {
 	color: #4c4c4c;
-	border: 1px solid #3d590e;
+	border: 1px solid #3d595e;
 	background-color: #adc47d;
 	padding: 2px 5px 2px 5px;
 	margin: 5px auto 5px auto;
-	width: 90%;
+	width: 95%;
 }
 
 .error {
@@ -174,7 +174,7 @@ body {
 	background-color: #ffb5b5;
 	padding: 2px 5px 2px 5px;
 	margin: 5px auto 5px auto;
-	width: 90%;
+	width: 95%;
 }
 
 h1 {
@@ -184,5 +184,5 @@ h1 {
 	background-color: #ffb5b5;
 	padding: 2px 5px 2px 5px;
 	margin: 5px auto 5px auto;
-	width: 90%;
+	width: 95%;
 }
