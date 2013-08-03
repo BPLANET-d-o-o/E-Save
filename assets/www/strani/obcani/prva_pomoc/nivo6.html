@@ -12,14 +12,12 @@
 		<script type="text/javascript" charset="utf-8">
 			if(isAndroid()) {
 				$("script").attr("src", "../../../js/cordova-2.6.0-android.js").appendTo("head");
-			}
-
-			if(isiOS()) {
+			} else if(isiOS()) {
 				$("script").attr("src", "../../../js/cordova-2.6.0-ios.js").appendTo("head");
-			}
-
-			if(isBlackBerry()) {
+			} else if(isBlackBerry()) {
 				$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
+			} else {
+				$("script").attr("src", "../../../js/cordova-2.6.0-wp.js").appendTo("head");
 			}
 			
 			function zakljuci() {
