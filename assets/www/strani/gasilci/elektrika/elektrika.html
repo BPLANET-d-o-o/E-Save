@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/mediaelement/mediaelement-and-player.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/myjava.js"></script>
+  		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../../../js/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">	
+			if(isAndroid()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-android.js").appendTo("head");
+			} else if(isiOS()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-ios.js").appendTo("head");
+			} else if(isBlackBerry()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
+			} else {
+				$("script").attr("src", "../../../js/cordova-2.6.0-wp.js").appendTo("head");
+			}
+			
+			function zakljuci() {
+				showAlert('ČESTITAMO', 'PREDELAL SI POGLAVJE - ELEKTRIKA! IZBERI DRUGO POGLAVJE.');
+				
+				window.location = "../zacetek.html";
+			}
+		</script>
+  	</head>
+  	<body>
+    	<div id="header">
+			<table align="center" width="90%">
+				<tr>
+					<td width="30%" align="left"><a href="../zacetek.html"><img height="50px" src="../../../img/nazaj.png" /></a></td>
+					<td width="30%" align="center"><img height="50px" src="../../../img/esavelogo.png" /></td>
+					<td width="30%" align="right"><a href="../../../index.html"><img height="50px" src="../../../img/meni.png" /></a></td>
+				</tr>
+			</table>
+		</div>
+		<div id="content">
+			<div style="margin: 30px 0px 30px 0px">
+				<div class="font1">1. SPLOŠNO O ELEKTRIKI:</div>
+				
+				<div style="margin-bottom: 10px">Električna energija je velika pridobitev modernega časa, ki je človeku omogočila velik napredek v razvoju in pa seveda precej bolj udobno bivanje.  Postali smo odvisni od elektrike, saj si življenja brez te dobrine več ne moremo predstavljati. To bi predstavljalo popolnoma drugačen način življenja, kot ga sedaj poznamo. Če zmanjka elektrike samo za kako uro, postane to za ljudi zelo neprijetno, saj povsod uporabljamo vse mogoče naprave, ki brez elektrike sploh ne delujejo. Kljub vsemu obstaja na svetu še peščica ljudi, ki sploh ne poznajo elektrike in tako “uživajo” prvinsko življenje.</div>
+				<div style="margin-bottom: 10px">Elektrika je naravna lastnost snovi, atom ki je najmanjši delec snovi sestavljajo jedro in elekroni, med katerimi delujejo sile, katerih vzrok je elektrina. Poznamo pozitivno in negativno elekrino, ki se med seboj privlačita, razlika med njima nam definira naelektrenost snovi.</div>
+				
+				<div style="margin-bottom: 10px"><img style="max-width: 100%" src="slike/1.jpg" /></div>
+				
+				<div style="margin-bottom: 10px">Če povežemo dve točki z različno elektrino s prevodno snovjo, dobimo usmerjeno gibanje elekronov oziroma električni tok,(I) napetost med tema dvema točkama pa se imenuje električna napetost (U). Enota za merjenje jakosti električnega toka se imenuje Amper (A), enota za merjenje električne napetosti pa se imenuje Volt (V).</div>
+				<div style="margin-bottom: 10px">Poznamo enosmerni in izmenični električni tok, tako kot je tudi el. napetost istočasno enosmerna ali izmenična. Jakost el. toka ki steče skozi neko snov je odvisna od velikosti napetosti in upornosti (R) te snovi, manjša kot je upornost večji je el. tok skozi to snov. Snovi z zelo veliko upornostjo imenujemo izolatorji, snovi z srednjo upornostjo so polprevodniki, med tem ko so znovi z malo upornostjo prevodniki.</div>
+				
+				<div style="margin-bottom: 10px">Upornost merimo z enoto Ohm. Medsebojno odvistost imenujemo Ohmov zakon (I=U/R).</div>
+				
+				<div style="margin-bottom: 10px"><img style="max-width: 100%" src="slike/2.jpg" /></div>
+				
+				<div style="margin-bottom: 10px">Enota ki nam pove, koliko el. toka steče pri neki napetosti, se imenuje el. Moč (P) in jo merimo z osnovno enoto (W), energijo ki jo neka naprava potroši pa merimo v (kWh).</div>
+				
+				<div style="margin-bottom: 10px"><img style="max-width: 100%" src="slike/3.jpg" /></div>
+				
+				<div>Nevarnosti zaradi električnega toka:</div>
+				<div>- poškodbe zaradi dotika naprav ali vodov pod el. napetostjo, opekline, nepravilno delovanje srca, poškod znotraj organov v človeškem telesu</div>
+				<div>- požari</div>
+				<div style="margin-bottom: 10px">- eksplozije</div>
+				
+				<div style="margin-bottom: 10px">Višina el. napetosti v stanovanjskih in poslovnih zgradbah je od 230V do 400V, v industriji se lahko srečamo tudi s napetostmi do 600V. Napetosti na daljnovodnih omrežjih pa so cello od 1kV do 380kV.</div>
+				
+				<div style="margin-bottom: 10px">Vpliv izmeničnega el. toka na telo so odvisni od jakosti le tega in sicer:</div>
+				<div><b>0,005mA</b> čutimo na jeziku rahel pekoč občutek</div>
+				<div><b>1,2mA</b> se čuti že s prsti</div>
+				<div><b>2-3mA</b> prisotno je močno drhtenje prstov</div>
+				<div><b>12-15mA</b> prisotne so močne bolečine v prstih, rokah, težko je ločiti roke od mesta dotika</div>
+				<div><b>20-25mA</b> pride do paralize rok, bolečine so že zelo močne, dihanje je oteženo</div>
+				<div><b>50-80mA</b> paraliza dihanja, začetek fibrilacije srca, aritmija, nezavest</div>
+				<div><b>80-100mA</b> paraliza dihanja, paraliza bitja srca, smrt</div>
+				<div style="margin-bottom: 10px"><b>nad 3000mA</b>	paraliza dihanja, srca, poškodbe tkiva-ožganine zaradi el. toka</div>
+				
+				<div style="margin-bottom: 10px">Izmenični el. tok večji od 30mA in 50V el. napetosti je nevarno za človeško življenje.</div>
+				
+				<div>Naprave ki za svoje delovanje potrebujejo elektriko, imenujemo enostavno "električne naprave". Delimo jih glede na:</div>
+				<div>1. napetost:</div>
+				<div style="padding-left: 20px">- malo napetost do 50 V izmenične napetosti, oz do 120 V enosmerno</div>
+				<div style="padding-left: 20px">- nizko izmenično napetost od 50 do 1000 V (najpogosteje 230 V enofazne naprave in 400 V trifazne naprave)</div>
+				<div style="padding-left: 20px">- nizko enosmerno napetost od 120 do 1500 V</div>
+				<div style="padding-left: 20px; margin-bottom: 10px">- srednjo izmenično napetost, 1000 V ali več, napr. v industriji</div>
+				
+				<div>2. vrsto toka:</div>
+				<div style="padding-left: 20px">- izmenične naprave</div>
+				<div style="padding-left: 20px; margin-bottom: 10px">- enosmerne naprave</div>
+				
+				<div>3. po številu faz:</div>
+				<div style="padding-left: 20px">- enofazne naprave</div>
+				<div style="padding-left: 20px; margin-bottom: 10px">- trifazne naprave</div>
+				
+				<div>4. po frekvenci:</div>
+				<div style="padding-left: 20px">- 50 Hz</div>
+				<div style="padding-left: 20px; margin-bottom: 10px">- naprave višjih frekvenc</div>
+				
+				<div style="margin-bottom: 10px">Električne instalacije so naprave ki povezujejo elektične porabnike z napravami za proizvodnjo električne energije. Med njih spadajo vodniki, stikala, vtičnice, varovalke. Pri uporabi el. instalacij lahko pride do nesreče, katerih udeleženci lahko utrpijo hude poškodbe. Zaradi tega je potrebno pri uporabi izpolnjevati nekatere pogoje zaščite pred el. udarom.</div>
+				
+				<div style="margin-bottom: 10px"><img style="max-width: 100%" src="slike/4.jpg" /></div>
+				
+				<div style="margin-bottom: 10px">Poskrbeti je potrebno usposobljenost oseb, ki bodo naprave uporabljali, zagotoviti zaščito pred posrednim in neposrednim dotikom naprav pod napetostjo. Pred prvo uporabo morajo biti tudi vse električne naprave v skladu z predpisi pregledane in preizkušene. V skladu s požarno varnostjo, morajo električne naprave biti napravljene iz materialov in na način da bistveno ne pripomorejo k širjenju požara po objektu. Pri nartovanju električnih instalacij je potrebno poskrbeti za pravilno dimenzioniranje el. vodnikov , pravilno dimenzioniranje in izbiro varovalk, ter FID stikal. FID stikalo je naprava ki nam v delčku sekunde izklopi električno omrežje, če na tok steče po napačni poti. El. omrežje prekine tudi ko električni tok preseže mejno vrednost.</div>
+				
+				<div class="font1">2. VARNOSTNI UKREPI PRI GAŠENJU V BLIŽINI ELEKTRIČNEGA OMREŽJA</div>
+				<div style="margin-bottom: 10px">Pri gašenju v bližini električega omrežja moramo zagotoviti primerno oddaljenost gasilcev od naprav pod električno napetostjo, polek tega morajo imeti gasilci primerno obutev ki jih dodatno ščiti pred električnim udarom. Gasilno sredstvo mora biti primerno izbrano glede na vrsto požara in velikost električne napetosti. Obvezno je potrebno zagotoviti odklop gorečega objekta ali naprave iz električnega omrežja. Pri gašenju naprav podelektrično napetostjo, je potrebno da posredovalci posedujejo primerno znanje na tem področju.</div>
+				
+				<div class="font1">3. NEVARNOSTI ZA GASILCA PRI GAŠENJU NAPRAV POD ELEKTRIČNO NAPETOSTJO</div>
+				<div style="margin-bottom: 10px">Pri gašenju naprav pod električno napetostjo se je potrebno še posebaj izogibat dotika delov naprav na katerih se je raztopila izolacijska zaščita. Pri omrežjih visokih napetosti je potrebno biti še posebej pozoren na možnost električnega preskoka. V primerih kot napr. padec visokonapetostnega vodnika, lahko pride do napetosnega lijaka od točke dotika vodnika z zemljo na vzven. Upoštevati je treba tudi možnost sklenitve tokoroga z gasilom preko telesa gasilca.</div>
+				
+				<div style="margin-bottom: 10px"><img style="max-width: 100%" src="slike/5.jpg" /></div>
+				
+				<div class="font1">4. GAŠENJE NAPRAV POD ELEKTRIČNIM TOKOM</div>
+				<div style="margin-bottom: 10px">Praviloma se naprave pod električno napetostjo ne gasi, v kolikor je posredovanje gasilcev potrebno preden je možen odklop, je potrebno upoštevat vse varnostne ukrepe za gašenje naprav pod in v bližini  električne napetosti.</div>
+				
+				<div>Oddaljenost potrebna za gašenje naprav pod el. napetostjo z različnimi gasilnimi sredstvi:</div>
+				<div style="margin-bottom: 10px">
+					<table align="center" width="100%">
+						<tr>
+							<td>Tip gasila/Energetska naprava</td>
+							<td>Do 1000V AC<br/>Do 1500V DC</td>
+							<td>Nad 1000V AC<br/>Nad 1500V DC</td>
+						</tr>
+						<tr>
+							<td>Z ročnikom na vodno meglica do 5bar</td>
+							<td>1 m</td>
+							<td>5 m</td>
+						</tr>
+						<tr>
+							<td>Z ročniko na vodni curek do 5 bar</td>
+							<td>5 m</td>
+							<td>10 m</td>
+						</tr>
+						<tr>
+							<td>Z gasilnikom na prah</td>
+							<td>1 m</td>
+							<td>3-5 m</td>
+						</tr>
+						<tr>
+							<td>Z gasilnikom na CO2 (samo v zaprtih prostorih)</td>
+							<td>1 m</td>
+							<td>3-5 m</td>
+						</tr>
+						<tr>
+							<td>Z gasilnikom na peno</td>
+							<td>1 m</td>
+							<td>/</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div style="margin-bottom: 10px">Uporaba vode za gašenje delov pod napetostjo je pogojno dovoljena, če gasimo na prostem in upoštevamo predpisano najmanjšo razdaljo po zgornji tabeli. V tabeli prikazane zahteve za odmike veljajo za standardni večnamenski C-ročnik z ustnikom pri pritisku do 5 barov. Pri višjem pritisku ali večjem pretoku – posebej pri uporabi ročnika B ali vodnega topa – so zahtevani večji odmiki! Ročniki, ki jih želimo uporabiti za gašenje delov pod napetostjo, morajo imeti dokazilo, da so uporabni v te namene (nem. »Zulassung«)! Gasilci morajo pri gašenju delov pod napetostjo zraven zadostnega odmika ročnika od delov pod napetostjo paziti še na razlito gasilno vodo, če bi se lahko po njej premostili deli pod napetostjo in stojni položaj gasilca! Za drugačne ročnike je potrebno preveriti navodila o uporabi, ki jih je dolžan izdati proizvajalec! Za druga gasilna sredstva veljajo drugačni pogoji in razdalje! Gašenje z gasilno peno je dovoljeno le pri napravah, ki niso pod napetostjo!</div>
+				
+				<div class="font1">5. GASILSKA INTERVENCIJA</div>
+				<div>- Začetni požar na NN napravi</div>
+				<div style="padding-left: 20px">- Odklopiti napravo iz omrežja</div>
+				<div style="padding-left: 20px">- Požar gasiti z najprimernejšim gasilnim sredstvom</div>
+				<div>- Požar stanovanjskega objekta</div>
+				<div style="padding-left: 20px">- Zahtevati odklop s strani pooblaščenega podjetja</div>
+				<div style="padding-left: 20px">- Gašenje s primerne razdalje in primernim sredstvom</div>
+				<div style="padding-left: 20px">- Ob vstopu v prostor paziti na naprave pod napetostjo, paziti na primerno zaščito gasilca</div>
+				<div>- Požar VN naprav</div>
+				<div style="padding-left: 20px">- Zahtevati odklop s strani pooblaščenega podjetja</div>
+				<div style="padding-left: 20px">- Gašenje s primerne razdalje in primernim sredstvom</div>
+				<div style="padding-left: 20px">- Paziti na nevarnost napetostnega lijaka</div>
+				<div>- Reševanje ponesrečenca pri nesreči z električnim tokom</div>
+				<div style="padding-left: 20px">- Zahtevati odklop s strani pooblaščenega podjetja</div>
+				<div style="padding-left: 20px">- Najhitreje kot je mogoče odstraniti vir el. toka (paziti na svojo varnost- uporabiti je potrebno neprevodne pripomočke za odmik npr. vodnika)</div>
+				<div style="padding-left: 20px">- V kolikor ni možno odstraniti vira odstarnimo ponesrečenca (s pomočjo kavlja, droga…)</div>
+				<div style="padding-left: 20px">- Ko smo odstranili vir, ponesrečencu najhitreje nuditi PP in če je potrebno TPO in ob enem obvestiti NMP</div>
+				<div>- Ob posredovanju na objektu, ni priporočena uporaba električnih virov za napajanje naprav posredovalcev,  iz objektov pri katerih posredujemo.</div>
+				<div>- V kolikor ne gre drugače je obvezna uporaba ločevalnih varnostnih stikal</div>
+				<div style="margin-bottom: 10px">- Potrebno je poznavanje elektro-agragata, ki ga enota uporablja. Vedeti je treba predvsem kdaj je potrebna ozemljitev agregata in kako se to pravilno napravi.</div>
+				
+				<div style="margin-bottom: 10px">Vir: splet, www.gasilec.net, elektrika v gasilstvu</div>
+				
+				<div class="button" id="zakljuci" onclick="zakljuci();">ZAKLJUČI</div>
+			</div>
+		</div>
+ 	</body>
+</html>
