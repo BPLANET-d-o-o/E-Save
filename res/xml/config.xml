@@ -38,8 +38,13 @@
 	
 	<plugins>
 		<plugin name="App" value="org.apache.cordova.App"/>
-		<plugin name="Geolocation" value="org.apache.cordova.GeoBroker"/>
+		<plugin name="Notification" value="org.apache.cordova.Notification"/>
+		<plugin name="Storage" value="org.apache.cordova.Storage"/>
 		<plugin name="Device" value="org.apache.cordova.Device"/>
+		<plugin name="Globalization" value="org.apache.cordova.Globalization"/>
+		<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser"/>
+		
+		<!--<plugin name="Geolocation" value="org.apache.cordova.GeoBroker"/>
 		<plugin name="Accelerometer" value="org.apache.cordova.AccelListener"/>
 		<plugin name="Compass" value="org.apache.cordova.CompassListener"/>
 		<plugin name="Media" value="org.apache.cordova.AudioHandler"/>
@@ -47,15 +52,12 @@
 		<plugin name="Contacts" value="org.apache.cordova.ContactManager"/>
 		<plugin name="File" value="org.apache.cordova.FileUtils"/>
 		<plugin name="NetworkStatus" value="org.apache.cordova.NetworkManager"/>
-		<plugin name="Notification" value="org.apache.cordova.Notification"/>
-		<plugin name="Storage" value="org.apache.cordova.Storage"/>
 		<plugin name="FileTransfer" value="org.apache.cordova.FileTransfer"/>
 		<plugin name="Capture" value="org.apache.cordova.Capture"/>
 		<plugin name="Battery" value="org.apache.cordova.BatteryListener"/>
 		<plugin name="SplashScreen" value="org.apache.cordova.SplashScreen"/>
-		<plugin name="Echo" value="org.apache.cordova.Echo" />
-		<plugin name="Globalization" value="org.apache.cordova.Globalization"/>
-		<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser"/>
+		<plugin name="Echo" value="org.apache.cordova.Echo" />-->
+		
 	</plugins>
 </cordova>
 
@@ -77,7 +79,11 @@
     <plugins>
         <plugin name="LocalStorage" value="CDVLocalStorage" />
         <plugin name="Device" value="CDVDevice" />
-        <plugin name="Logger" value="CDVLogger" />
+		<plugin name="Notification" value="CDVNotification" />
+		<plugin name="Globalization" value="CDVGlobalization" />
+        <plugin name="InAppBrowser" value="CDVInAppBrowser" />
+		
+     <!--<plugin name="Logger" value="CDVLogger" />
         <plugin name="Compass" value="CDVLocation" />
         <plugin name="Accelerometer" value="CDVAccelerometer" />
         <plugin name="Camera" value="CDVCamera" />
@@ -87,14 +93,12 @@
         <plugin name="File" value="CDVFile" />
         <plugin name="FileTransfer" value="CDVFileTransfer" />
         <plugin name="Geolocation" value="CDVLocation" />
-        <plugin name="Notification" value="CDVNotification" />
         <plugin name="Media" value="CDVSound" />
         <plugin name="Capture" value="CDVCapture" />
         <plugin name="SplashScreen" value="CDVSplashScreen" />
         <plugin name="Echo" value="CDVEcho" />
-        <plugin name="Battery" value="CDVBattery" />
-        <plugin name="Globalization" value="CDVGlobalization" />
-        <plugin name="InAppBrowser" value="CDVInAppBrowser" />
+        <plugin name="Battery" value="CDVBattery" />-->
+        
     </plugins>
 </widget>
 

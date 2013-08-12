@@ -5,15 +5,17 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
   		<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../js/myjava.js"></script>
 		<script type="text/javascript" charset="utf-8">
 			if(isAndroid()) {
-				$("script").attr("src", "../../../js/cordova-2.6.0-android.js").appendTo("head");
+				$("script").attr("src", "../../js/cordova-2.6.0-android.js").appendTo("head");
 			} else if(isiOS()) {
-				$("script").attr("src", "../../../js/cordova-2.6.0-ios.js").appendTo("head");
+				$("script").attr("src", "../../js/cordova-2.6.0-ios.js").appendTo("head");
 			} else if(isBlackBerry()) {
-				$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
+				$("script").attr("src", "../../js/cordova-2.6.0-blackberry.js").appendTo("head");
 			} else {
-				$("script").attr("src", "../../../js/cordova-2.6.0-wp.js").appendTo("head");
+				$("script").attr("src", "../../js/cordova-2.6.0-wp.js").appendTo("head");
 			}
 			
 			var z1 = window.localStorage.getItem('notranji_napadi_zakljuceno');
