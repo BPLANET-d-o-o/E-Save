@@ -18,8 +18,10 @@
 				$("script").attr("src", "../../js/cordova-2.6.0-wp.js").appendTo("head");
 			}
 			
-			var z1 = window.localStorage.getItem('notranji_napadi_zakljuceno');
-			if(z1 == 1) $('#notranji_napadi').attr('class', 'button_success');
+			$(document).ready(function() {
+				var z1 = window.localStorage.getItem('notranji_napadi_zakljuceno');
+				if(z1 == 1) $('#notranji_napadi').attr('class', 'button_success');
+			});
 		</script>
   	</head>
   	<body>
