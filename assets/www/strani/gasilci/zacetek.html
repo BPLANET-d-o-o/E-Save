@@ -5,7 +5,20 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
   		<link href="../../css/style.css" rel="stylesheet" type="text/css" />
-		<script type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			if(isAndroid()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-android.js").appendTo("head");
+			} else if(isiOS()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-ios.js").appendTo("head");
+			} else if(isBlackBerry()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
+			} else {
+				$("script").attr("src", "../../../js/cordova-2.6.0-wp.js").appendTo("head");
+			}
+			
+			var z1 = window.localStorage.getItem('notranji_napadi_zakljuceno');
+			if(z1 == 1) $('#notranji_napadi').attr('class', 'button_success');
+		</script>
   	</head>
   	<body>
     	<div id="header">
@@ -22,7 +35,7 @@
 			
 			<div class="button" onclick="window.location='osnove_gorenja_in_gasenja/osnove_gorenja_in_gasenja.html'">OSNOVE GORENJA IN GAŠENJA</div>
 			<div class="button" onclick="window.location='ida/ida.html'"><img height="15px" src="../../img/ida.png" /> IDA</div>
-			<div class="button" onclick="window.location='notranji_napadi/notranji_napadi.html'"><img height="15px" src="../../img/notranjinapadi.png" /> NOTRANJI NAPADI</div>
+			<div id="notranji_napadi" class="button" onclick="window.location='notranji_napadi/notranji_napadi.html'"><img height="15px" src="../../img/notranjinapadi.png" /> NOTRANJI NAPADI</div>
 			<div class="button" onclick="window.location='prezracevanje/prezracevanje.html'"><img height="15px" src="../../img/prezracevanje.png" /> PREZRAČEVANJE</div>
 			<div class="button" onclick="window.location='fotovoltaika/fotovoltaika.html'">FOTOVOLTAIKA</div>
 			<div class="button" onclick="window.location='predori_enocevni/predori_enocevni.html'"><img height="15px" src="../../img/enocevni.png" /> ENOCEVNI PREDORI</div>

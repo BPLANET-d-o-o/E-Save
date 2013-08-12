@@ -34,6 +34,7 @@
 			}
 			
 			function zakljuci() {
+				window.localStorage.setItem('notranji_napadi_zakljuceno', '1');
 				showAlert('ČESTITAMO', 'ZAKLJUČIL SI POGLAVJE - NOTRANJI NAPADI! IZBERI DRUGO POGLAVJE.');
 				
 				window.location = "../zacetek.html";
