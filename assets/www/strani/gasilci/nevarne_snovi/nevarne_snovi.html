@@ -21,6 +21,7 @@
 			}
 			
 			function zakljuci() {
+				window.localStorage.setItem('nevarne_snovi_zakljuceno', '1');
 				showAlert('ČESTITAMO', 'PREDELAL SI POGLAVJE - NEVARNE SNOVI! IZBERI DRUGO POGLAVJE.');
 				
 				window.location = "../zacetek.html";
@@ -31,9 +32,9 @@
     	<div id="header">
 			<table align="center" width="90%">
 				<tr>
-					<td width="30%" align="left"><a href="../zacetek.html"><img height="50px" src="../../../img/nazaj.png" /></a></td>
+					<td width="30%" align="left"><a href="../zacetek.html"><img height="30px" src="../../../img/nazaj.png" /></a></td>
 					<td width="30%" align="center"><img height="50px" src="../../../img/esavelogo.png" /></td>
-					<td width="30%" align="right"><a href="../../../index.html"><img height="50px" src="../../../img/meni.png" /></a></td>
+					<td width="30%" align="right"><a href="../../../index.html"><img height="30px" src="../../../img/meni.png" /></a></td>
 				</tr>
 			</table>
 		</div>
@@ -54,11 +55,12 @@
 				
 				<div style="margin-bottom: 10px">Kadar je osnovni razred (primarna številka) dopolnjen z drugo številko, to pomeni dodatno nevarnost oziroma lastnost. Kadar število sestavljajo trije znaki, pomeni, da obstaja možnost verižne reakcije. Kadar je številkama dodan X, pomeni, da bo snov burno reagirala z vodo (Kemlerjeva kombinacija).</div>
 				
-				<div>Slika 1: Primer table: število 66 predstavlja zelo trupeno snov;</div>
-				<div style="margin-bottom: 10px">1557 je oznaka snovi – arzenove spojine (trdna)</div>
+				<div><img style="max-width: 100%" src="slike/1.jpg" /></div>
+				<div style="margin-bottom: 10px">Slika 1: Primer table: število 66 predstavlja zelo trupeno snov; 1557 je oznaka snovi – arzenove spojine (trdna)</div>
 				
 				<div style="margin-bottom: 10px">Poleg oranžne table, ki jo sestavlja kombinacija oznake nevarnosti snovi (zgoraj) in številčne oznake s točno snovjo (spodaj), se označevanje dopolnjuje z opozorilnimi tablami (piktogrami), ki slikovno ponazarjajo razrede snovi.</div>
 			
+				<div><img style="max-width: 100%" src="slike/2.jpg" /> <img style="max-width: 100%" src="slike/3.jpg" /></div>
 				<div style="margin-bottom: 10px">Slika 1b: Piktograma GHS – levo eksplozivne snovi, desno jedke snovi</div>
 				
 				<div class="font1">TAKTIKA POSREDOVANJA</div>
@@ -69,6 +71,7 @@
 				<div style="color: #ffff00; margin-bottom: 10px">Rumena cona je območje, kjer so lahko še lokalno prisotni nevarna snov in njeni vplivi, praviloma pa ne več. To območje imenujemo tudi topla cona ali območje varnostnega pasu.</div>
 				<div style="color: #00A216; margin-bottom: 10px">Zelena cona je območje, kjer ni nikakršne nevarnosti za zdravje, je pa še vedno omejeno gibanje, kjer delujejo gasilci, reševalci in druge službe, ki usmerjajo intervencijo.</div>
 				
+				<div><img style="max-width: 100%" src="slike/4.jpg" /></div>
 				<div style="margin-bottom: 10px">Slika 2: Oznaka con in stopnje zaščite</div>
 				
 				<div class="font1">REŠEVANJE</div>
@@ -89,6 +92,7 @@
 				<div style="margin-bottom: 10px">Izhodna točka ima poleg primerne naloge dodatno vlogo, to je dekontaminacija posredovalcev in ponesrečencev. Za dekontaminacijo je vsekakor najpomembnejša hitra postavitev delovišča, ki je prilagodljiva gasilcem kot tudi ljudem, ki pomoč potrebujejo. V veliki meri je vsaj v prvi fazi nemogoče izpeljati popolno dekontaminacijsko območje, zato se primarno postavi hitra dekontaminacijska površina za najnujnejše čiščenje in izpiranje. V nadaljevanju je ta del hitra ali delna dekontaminacija gasilcev, ki se vračajo po dodatno opremo. Postavi se neposredno po izstopu iz rdeče cone na meji z rumeno.</div>
 				<div style="margin-bottom: 10px">Glavna ali dokončna dekontaminacija se med tem ustrezno dopolni in pripravi, kar omogoča kakovostno delo. Glavno dokončno dekontaminacijo se postavi na območje med rumeno in zeleno cono. Sestavljena je iz vstopnega dela, ki je namenjen hitremu izplakovanju oziroma slačenju (odvisno od tipa poškodbe oziroma udeleženca, gasilec ali občan), glavnega dela za izpiranje in umivanje ter izhodnega dela, kjer se poškodovanca pregleda in obleče v nadomestna oblačila ali vsaj primerno zavaruje.</div>
 			
+				<div><img style="max-width: 100%" src="slike/5.jpg" /></div>
 				<div style="margin-bottom: 10px">Slika 3: Primer postavitve dekontaminacijske točke, zelena površina je mesto vstopa</div>
 				
 				<div class="font1">POTEK DOGAJANJA</div>

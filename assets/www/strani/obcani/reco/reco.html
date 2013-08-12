@@ -21,6 +21,7 @@
 			}
 			
 			function zakljuci() {
+				window.localStorage.setItem('reco_zakljuceno', '1');
 				showAlert('ČESTITAMO', 'PREDELAL SI POGLAVJE - 112! IZBERI DRUGO POGLAVJE.');
 				
 				window.location = "../zacetek.html";
@@ -31,17 +32,20 @@
     	<div id="header">
 			<table align="center" width="90%">
 				<tr>
-					<td width="30%" align="left"><a href="../zacetek.html"><img height="50px" src="../../../img/nazaj.png" /></a></td>
+					<td width="30%" align="left"><a href="../zacetek.html"><img height="30px" src="../../../img/nazaj.png" /></a></td>
 					<td width="30%" align="center"><img height="50px" src="../../../img/esavelogo.png" /></td>
-					<td width="30%" align="right"><a href="../../../index.html"><img height="50px" src="../../../img/meni.png" /></a></td>
+					<td width="30%" align="right"><a href="../../../index.html"><img height="30px" src="../../../img/meni.png" /></a></td>
 				</tr>
 			</table>
 		</div>
 		<div id="content">
 			<div style="margin: 30px 0px 30px 0px">
-				<div class="font1">112 – klic v sili: Center za obveščanje</div>
+				<div class="font1" style="margin-bottom: 10px">112 – klic v sili: Center za obveščanje</div>
+				<div style="margin-bottom: 10px"><img style="max-width: 100%" src="slike/1.jpg" /></div>
 				<div>Klic v sili na telefonsko številko 112 je brezplačen. Na voljo je 24 ur dnevno, 365 dni v letu. Vsak občan, ki opazi nesrečo, ki je prisotni na mestu dogodka ne morejo obvladati, je dolžan poklicati pomoč na številko 112. Občani tvorijo največje opazovalno omrežje in centrom za obveščanje sporočajo podatke o naravnih in drugih nesrečah oziroma o dogodkih, kjer je potrebno posredovanje različnih reševalnih ali javnih služb. Centri za obveščanje spremljajo tudi določene aplikacije za monitoring, kot je vodostaj rek, pridobivajo podatke od policije ter javnih zavodov in služb. Slovenija je enotno evropsko številko za klic v sili uvedla leta 1997. Številko 112 lahko pokličete v vseh državah članicah EU in v nekaterih drugih državah.</div>
 				<div style="margin-bottom: 10px">V Sloveniji klice v sili na številko 112 sprejema trinajst regijskih centrov za obveščanje: Brežice, Celje, Koper, Kranj, Ljubljana, Maribor, Murska Sobota, Nova Gorica, Novo Mesto, Postojna, Ptuj, Slovenj Gradec, Trbovlje.</div>
+				
+				<div style="margin-bottom: 10px"><img style="max-width: 100%" src="slike/2.jpg" /></div>
 				
 				<div>Klic v sili se lahko opravi na tri načine:</div>
 				<div>- z glasovnim klicem na številko 112</div>

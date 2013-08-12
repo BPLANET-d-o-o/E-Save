@@ -94,6 +94,7 @@
 			}
 			
 			function zakljuci() {
+				window.localStorage.setItem('razrez_osebnih_vozil_zakljuceno', '1');
 				showAlert('ČESTITAMO', 'ZAKLJUČIL SI POGLAVJE - RAZREZ OSEBNIH VOZIL! IZBERI DRUGO POGLAVJE.');
 				
 				window.location = "../zacetek.html";
@@ -104,9 +105,9 @@
     	<div id="header">
 			<table align="center" width="90%">
 				<tr>
-					<td width="30%" align="left"><a href="nivo4.html"><img height="50px" src="../../../img/nazaj.png" /></a></td>
+					<td width="30%" align="left"><a href="nivo4.html"><img height="30px" src="../../../img/nazaj.png" /></a></td>
 					<td width="30%" align="center"><img height="50px" src="../../../img/esavelogo.png" /></td>
-					<td width="30%" align="right"><a href="../../../index.html"><img height="50px" src="../../../img/meni.png" /></a></td>
+					<td width="30%" align="right"><a href="../../../index.html"><img height="30px" src="../../../img/meni.png" /></a></td>
 				</tr>
 			</table>
 		</div>

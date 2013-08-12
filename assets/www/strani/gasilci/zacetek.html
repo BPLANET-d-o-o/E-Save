@@ -19,8 +19,47 @@
 			}
 			
 			$(document).ready(function() {
-				var z1 = window.localStorage.getItem('notranji_napadi_zakljuceno');
-				if(z1 == 1) $('#notranji_napadi').attr('class', 'button_success');
+				var z1 = window.localStorage.getItem('elektrika_zakljuceno');
+				if(z1 == 1) $('#elektrika').attr('class', 'button_success');
+				
+				var z2 = window.localStorage.getItem('fotovoltaika_zakljuceno');
+				if(z2 == 1) $('#fotovoltaika').attr('class', 'button_success');
+				
+				var z3 = window.localStorage.getItem('ida_zakljuceno');
+				if(z3 == 1) $('#ida').attr('class', 'button_success');
+				
+				var z4 = window.localStorage.getItem('nevarne_snovi_zakljuceno');
+				if(z4 == 1) $('#nevarne_snovi').attr('class', 'button_success');
+				
+				var z5 = window.localStorage.getItem('notranji_napadi_zakljuceno');
+				if(z5 == 1) $('#notranji_napadi').attr('class', 'button_success');
+				
+				var z6 = window.localStorage.getItem('osnove_gorenja_in_gasenja_zakljuceno');
+				if(z6 == 1) $('#osnove_gorenja_in_gasenja').attr('class', 'button_success');
+				
+				var z7 = window.localStorage.getItem('predori_dvocevni_zakljuceno');
+				if(z7 == 1) $('#predori_dvocevni').attr('class', 'button_success');
+				
+				var z8 = window.localStorage.getItem('predori_enocevni_zakljuceno');
+				if(z8 == 1) $('#predori_enocevni').attr('class', 'button_success');
+				
+				var z9 = window.localStorage.getItem('prezracevanje_zakljuceno');
+				if(z9 == 1) $('#prezracevanje').attr('class', 'button_success');
+				
+				var z10 = window.localStorage.getItem('pp_gasilci_zakljuceno');
+				if(z10 == 1) $('#pp_gasilci').attr('class', 'button_success');
+				
+				var z11 = window.localStorage.getItem('razrez_osebnih_vozil_zakljuceno');
+				if(z11 == 1) $('#razrez_osebnih_vozil').attr('class', 'button_success');
+				
+				var z12 = window.localStorage.getItem('tovorna_vozila_zakljuceno');
+				if(z12 == 1) $('#tovorna_vozila').attr('class', 'button_success');
+				
+				var z13 = window.localStorage.getItem('vodenje_intervencije_zakljuceno');
+				if(z13 == 1) $('#vodenje_intervencije').attr('class', 'button_success');
+				
+				var z14 = window.localStorage.getItem('zemeljski_plin_zakljuceno');
+				if(z14 == 1) $('#zemeljski_plin').attr('class', 'button_success');
 			});
 		</script>
   	</head>
@@ -28,29 +67,29 @@
     	<div id="header">
 			<table align="center" width="90%">
 				<tr>
-					<td width="30%" align="left"><a href="../../index.html"><img height="50px" src="../../img/nazaj.png" /></a></td>
+					<td width="30%" align="left"><a href="../../index.html"><img height="30px" src="../../img/nazaj.png" /></a></td>
 					<td width="30%" align="center"><img height="50px" src="../../img/esavelogo.png" /></td>
-					<td width="30%" align="right"><a href="../../index.html"><img height="50px" src="../../img/meni.png" /></a></td>
+					<td width="30%" align="right"><a href="../../index.html"><img height="30px" src="../../img/meni.png" /></a></td>
 				</tr>
 			</table>
 		</div>
 		<div id="content">
 			<div class="opis">IZBERI TEMO</div>
 			
-			<div class="button" onclick="window.location='osnove_gorenja_in_gasenja/osnove_gorenja_in_gasenja.html'">OSNOVE GORENJA IN GAŠENJA</div>
-			<div class="button" onclick="window.location='ida/ida.html'"><img height="15px" src="../../img/ida.png" /> IDA</div>
-			<div id="notranji_napadi" class="button" onclick="window.location='notranji_napadi/notranji_napadi.html'"><img height="15px" src="../../img/notranjinapadi.png" /> NOTRANJI NAPADI</div>
-			<div class="button" onclick="window.location='prezracevanje/prezracevanje.html'"><img height="15px" src="../../img/prezracevanje.png" /> PREZRAČEVANJE</div>
-			<div class="button" onclick="window.location='fotovoltaika/fotovoltaika.html'">FOTOVOLTAIKA</div>
-			<div class="button" onclick="window.location='predori_enocevni/predori_enocevni.html'"><img height="15px" src="../../img/enocevni.png" /> ENOCEVNI PREDORI</div>
-			<div class="button" onclick="window.location='predori_dvocevni/predori_dvocevni.html'"><img height="15px" src="../../img/dvocevni.png" /> DVOCEVNI PREDORI</div>
-			<div class="button" onclick="window.location='razrez_osebnih_vozil/nivo1.html'">RAZREZ OSEBNIH VOZIL</div>
-			<div class="button" onclick="window.location='tovorna_vozila/tovorna_vozila.html'"><img height="15px" src="../../img/tovorna.png" /> TOVORNA VOZILA</div>
-			<div class="button" onclick="window.location='nevarne_snovi/nevarne_snovi.html'">NEVARNE SNOVI</div>
-			<div class="button" onclick="window.location='zemeljski_plin/zemeljski_plin.html'">ZEMELJSKI PLIN</div>
-			<div class="button" onclick="window.location='elektrika/elektrika.html'">ELEKTRIKA</div>
-			<div class="button" onclick="window.location='prva_pomoc/prva_pomoc.html'"><img height="15px" src="../../img/prvapomoc.png" /> PRVA POMOČ</div>
-			<div class="button" onclick="window.location='vodenje_intervencije/vodenje_intervencije.html'">VODENJE INTERVENCIJE</div>
+			<div id="osnove_gorenja_in_gasenja" class="button" onclick="window.location='osnove_gorenja_in_gasenja/osnove_gorenja_in_gasenja.html'">OSNOVE GORENJA IN GAŠENJA</div>
+			<div id="ida" class="button" onclick="window.location='ida/ida.html'"><img style="float: left; max-height: 15px; max-width: 20px" src="../../img/ida.png" /> IDA</div>
+			<div id="notranji_napadi" class="button" onclick="window.location='notranji_napadi/notranji_napadi.html'"><img style="float: left; max-height: 15px; max-width: 20px" src="../../img/notranjinapadi.png" /> NOTRANJI NAPADI</div>
+			<div id="prezracevanje" class="button" onclick="window.location='prezracevanje/prezracevanje.html'"><img style="float: left; max-height: 15px; max-width: 20px" src="../../img/prezracevanje.png" /> PREZRAČEVANJE</div>
+			<div id="fotovoltaika" class="button" onclick="window.location='fotovoltaika/fotovoltaika.html'">FOTOVOLTAIKA</div>
+			<div id="predori_enocevni" class="button" onclick="window.location='predori_enocevni/predori_enocevni.html'"><img style="float: left; max-height: 15px; max-width: 20px" src="../../img/enocevni.png" /> ENOCEVNI PREDORI</div>
+			<div id="predori_dvocevni" class="button" onclick="window.location='predori_dvocevni/predori_dvocevni.html'"><img style="float: left; max-height: 15px; max-width: 20px" src="../../img/dvocevni.png" /> DVOCEVNI PREDORI</div>
+			<div id="razrez_osebnih_vozil" class="button" onclick="window.location='razrez_osebnih_vozil/nivo1.html'"><img style="float: left; max-height: 15px; max-width: 20px" src="../../img/rezanje.png" /> RAZREZ OSEBNIH VOZIL</div>
+			<div id="tovorna_vozila" class="button" onclick="window.location='tovorna_vozila/tovorna_vozila.html'"><img style="float: left; max-height: 15px; max-width: 20px" src="../../img/tovorna.png" /> TOVORNA VOZILA</div>
+			<div id="nevarne_snovi" class="button" onclick="window.location='nevarne_snovi/nevarne_snovi.html'">NEVARNE SNOVI</div>
+			<div id="zemeljski_plin" class="button" onclick="window.location='zemeljski_plin/zemeljski_plin.html'">ZEMELJSKI PLIN</div>
+			<div id="elektrika" class="button" onclick="window.location='elektrika/elektrika.html'">ELEKTRIKA</div>
+			<div id="pp_gasilci" class="button" onclick="window.location='prva_pomoc/prva_pomoc.html'"><img style="float: left; max-height: 15px; max-width: 20px" src="../../img/prvapomoc.png" /> PRVA POMOČ</div>
+			<div id="vodenje_intervencije" class="button" onclick="window.location='vodenje_intervencije/vodenje_intervencije.html'">VODENJE INTERVENCIJE</div>
 		</div>
  	</body>
 </html>

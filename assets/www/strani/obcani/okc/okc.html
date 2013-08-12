@@ -21,6 +21,7 @@
 			}
 			
 			function zakljuci() {
+				window.localStorage.setItem('okc_zakljuceno', '1');
 				showAlert('ČESTITAMO', 'PREDELAL SI POGLAVJE - 113! IZBERI DRUGO POGLAVJE.');
 				
 				window.location = "../zacetek.html";
@@ -31,9 +32,9 @@
     	<div id="header">
 			<table align="center" width="90%">
 				<tr>
-					<td width="30%" align="left"><a href="../zacetek.html"><img height="50px" src="../../../img/nazaj.png" /></a></td>
+					<td width="30%" align="left"><a href="../zacetek.html"><img height="30px" src="../../../img/nazaj.png" /></a></td>
 					<td width="30%" align="center"><img height="50px" src="../../../img/esavelogo.png" /></td>
-					<td width="30%" align="right"><a href="../../../index.html"><img height="50px" src="../../../img/meni.png" /></a></td>
+					<td width="30%" align="right"><a href="../../../index.html"><img height="30px" src="../../../img/meni.png" /></a></td>
 				</tr>
 			</table>
 		</div>
@@ -45,6 +46,8 @@
 			
 				<div class="font1">OPERATIVNO - KOMUNIKACIJSKI CENTER</div>
 				<div style="margin-bottom: 10px">Vse klice na telefonsko številko 113 sprejemajo uslužbenci policije oziroma uslužbenci operativno-komunikacijskih centrov (v nadaljevanju OKC). Na državni ravni je ustanovljen OKC generalne policijske uprave, na regijski ravni pa so OKC ustanovljeni znotraj osmih policijskih uprav: Celje, Koper, Kranj, Ljubljana, Maribor, Murska Sobota, Nova Gorica in Novo mesto, kjer na regijski ravni skrbijo za varnost ljudi in njihovega premoženja. Kateri OKC bo sprejel naš klic, je odvisno od tega, kje stanujemo oziroma kje smo, ko kličemo na številko 113. Telefonski klic iz Domžal bodo sprejeli uslužbenci OKC policijske uprave Ljubljana, če pa kličemo iz izolske marine, bodo klic sprejeli v OKC policijske uprave Koper.</div>
+				
+				<div style="margin-bottom: 10px"><img style="max-width: 100%" src="slike/1.jpg" /></div>
 				
 				<div class="font1">Zgodovinski pregled delovanja OKC</div>
 				<div style="margin-bottom: 10px">Zgodovina OKC sega v petdeseta leta prejšnjega stoletja in ima temelje v prvo ustanovljeni Stalni službi v tajništvu za notranje zadeve v Ljubljani. Ena od glavnih nalog je bila, da promovira takratno telefonsko številko milice, ki je bila 02. Na podlagi izkušenj tujih policij so sčasoma ustanovili Stalno službo kot posebno operativno enoto, v kateri so zaposlili izkušene policiste, ki so dobro poznali policijska pooblastila, postopke in območje, za katero so bili pristojni. Družbene spremembe in tehnološki razvoj so vplivali tudi na organizacijske in druge spremembe v takratni milici, ki so se odražale pri organizaciji in delu Stalne službe.</div>
