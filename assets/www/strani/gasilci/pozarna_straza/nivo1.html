@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/mediaelement/mediaelement-and-player.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/myjava.js"></script>
+  		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../../../js/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">	
+			if(isAndroid()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-android.js").appendTo("head");
+			} else if(isiOS()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-ios.js").appendTo("head");
+			} else if(isBlackBerry()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
+			} else {
+				$("script").attr("src", "../../../js/cordova-2.6.0-wp.js").appendTo("head");
+			}
+			
+			function zakljuci() {
+				window.localStorage.setItem('pozarna_straza_zakljuceno', '1');
+				showAlert('ČESTITAMO', 'PREDELAL SI POGLAVJE - POŽARNA STRAŽA! IZBERI DRUGO POGLAVJE.');
+				
+				window.location = "../zacetek.html";
+			}
+		</script>
+  	</head>
+  	<body>
+    	<div id="header">
+			<table align="center" width="90%">
+				<tr>
+					<td width="30%" align="left"><a href="pozarna_straza.html"><img height="30px" src="../../../img/nazaj.png" /></a></td>
+					<td width="30%" align="center"><img height="50px" src="../../../img/esavelogo.png" /></td>
+					<td width="30%" align="right"><a href="../../../index.html"><img height="30px" src="../../../img/meni.png" /></a></td>
+				</tr>
+			</table>
+		</div>
+		<div id="content">
+			<div style="margin: 30px 0px 30px 0px">
+				<div class="opis">GASILSKA STRAŽA kot oblika dolgotrajnejšega nadzora nad pogoriščem</div>
+				<div style="margin-bottom: 10px">Za konec naj omenimo še, da gasilci poznamo tudi izraz gasilska straža, ki ga dostikrat zamenjujemo z izrazom požarna straža. Gasilska straža se opravlja po požaru, z njo preprečujemo, da ne bi nastal požar. Gasilsko stražo vedno izvajajo gasilci, in sicer toliko časa, dokler ni z gotovostjo mogoče reči, da ne bo ponovnega požara.</div>
+				
+				<div class="opis">OPRAVLJANJE POŽARNE STRAŽE v eksplozijsko ogroženem območju (ex-cone)</div>
+				<div style="margin-bottom: 10px"><b>NEVARNOST EKSPLOZIJE</b> lahko nastane, če se pri delu uporabljajo, predelujejo ali skladiščijo vnetljivi plini, vnetljive tekočine ali prašni materiali, ki so v obliki plinov, hlapov megle ali prahu z zrakom pomešani v eksplozivno zmes.</div>
+				<div style="margin-bottom: 10px"><b>EKSPLOZIVNA ZMES NASTANE</b>, če je vnetljivih plinov, hlapov, megle ali prahu v zraku toliko, da se po vžigu plamen lahko spontano širi (eksplozija).</div>
+				
+				<div><b>IZVEDBA POŽARNIH STRAŽ V INDUSTRIJSKIH OBJEKTIH SE DELI NA:</b></div>
+				<div>1.	požarne straže v času redne proizvodnje</div>
+				<div>2.	požarne straže v času remontnih, vzdrževalnih del, investicijskih in drugih projektih</div>
+				<div>3.	požarna straža pri pretakanju vnetljivih snovi nad deset m3</div>
+				<div style="margin-bottom: 10px">V nadaljevanju sta opisana postopka pod točkama 1 in 2.</div>
+				
+				<div><b>V prvem primeru gre za čas redne proizvodnje</b>, kjer je treba zaradi nevarnosti delovnih procesov opravljati požarno stražo. Aktivnosti za izvedbo požarne straže:</div>
+				<div style="padding-left: 10px">a) Predhodno:</div>
+				<div style="padding-left: 20px">- seznaniti se z delovnim procesom, požarno zasnovo objekta</div>
+				<div style="padding-left: 20px">- seznaniti se z nevarnimi snovmi, ki se v delovnem procesu uporabljajo</div>
+				<div style="padding-left: 20px">- kakšne nevarnosti se lahko v času delovnega procesa pojavijo</div>
+				<div style="padding-left: 20px">- določiti zaščitne varnostne ukrepe (skleniti dovoljenje za požarno nevarna dela): število gasilcev, gasilna sredstva, varnostne razdalje, zavarovanje okolice, čas trajanja požarne straže</div>
+				<div style="padding-left: 10px">b) V času opravljanja požarne straže:</div>
+				<div style="padding-left: 20px">- imeti v pripravljenosti vso intervencijsko zaščitno opremo gasilca</div>
+				<div style="padding-left: 20px">- imeti pripravljena gasilna sredstva (zagotovljene količine gasilnih sredstev glede na predviden razvoj začetnega požara/eksplozije)</div>
+				<div style="padding-left: 20px">- omejiti nevarno območje in preprečiti vstop osebam, ki v tistem trenutku niso vključene v proizvodni proces</div>
+				<div style="padding-left: 20px">- narediti meritve eksplozivne atmosfere z merilnikom hlapov (eksploziometer), ki se v eksplozivnem območju lahko pojavijo</div>
+				<div style="padding-left: 20px">- spremljati delovni proces</div>
+				<div style="padding-left: 10px; margin-bottom: 10px">c) Po končanem delovnem procesu pregledati delovno območje in ugotoviti, ali je nevarnost minila – požarna straža je zaključena.</div>
+				
+				<div><b>V drugem primeru, kjer gre za čas remontnih, vzdrževalnih in investicijskih del</b>, je treba:</div>
+				<div style="padding-left: 10px">d) Predhodno:</div>
+				<div style="padding-left: 20px">- pripraviti dokumentacijo v skladu z Zakonom o varnosti in zdravju pri delu ter Uredbo o zagotavljanju varnosti in zdravja pri delu na začasnih in premičnih gradbiščih: varnostni načrt, pisni sporazum, koordinator za VZD</div>
+				<div style="padding-left: 20px">- izdelati dovoljenje za požarno nevarna dela znotraj eksplozijsko ogroženega prostora od lastnika (nosilca) objekta; lastnik v sodelovanju z odgovorno osebo VPP in eksplozijske varnosti in gasilsko službo na osnovi podatkov o predvidenih delih in nevarnostih določi varnostne ukrepe</div>
+				<div style="padding-left: 20px">- pripraviti delovno območje: odstranitev vnetljivih tekočin, prahu, olja, očistiti in osušiti talne površine, razbremenitev pritiska v opremi, pranje opreme, zalitje opreme z vodo, zagotovitev brezenergijskega stanja, zagotovitev odsesavanja in prezračevanja</div>
+				<div style="padding-left: 20px">- pregled delovnega območja o ustreznosti izvedenih zahtevanih ukrepih pred začetkom požarno nevarnih del</div>
+				<div style="padding-left: 20px">- odobritev/zavrnitev začetka požarno nevarnih del</div>
+				<div style="padding-left: 10px">e) V času opravljanja požarne straže:</div>
+				<div style="padding-left: 20px">- imeti v pripravljenosti vso intervencijsko zaščitno opremo gasilca</div>
+				<div style="padding-left: 20px">- imeti pripravljena gasilna sredstva (zagotovljene količine gasilnih sredstev glede na predviden razvoj začetnega požara/eksplozije)</div>
+				<div style="padding-left: 20px">- opravljati meritve eksplozivne atmosfere z merilnikom hlapov (eksploziometer), ki se v eksplozivnem območju lahko pojavijo</div>
+				<div style="padding-left: 20px">- prekritje stenskih in talnih odprtin, nameščanje ognjevarnih zaves, odstranjevanje gorljivega materiala</div>
+				<div style="padding-left: 20px">- v primeru zaznavanja hlapov nad deset odstotkov SME takoj prekiniti dela</div>
+				<div style="padding-left: 10px">f) Po končanem delovnem procesu:</div>
+				<div style="padding-left: 10px">- pregledati delovno območje in ugotoviti, ali je nevarnost minila, arhiviranje dokumentacije</div>
+				
+				<div class="button" id="zakljuci" onclick="zakljuci();">ZAKLJUČI</div>
+			</div>
+		</div>
+ 	</body>
+</html>

@@ -18,7 +18,7 @@
 				$("script").attr("src", "../../js/cordova-2.6.0-wp.js").appendTo("head");
 			}
 			
-			$(document).ready(function() {
+			document.addEventListener("deviceready", function() {
 				var zo1 = window.localStorage.getItem('okc_zakljuceno');
 				if(zo1 == 1) $('#okc').attr('class', 'button_success');
 				
@@ -33,6 +33,9 @@
 				
 				var zo5 = window.localStorage.getItem('vppm_zakljuceno');
 				if(zo5 == 1) $('#vppm').attr('class', 'button_success');
+				
+				var zo6 = window.localStorage.getItem('pozarna_preventiva_zakljuceno');
+				if(zo6 == 1) $('#pozarna_preventiva').attr('class', 'button_success');
 			});
 		</script>
   	</head>
@@ -49,10 +52,11 @@
 		<div id="content">
 			<div class="opis">IZBERI TEMO</div>
 			
-			<div id="reco" class="button" onclick="window.location='reco/reco.html'"><img style="float: left; max-height: 15px; max-width: 20px" src="../../img/112.png" /> 112</div>
-			<div id="okc" class="button" onclick="window.location='okc/okc.html'"><img style="float: left; max-height: 15px; max-width: 20px" src="../../img/113.png" /> 113</div>
-			<div id="pp_obcani" class="button" onclick="window.location='prva_pomoc/prva_pomoc.html'"><img style="float: left; max-height: 15px; max-width: 20px" src="../../img/prvapomoc.png" /> PRVA POMOČ</div>
-			<div id="tpo_otroka" class="button" onclick="window.location='tpo_otroka/tpo_otroka.html'"><img style="float: left; max-height: 15px; max-width: 20px" src="../../img/prvapomoc.png" /> PRVA POMOČ ZA DOJENČKA IN OTROKA</div>
+			<div id="pozarna_preventiva" class="button" onclick="window.location='pozarna_preventiva/pozarna_preventiva.html'">POŽARNA PREVENTIVA ZA DOMAČO RABO</div>
+			<div id="reco" class="button" onclick="window.location='reco/reco.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/112.png" /> OBVEŠČANJE OB DOGODKIH 112</div>
+			<div id="okc" class="button" onclick="window.location='okc/okc.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/113.png" /> OBVEŠČANJE OB DOGODKIH 113</div>
+			<div id="pp_obcani" class="button" onclick="window.location='prva_pomoc/prva_pomoc.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/prvapomoc.png" /> PP ZA DOMAČO RABO</div>
+			<div id="tpo_otroka" class="button" onclick="window.location='tpo_otroka/tpo_otroka.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/prvapomoc.png" /> PP ZA DOJENČKE IN OTROKE</div>
 			<div id="vppm" class="button" onclick="window.location='vppm/vppm.html'">VARSTVO PRED POŽAROM ZA MLADINO</div>
 		</div>
  	</body>

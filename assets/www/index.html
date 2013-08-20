@@ -18,7 +18,7 @@
 				$("script").attr("src", "js/cordova-2.6.0-wp.js").appendTo("head");
 			}
 			
-			$(document).ready(function() {
+			document.addEventListener("deviceready", function() {
 				var z1 = window.localStorage.getItem('elektrika_zakljuceno');
 				var z2 = window.localStorage.getItem('fotovoltaika_zakljuceno');
 				var z3 = window.localStorage.getItem('ida_zakljuceno');

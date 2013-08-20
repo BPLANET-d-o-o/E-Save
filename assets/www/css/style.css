@@ -186,3 +186,7 @@ h1 {
 	margin: 5px auto 5px auto;
 	width: 90%;
 }
+
+img {
+	border: 0px;
+}

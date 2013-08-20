@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/mediaelement/mediaelement-and-player.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/myjava.js"></script>
+  		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../../../js/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">
+			if(isAndroid()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-android.js").appendTo("head");
+			} else if(isiOS()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-ios.js").appendTo("head");
+			} else if(isBlackBerry()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
+			} else {
+				$("script").attr("src", "../../../js/cordova-2.6.0-wp.js").appendTo("head");
+			}
+			
+			function zakljuci() {
+				window.localStorage.setItem('pozarna_preventiva_zakljuceno', '1');
+				showAlert('ČESTITAMO', 'ZAKLJUČIL SI POGLAVJE - POŽARNA PREVENTIVA ZA DOMAČO RABO! IZBERI DRUGO POGLAVJE.');
+				
+				window.location = "../zacetek.html";
+			}
+		</script>
+  	</head>
+  	<body>
+    	<div id="header">
+			<table align="center" width="90%">
+				<tr>
+					<td width="30%" align="left"><a href="nivo13.html"><img height="30px" src="../../../img/nazaj.png" /></a></td>
+					<td width="30%" align="center"><img height="50px" src="../../../img/esavelogo.png" /></td>
+					<td width="30%" align="right"><a href="../../../index.html"><img height="30px" src="../../../img/meni.png" /></a></td>
+				</tr>
+			</table>
+		</div>
+		<div id="content">
+			<div class="opis" style="margin-bottom: 20px">EVAKUACIJA</div>
+
+			<div style="margin-bottom: 10px">POGLEJTE OBJEKT IN PRESODITE, PO KATERI POTI BI SE LAHKO VARNO UMAKNILI V PRIMERU POŽARA. NEKATERI OBJEKTI V VEČ UPORABNIKI IMAJO DOLOČENO EVAKUACIJSKO POT, KI JO JE TREBA UPOŠTEVATI OB EVAKUACIJI.</div>
+			
+			<div>VELJA, DA MORA BI EVAKUACIJSKA POT:</div>
+			<div>- PROSTA IN PREHODNA</div>
+			<div style="margin-bottom: 10px">- OZNAČENA (VEČSTANOVANJSKI OBJEKTI)</div>
+			
+			<div style="margin-bottom: 10px">V PRIMERU ENO ALI DVOSTANOVANJSKE HIŠE JE TREBA POSKRBETI, DA SO Z EVAKUACIJSKO POTJO VSI SEZNANJENI. STANOVALCI MORAJO VEDETI, KJER SE NAHAJA KLJUČ IZHODNIH VRAT IN NA KATERO ŠTEVILO (ŠTEVILKA 112) POKLICATI GASILCE V PRIMERU POŽARA. OBČASNO SE JE TUDI V PRIMERU ENO IN DVOSTANOVANJSKE HIŠE TREBA POGOVORITI O MOREBITNI EVAKUACIJI, V OBLIKI IGRE S POTJO SEZNANITI OTROKE IPD.</div>
+			
+			<div style="margin-bottom: 10px">VEČSTANOVANJSKI OBJEKTI MORAJO NA PODROČJU EVAKUACIJE IZPOLNITI VEČ ZAHTEV. OBJEKTI, KJER SE ZADRŽUJE VEČ KOT 100 STANOVALCEV MORAJO IMETI IZDELAN POŽARNI RED.</div>
+			
+			<div class="button" id="zakljuci" onclick="zakljuci();">ZAKLJUČI</div>
+		</div>
+ 	</body>
+</html>

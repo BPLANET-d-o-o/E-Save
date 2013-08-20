@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/mediaelement/mediaelement-and-player.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/myjava.js"></script>
+  		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../../../js/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">
+			if(isAndroid()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-android.js").appendTo("head");
+			} else if(isiOS()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-ios.js").appendTo("head");
+			} else if(isBlackBerry()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
+			} else {
+				$("script").attr("src", "../../../js/cordova-2.6.0-wp.js").appendTo("head");
+			}
+		</script>
+  	</head>
+  	<body>
+    	<div id="header">
+			<table align="center" width="90%">
+				<tr>
+					<td width="30%" align="left"><a href="nivo11.html"><img height="30px" src="../../../img/nazaj.png" /></a></td>
+					<td width="30%" align="center"><img height="50px" src="../../../img/esavelogo.png" /></td>
+					<td width="30%" align="right"><a href="../../../index.html"><img height="30px" src="../../../img/meni.png" /></a></td>
+				</tr>
+			</table>
+		</div>
+		<div id="content">
+			<div class="opis" style="margin-bottom: 20px">GORENJE OLJA</div>
+
+			<div style="margin-bottom: 10px">V KUHINJI LAHKO PRIDE DO VŽIGA OLJA. POGOSTA REAKCIJA OSEBE, KI OPAZI GOREČE OLJE V PONVI JE ZALITJE GOREČEGA OLJA Z VODO.</div>
+			<div style="margin-bottom: 10px">OB TEM, KO GOREČE OLJE GASIMO Z VODO STIK VROČEGA OLJA IN VODE PRIPELJE DO TAKOJŠNJEGA UPARJANJA VODE. TO POSLEDIČNO POVZROČI BURNO REAKCIJO IN ŠKROPLJENJE PREGRETEGA OLJA. NASTANE MAŠČOBNA EKSPLOZIJA. PRAVILNO IN PREVENTIVNO RAVNANJE V PRIMERU VŽIGA JEDILNEGA OLJA (ALI MASTI) V KUHINJI JE UPORABA POKROVKE S KATERO POKRIJEMO POSODO. S TEM ONEMOGOČIMO ZGOREVANJE OLJA – ODVZAMEMO KISIK. DO PONOVNEGA ODKRITJA POKROVKE JE TREBA POČAKATI NEKAJ ČASA. OLJE JE ŠE VEDNO SEGRETO NAD SAMOVŽIGNO TEMPERATURO, KAR OB PONOVNEM STIKU Z ZRAKOM TAKOJ PRIPELJE DO PONOVNEGA VŽIGA.</div>
+
+			<div align="center" style="margin-bottom: 10px"><img style="max-width: 100%" src="slike/6.jpg" /></div>
+			
+			<div class="font1">POŽARNA ODEJA</div>
+			<div style="margin-bottom: 10px">V KUHINJO JE OB ŠTEDILNIK SMISELNO NAMESTITI POŽARNO ODEJO. TA JE UPORABNA PREDVSEM ZA GASENJE OLJA, KI SE JE OB CVRTJU VZGALO V PONVI.</div>
+			
+			<div align="center" style="margin-bottom: 10px"><img style="max-width: 100%" src="slike/7.jpg" /></div>
+		
+			<div class="button" id="nadaljuj" onclick="window.location='nivo13.html'">NADALJUJ</div>
+		</div>
+ 	</body>
+</html>
