@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/myjava.js"></script>
+  		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">
+			if(isAndroid()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-android.js").appendTo("head");
+			} else if(isiOS()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-ios.js").appendTo("head");
+			} else if(isBlackBerry()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
+			} else {
+				$("script").attr("src", "../../../js/cordova-2.6.0-wp.js").appendTo("head");
+			}
+			
+			function preveriOdgovore() {
+				var odg1 = window.localStorage.getItem('prometne_nezgode_nivo1_odg1');
+				var odg2 = window.localStorage.getItem('prometne_nezgode_nivo1_odg2');
+				var odg3 = window.localStorage.getItem('prometne_nezgode_nivo1_odg3');
+				var odg4 = window.localStorage.getItem('prometne_nezgode_nivo1_odg7');
+				
+				if(odg1 == 1 && odg2 == 1 && odg3 == 1 && odg4 == 1) {
+					$('#nadaljuj').show();
+				}
+			}
+		</script>
+  	</head>
+  	<body>
+    	<div id="header">
+			<table align="center" width="90%">
+				<tr>
+					<td width="30%" align="left"><a href="prometne_nezgode.html"><img height="30px" src="../../../img/nazaj.png" /></a></td>
+					<td width="30%" align="center"><img height="50px" src="../../../img/esavelogo.png" /></td>
+					<td width="30%" align="right"><a href="../../../index.html"><img height="30px" src="../../../img/meni.png" /></a></td>
+				</tr>
+			</table>
+		</div>
+		<div id="content">
+			<div style="margin: 30px 0px 30px 0px">
+				<div class="opis" style="margin-bottom: 10px">STE VOZNIK VOZILA, KI JE NALETEL NA STOJEČO KOLONO VOZIL PRED SEBOJ. IZBERITE USTREZNE TRDITVE.</div>
+				
+				<div class="button" id="prometne_nezgode_nivo1_odg1" 
+					onclick="
+						$('#prometne_nezgode_nivo1_odg1').attr('class', 'button_success');
+						window.localStorage.setItem('prometne_nezgode_nivo1_odg1', '1');
+						preveriOdgovore();
+					">VKLOPIM VSE ŠTIRI SMEROKAZE</div>
+				
+				<div class="button" id="prometne_nezgode_nivo1_odg2" 
+					onclick="
+						$('#prometne_nezgode_nivo1_odg2').attr('class', 'button_success');
+						window.localStorage.setItem('prometne_nezgode_nivo1_odg2', '1');
+						preveriOdgovore();
+					">POSTAVIM SE SKRAJNO DESNO, ČE SEM NA LOKALNI CESTI</div>
+					
+				<div class="button" id="prometne_nezgode_nivo1_odg3" 
+					onclick="
+						$('#prometne_nezgode_nivo1_odg3').attr('class', 'button_success');
+						window.localStorage.setItem('prometne_nezgode_nivo1_odg3', '1');
+						preveriOdgovore();
+					">POSTAVIM SE SKRAJNO LEVO ALI DESNO ČE SEM NA AVTOCESTI</div>
+					
+				<div class="button" id="prometne_nezgode_nivo1_odg4" 
+					onclick="
+						$('#prometne_nezgode_nivo1_odg4').attr('class', 'button_error');
+						window.localStorage.setItem('prometne_nezgode_nivo1_odg4', '1');
+						showAlert('KLIC NA 113', 'ČE NIČ NE VIDIŠ NE OBREMENJUJ ŠTEVILKE 113, PO NEPOTREBNEM');
+					">POKLIČEM 113 IN PREVERIM ZA KAKŠEN DOGODEK GRE</div>
+					
+				<div class="button" id="prometne_nezgode_nivo1_odg5" 
+					onclick="
+						$('#prometne_nezgode_nivo1_odg5').attr('class', 'button_error');
+						window.localStorage.setItem('prometne_nezgode_nivo1_odg5', '1');
+						showAlert('POČAKAM', 'NIKAKOR NE, TAKO BLOKIRAŠ DOSTOP INTERVENCIJSKIH VOZIL');
+					">POČAKAM TAKO KOT SEM PRIPELJAL Z VOZILOM</div>
+					
+				<div class="button" id="prometne_nezgode_nivo1_odg6" 
+					onclick="
+						$('#prometne_nezgode_nivo1_odg6').attr('class', 'button_error');
+						window.localStorage.setItem('prometne_nezgode_nivo1_odg6', '1');
+						showAlert('TROBIM', 'NIKAKOR NE');
+					">TROBIM NAJ SE PREMAKNEJO NAPREJ</div>
+					
+				<div class="button" id="prometne_nezgode_nivo1_odg7" 
+					onclick="
+						$('#prometne_nezgode_nivo1_odg7').attr('class', 'button_success');
+						window.localStorage.setItem('prometne_nezgode_nivo1_odg7', '1');
+						preveriOdgovore();
+					">PRIŽGEM RADIO IN PREVERIM MOREBITNE INFORMACIJE</div>
+				
+				<div class="button" id="nadaljuj" style="display: none" onclick="window.location='nivo2.html'">NADALJUJ</div>
+			</div>
+		</div>
+ 	</body>
+</html>

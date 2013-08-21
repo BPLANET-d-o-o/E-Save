@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/myjava.js"></script>
+  		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">
+			if(isAndroid()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-android.js").appendTo("head");
+			} else if(isiOS()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-ios.js").appendTo("head");
+			} else if(isBlackBerry()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
+			} else {
+				$("script").attr("src", "../../../js/cordova-2.6.0-wp.js").appendTo("head");
+			}
+			
+			function preveriOdgovore() {
+				var odg1 = window.localStorage.getItem('prometne_nezgode_nivo4_odg1');
+				var odg2 = window.localStorage.getItem('prometne_nezgode_nivo4_odg3');
+				var odg3 = window.localStorage.getItem('prometne_nezgode_nivo4_odg4');
+				var odg4 = window.localStorage.getItem('prometne_nezgode_nivo4_odg5');
+				var odg5 = window.localStorage.getItem('prometne_nezgode_nivo4_odg7');
+				
+				if(odg1 == 1 && odg2 == 1 && odg3 == 1 && odg4 == 1 && odg5 == 1) {
+					$('#nadaljuj').show();
+				}
+			}
+		</script>
+  	</head>
+  	<body>
+    	<div id="header">
+			<table align="center" width="90%">
+				<tr>
+					<td width="30%" align="left"><a href="nivo3.html"><img height="30px" src="../../../img/nazaj.png" /></a></td>
+					<td width="30%" align="center"><img height="50px" src="../../../img/esavelogo.png" /></td>
+					<td width="30%" align="right"><a href="../../../index.html"><img height="30px" src="../../../img/meni.png" /></a></td>
+				</tr>
+			</table>
+		</div>
+		<div id="content">
+			<div style="margin: 30px 0px 30px 0px">
+				<div class="opis" style="margin-bottom: 10px">PRED VAMI JE ZAGORELO VOZILO IZBERI VSE PRAVILNE MOŽNOSTI ZA POGASITEV</div>
+				
+				<div class="button" id="prometne_nezgode_nivo4_odg1" 
+					onclick="
+						$('#prometne_nezgode_nivo4_odg1').attr('class', 'button_success');
+						window.localStorage.setItem('prometne_nezgode_nivo4_odg1', '1');
+						preveriOdgovore();
+					">VZAMETE SVOJ GASILNIK</div>
+				
+				<div class="button" id="prometne_nezgode_nivo4_odg2" 
+					onclick="
+						$('#prometne_nezgode_nivo4_odg2').attr('class', 'button_error');
+						window.localStorage.setItem('prometne_nezgode_nivo4_odg2', '1');
+						showAlert('ODEJA', 'ZMANJŠATE DOTOK KISIKA VENDAR NE BO USPEŠNO');
+					">POKRIJETE VOZILO Z ODEJO ALI PODOBNIM PRIPOMOČKOM</div>
+					
+				<div class="button" id="prometne_nezgode_nivo4_odg3" 
+					onclick="
+						$('#prometne_nezgode_nivo4_odg3').attr('class', 'button_success');
+						window.localStorage.setItem('prometne_nezgode_nivo4_odg3', '1');
+						preveriOdgovore();
+					">GASILNIK NAJDETE V AVTOBUSIH</div>
+				
+				<div class="button" id="prometne_nezgode_nivo4_odg4" 
+					onclick="
+						$('#prometne_nezgode_nivo4_odg4').attr('class', 'button_success');
+						window.localStorage.setItem('prometne_nezgode_nivo4_odg4', '1');
+						preveriOdgovore();
+					">GASILNIK NAJDETE V TOVORNIH VOZILIH</div>
+					
+				<div class="button" id="prometne_nezgode_nivo4_odg5" 
+					onclick="
+						$('#prometne_nezgode_nivo4_odg5').attr('class', 'button_success');
+						window.localStorage.setItem('prometne_nezgode_nivo4_odg5', '1');
+						preveriOdgovore();
+					">UPORABITE PLASTENKE Z VODO, SOKOVI...</div>
+					
+				<div class="button" id="prometne_nezgode_nivo4_odg6" 
+					onclick="
+						$('#prometne_nezgode_nivo4_odg6').attr('class', 'button_error');
+						window.localStorage.setItem('prometne_nezgode_nivo4_odg6', '1');
+						showAlert('PESEK', 'NE BO ŠLO IN TUDI PESKA NA CESTI NI LAHKO NAJTI');
+					">NABERETE PESEK IN GA NAMEČETE NA GOREČO POVRŠINO</div>
+					
+				<div class="button" id="prometne_nezgode_nivo4_odg7" 
+					onclick="
+						$('#prometne_nezgode_nivo4_odg7').attr('class', 'button_success');
+						window.localStorage.setItem('prometne_nezgode_nivo4_odg7', '1');
+						preveriOdgovore();
+					">POGLEDAŠ ČE JE V BLIŽINI POTOK, VODNI VIR...</div>
+				
+				<div class="button" id="nadaljuj" style="display: none" onclick="window.location='nivo5.html'">NADALJUJ</div>
+			</div>
+		</div>
+ 	</body>
+</html>

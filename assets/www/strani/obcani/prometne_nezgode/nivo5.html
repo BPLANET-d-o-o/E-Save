@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/mediaelement/mediaelement-and-player.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/myjava.js"></script>
+  		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../../../js/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">
+			if(isAndroid()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-android.js").appendTo("head");
+			} else if(isiOS()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-ios.js").appendTo("head");
+			} else if(isBlackBerry()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
+			} else {
+				$("script").attr("src", "../../../js/cordova-2.6.0-wp.js").appendTo("head");
+			}
+			
+			function preveriOdgovore(odg) {
+				var odg1 = window.localStorage.getItem('prometne_nezgode_nivo5_odg1');
+				var odg2 = window.localStorage.getItem('prometne_nezgode_nivo5_odg2');
+				var odg3 = window.localStorage.getItem('prometne_nezgode_nivo5_odg3');
+				var odg4 = window.localStorage.getItem('prometne_nezgode_nivo5_odg4');
+				var odg5 = window.localStorage.getItem('prometne_nezgode_nivo5_odg5');
+				var odg6 = window.localStorage.getItem('prometne_nezgode_nivo5_odg6');
+				var odg7 = window.localStorage.getItem('prometne_nezgode_nivo5_odg7');
+				var odg8 = window.localStorage.getItem('prometne_nezgode_nivo5_odg8');
+				
+				if(odg == 1) {
+					if(odg2 != 1 || odg7 != 1 || odg8 != 1) {
+						window.localStorage.setItem('prometne_nezgode_nivo5_odg1', '0');
+						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
+					} else {
+						$('#prometne_nezgode_nivo5_odg1').attr('class', 'button_success');
+					}
+				} else if(odg == 2) {
+					$('#prometne_nezgode_nivo5_odg2').attr('class', 'button_success');
+				} else if(odg == 3) {
+					if(odg1 != 1 || odg2 != 1 || odg7 != 1 || odg8 != 1) {
+						window.localStorage.setItem('prometne_nezgode_nivo5_odg3', '0');
+						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
+					} else {
+						$('#prometne_nezgode_nivo5_odg3').attr('class', 'button_success');
+					}
+				} else if(odg == 4) {
+					if(odg1 != 1 || odg2 != 1 || odg3 != 1 || odg5 != 1 || odg7 != 1 || odg8 != 1) {
+						window.localStorage.setItem('prometne_nezgode_nivo5_odg4', '0');
+						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
+					} else {
+						$('#prometne_nezgode_nivo5_odg4').attr('class', 'button_success');
+					}
+				} else if(odg == 5) {
+					if(odg1 != 1 || odg2 != 1 || odg3 != 1 || odg7 != 1 || odg8 != 1) {
+						window.localStorage.setItem('prometne_nezgode_nivo5_odg5', '0');
+						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
+					} else {
+						$('#prometne_nezgode_nivo5_odg5').attr('class', 'button_success');
+					}
+				} else if(odg == 6) {
+					if(odg1 != 1 || odg2 != 1 || odg3 != 1 || odg4 != 1 || odg5 != 1 || odg7 != 1 || odg8 != 1) {
+						window.localStorage.setItem('prometne_nezgode_nivo5_odg6', '0');
+						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
+					} else {
+						$('#nadaljuj').show();
+						$('#prometne_nezgode_nivo5_odg6').attr('class', 'button_success');
+					}
+				} else if(odg == 7) {
+					if(odg2 != 1) {
+						window.localStorage.setItem('prometne_nezgode_nivo5_odg7', '0');
+						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
+					} else {
+						$('#prometne_nezgode_nivo5_odg7').attr('class', 'button_success');
+					}
+				} else if(odg == 8) {
+					if(odg2 != 1 || odg7 != 1) {
+						window.localStorage.setItem('prometne_nezgode_nivo5_odg8', '0');
+						showAlert('NAPAČEN KORAK', 'KAJ NAREDIMO PRED TEM?');
+					} else {
+						$('#prometne_nezgode_nivo5_odg8').attr('class', 'button_success');
+					}
+				}
+			}
+		</script>
+  	</head>
+  	<body>
+    	<div id="header">
+			<table align="center" width="90%">
+				<tr>
+					<td width="30%" align="left"><a href="nivo4.html"><img height="30px" src="../../../img/nazaj.png" /></a></td>
+					<td width="30%" align="center"><img height="50px" src="../../../img/esavelogo.png" /></td>
+					<td width="30%" align="right"><a href="../../../index.html"><img height="30px" src="../../../img/meni.png" /></a></td>
+				</tr>
+			</table>
+		</div>
+		<div id="content">
+			<div class="opis">V PRAVILNEM VRSTNEM REDU IZBERI PRISTOP K  PONESREČENCU V PROMETNI NESREČI</div>
+			
+			<div class="button" id="prometne_nezgode_nivo5_odg1"
+				onclick="
+					window.localStorage.setItem('prometne_nezgode_nivo5_odg1', '1');
+					preveriOdgovore('1');
+				">PREVERIMO UTRIP IN DIHALNO POT</div>
+				
+			<div class="button" id="prometne_nezgode_nivo5_odg2" 
+				onclick="
+					window.localStorage.setItem('prometne_nezgode_nivo5_odg2', '1');
+					preveriOdgovore('2');
+				">PRISTOPIMO OD SPREDAJ IN GA PRIMEMO ZA GLAVO, DA JE NE PREMIKA</div>
+				
+			<div class="button" id="prometne_nezgode_nivo5_odg3" 
+				onclick="
+					window.localStorage.setItem('prometne_nezgode_nivo5_odg3', '1');
+					preveriOdgovore('3');
+				">V KOLIKOR DIHA MU SPROSTIMO OBLAČILA OKOLI VRATU</div>
+				
+			<div class="button" id="prometne_nezgode_nivo5_odg4" 
+				onclick="
+					window.localStorage.setItem('prometne_nezgode_nivo5_odg4', '1');
+					preveriOdgovore('4');
+				">V KOLIKOR JE NEZAVESTEN, NE DIHA IN NI UTRIPA GA IZVLEČEMO IZ VOZILA IN PRIČNEMO Z UŽIVLJANJEM</div>
+				
+			<div class="button" id="prometne_nezgode_nivo5_odg5" 
+				onclick="
+					window.localStorage.setItem('prometne_nezgode_nivo5_odg5', '1');
+					preveriOdgovore('5');
+				">V KOLIKOR JE NEZAVESTEN, DIHA IN IMA UTRIP POČAKAMO REŠEVALCE</div>
+				
+			<div class="button" id="prometne_nezgode_nivo5_odg6" 
+				onclick="
+					window.localStorage.setItem('prometne_nezgode_nivo5_odg6', '1');
+					preveriOdgovore('6');
+				">PONESREČENCU, KI ČUTI BOLEČINE V HRBTU, GLAVI ALI VRATU NE DOVOLIMO IZSTOPITI IZ  VOZILA</div>
+				
+			<div class="button" id="prometne_nezgode_nivo5_odg7" 
+				onclick="
+					window.localStorage.setItem('prometne_nezgode_nivo5_odg7', '1');
+					preveriOdgovore('7');
+				">PONESREČENCA OGOVORIMO Z VPRAŠANJI KAKO JE, KAJ GA BOLI, KAKO MU JE IME</div>
+				
+			<div class="button" id="prometne_nezgode_nivo5_odg8" 
+				onclick="
+					window.localStorage.setItem('prometne_nezgode_nivo5_odg8', '1');
+					preveriOdgovore('8');
+				">ČE SE NE ODZOVE GA MOČNEJE UŠČIPNEMO IN TAKOJ PREVERIMO STANJE ZAVESTI</div>
+			
+			<div class="button" id="nadaljuj" style="display: none" onclick="window.location='nivo6.html'">NADALJUJ</div>
+		</div>
+ 	</body>
+</html>

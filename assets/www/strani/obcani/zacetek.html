@@ -36,6 +36,9 @@
 				
 				var zo6 = window.localStorage.getItem('pozarna_preventiva_zakljuceno');
 				if(zo6 == 1) $('#pozarna_preventiva').attr('class', 'button_success');
+				
+				var zo7 = window.localStorage.getItem('prometne_nezgode_zakljuceno');
+				if(zo7 == 1) $('#prometne_nezgode').attr('class', 'button_success');
 			});
 		</script>
   	</head>
@@ -58,6 +61,7 @@
 			<div id="pp_obcani" class="button" onclick="window.location='prva_pomoc/prva_pomoc.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/prvapomoc.png" /> PP ZA DOMAČO RABO</div>
 			<div id="tpo_otroka" class="button" onclick="window.location='tpo_otroka/tpo_otroka.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/prvapomoc.png" /> PP ZA DOJENČKE IN OTROKE</div>
 			<div id="vppm" class="button" onclick="window.location='vppm/vppm.html'">VARSTVO PRED POŽAROM ZA MLADINO</div>
+			<div id="prometne_nezgode" class="button" onclick="window.location='prometne_nezgode/prometne_nezgode.html'">UKREPANJE OB DOGODKIH V CESTNEM PROMETU</div>
 		</div>
  	</body>
 </html>
