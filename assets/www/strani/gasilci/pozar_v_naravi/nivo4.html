@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/myjava.js"></script>
+  		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">	
+			if(isAndroid()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-android.js").appendTo("head");
+			} else if(isiOS()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-ios.js").appendTo("head");
+			} else if(isBlackBerry()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
+			} else {
+				$("script").attr("src", "../../../js/cordova-2.6.0-wp.js").appendTo("head");
+			}
+			
+			function zakljuci() {
+				window.localStorage.setItem('pozar_v_naravi_zakljuceno', '1');
+				showAlert('ČESTITAMO', 'PREDELAL SI POGLAVJE - GAŠENJE POŽAROV V NARAVI! IZBERI DRUGO POGLAVJE.');
+				
+				window.location = "../zacetek.html";
+			}
+		</script>
+  	</head>
+  	<body>
+    	<div id="header">
+			<table align="center" width="90%">
+				<tr>
+					<td width="30%" align="left"><a href="nivo3.html"><img height="30px" src="../../../img/nazaj.png" /></a></td>
+					<td width="30%" align="center"><img height="50px" src="../../../img/esavelogo.png" /></td>
+					<td width="30%" align="right"><a href="../../../index.html"><img height="30px" src="../../../img/meni.png" /></a></td>
+				</tr>
+			</table>
+		</div>
+		<div id="content">
+			<div style="margin: 30px 0px 30px 0px">
+				<div class="font1">OSNOVNA GASILSKA TAKTIČNA ENOTA</div>
+				<div>Formacijo enote glede na njeno opremljenost delimo na:</div>
+				<div>- ROČNO (ročno orodje, metla za gašenje...)</div>
+				<div>- PEHOTNO (pehotne naprave, izpihovalnik zraka, nahrbtna škropilnica, motorna žaga...)</div>
+				<div style="margin-bottom: 10px">- STROJNO (visokotlačna naprava za gašenje, vozilo...)</div>
+				
+				<div class="font1">TAKTIČNA UPORABA MOŠTVA</div>
+				<div>1.) SKUPINA Z OSNOVNO OPREMO je sestavljena iz treh gasilcev, opremljenih z metlo za gašenje, nahrbtno škropilnico in izpihovalnikom zraka. Skupina lahko deluje v samostojnem sektorju in obvladuje srednje razvit požar.</div>
+				<div>2.) SKUPINA Z VODO je sestavljena iz treh gasilcev: strojnik visokotlačne naprave, napadalec 1 (drži ročnik) in napadalec 2, ki pomaga pri raztegovanju cevi, dodatno pa je lahko opremljen z metlo za gašenje ali izpihovalnikom zraka. Skupina obvladuje srednje razvit požar.</div>
+				<div>3.) ZMANJŠAN ODDELEK Z OSNOVNO OPREMO je sestavljen iz sedmih gasilcev, ki so opremljeni z dvema metlama za gašenje, dvema izpihovalnikoma zraka in tremi nahrbtnimi škropilnicami. Oddelek napreduje s hitrostjo približno 50 m/min.</div>
+				<div>4.) ZMANJŠAN ODDELEK Z VODO je sestavljen iz sedmih gasilcev, ki se oblikujejo v dve skupini. 1. skupina kot skupina z vodo (trije gasilci), 2. skupina pa se opremi s po dvema nahrbtnima škropilnicama in izpihovalnikoma zraka. 2. skupina pomaga 1. pri kontroli in čiščenju požarišča, s tem je doseženo, da 1. skupina napreduje hitreje.</div>
+				<div>5.) GASILSKI ODDELEK Z OSNOVNO OPREMO je sestavljen iz devetih gasilcev, ki so opremljeni s po tremi metlami za gašenje, tremi izpihovalniki zraka in tremi škropilnicami z vodo. Takšen oddelek lahko v samostojnem sektorju napreduje s hitrostjo približno 70 m/min.</div>
+				<div style="margin-bottom: 10px">6.) GASILSKI ODDELEK Z VODO je sestavljen iz devetih gasilcev. Običajno se znotraj oddelka ustvarijo tri skupine. 1. za delo z visokotlačno napravo, 2. je sestavljena iz dveh nahrbtnih škropilnic in metel za gašenje, 3. skupina pa je običajno sestavljena enako kot 2. Oddelek je uspešen pri gašenju povprečno velikih požarov, napreduje pa s hitrostjo približno 90 m/min.</div>
+				
+				<div class="font1">ZAKLJUČEK</div>
+				<div style="margin-bottom: 10px">Požarov v naravi ne smemo podcenjevati. So naš stalni spremljevalec vse od začetka uporabe ognja. Obstajata dva viška pogostosti pojavljanja požarov. Prvi je poznozimski višek, ko požari nastajajo predvsem marca ali še prej, traja pa, dokler vegetacija ne ozeleni. Vegetacija je najprej še suha, na tleh je veliko suhih ostankov iz prejšnjega vegetacijskega obdobja, suho in vetrovno vreme pa tla ter odmrlo in obstoječo vegetacijo še izsušuje. Navadno se požari najprej pojavljajo na Primorskem, pozneje tudi drugod. Glavna vzroka za nastanek požarov v tem obdobju sta kurjenje in zažiganje kmetijskih površin, kar je v Sloveniji žal zelo razširjen pojav. Poleti so razmere za nastanek požarov drugačne. Več jih nastane zaradi drugih vzrokov, na primer odmetavanja cigaretnih ogorkov in drugih snovi, ki lahko zanetijo požar, iskrenja zavor in odpadanja žarečih delcev zavor vlakov ter udarov strel. V drugih letnih obdobjih je požarna ogroženost navadno nižja in požari ne predstavljajo večje nevarnosti. Nikoli se žal ne da izogniti namernim požigom. Za uspešno obvladovanje ognjenih zubljev moramo hitro in pravilno ukrepati ter ne sme nam biti nerodno poklicati dodatnih sil na pomoč takrat, ko sami nismo kos nastali situaciji.</div>
+				
+				<div class="button" id="zakljuci" onclick="zakljuci();">ZAKLJUČI</div>
+			</div>
+		</div>
+ 	</body>
+</html>

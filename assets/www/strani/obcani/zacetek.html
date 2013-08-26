@@ -39,6 +39,13 @@
 				
 				var zo7 = window.localStorage.getItem('prometne_nezgode_zakljuceno');
 				if(zo7 == 1) $('#prometne_nezgode').attr('class', 'button_success');
+				
+				var zo8 = window.localStorage.getItem('rga_zakljuceno');
+				if(zo8 == 1) $('#rga').attr('class', 'button_success');
+				
+				if(zo1 == 1 && zo2 == 1 && zo3 == 1 && zo4 == 1 && zo5 == 1 && zo6 == 1 && zo7 == 1 && zo8 == 1) {
+					$('#potrdilo').show();
+				}
 			});
 		</script>
   	</head>
@@ -55,13 +62,16 @@
 		<div id="content">
 			<div class="opis">IZBERI TEMO</div>
 			
-			<div id="pozarna_preventiva" class="button" onclick="window.location='pozarna_preventiva/pozarna_preventiva.html'">POŽARNA PREVENTIVA ZA DOMAČO RABO</div>
+			<div id="potrdilo" class="opis" style="display: none; margin: 40px auto 40px auto">Čestitamo! Predelali ste vse sklope za občane. Za zaključni kviz in izdajo potrdila pojdite na http://www.esave.si/kviz/obcani</div>
+			
+			<div id="pozarna_preventiva" class="button" onclick="window.location='pozarna_preventiva/pozarna_preventiva.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/doma.png" /> POŽARNA PREVENTIVA ZA DOMAČO RABO</div>
+			<div id="rga" class="button" onclick="window.location='rga/rga.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/rga.png" /> GAŠENJE Z RGA</div>
 			<div id="reco" class="button" onclick="window.location='reco/reco.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/112.png" /> OBVEŠČANJE OB DOGODKIH 112</div>
 			<div id="okc" class="button" onclick="window.location='okc/okc.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/113.png" /> OBVEŠČANJE OB DOGODKIH 113</div>
 			<div id="pp_obcani" class="button" onclick="window.location='prva_pomoc/prva_pomoc.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/prvapomoc.png" /> PP ZA DOMAČO RABO</div>
 			<div id="tpo_otroka" class="button" onclick="window.location='tpo_otroka/tpo_otroka.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/prvapomoc.png" /> PP ZA DOJENČKE IN OTROKE</div>
-			<div id="vppm" class="button" onclick="window.location='vppm/vppm.html'">VARSTVO PRED POŽAROM ZA MLADINO</div>
-			<div id="prometne_nezgode" class="button" onclick="window.location='prometne_nezgode/prometne_nezgode.html'">UKREPANJE OB DOGODKIH V CESTNEM PROMETU</div>
+			<div id="vppm" class="button" onclick="window.location='vppm/vppm.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/mladina.png" /> VARSTVO PRED POŽAROM ZA MLADINO</div>
+			<div id="prometne_nezgode" class="button" onclick="window.location='prometne_nezgode/prometne_nezgode.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/cestnipromet.png" /> UKREPANJE OB DOGODKIH V CESTNEM PROMETU</div>
 		</div>
  	</body>
 </html>

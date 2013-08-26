@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/myjava.js"></script>
+  		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">	
+			if(isAndroid()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-android.js").appendTo("head");
+			} else if(isiOS()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-ios.js").appendTo("head");
+			} else if(isBlackBerry()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
+			} else {
+				$("script").attr("src", "../../../js/cordova-2.6.0-wp.js").appendTo("head");
+			}
+		</script>
+  	</head>
+  	<body>
+    	<div id="header">
+			<table align="center" width="90%">
+				<tr>
+					<td width="30%" align="left"><a href="nivo2.html"><img height="30px" src="../../../img/nazaj.png" /></a></td>
+					<td width="30%" align="center"><img height="50px" src="../../../img/esavelogo.png" /></td>
+					<td width="30%" align="right"><a href="../../../index.html"><img height="30px" src="../../../img/meni.png" /></a></td>
+				</tr>
+			</table>
+		</div>
+		<div id="content">
+			<div style="margin: 30px 0px 30px 0px">
+				<div class="font1">ORODJE, NAPRAVE IN SREDSTVA ZA GAŠENJE POŽAROV V NARAVI</div>
+				<div>Za gašenje požarov lahko uporabljamo:</div>
+				<div>- priročna gasilna sredstva (borove veje, pesek...)</div>
+				<div style="margin-bottom: 10px">- ročno orodje (metle za gašenje, sekire, mačete, grablje, lopate...)</div>
+				
+				<div align="center" style="margin-bottom: 10px"><img style="max-width: 100%" src="slike/17.jpg" /></div>
+				
+				<div style="margin-bottom: 10px">- prenosne naprave (nahrbtne škropilnice, izpihovalniki zraka, motorne žage, prenosne črpalke z armaturami...)</div>
+				
+				<div align="center" style="margin-bottom: 10px"><img style="max-width: 100%" src="slike/18.jpg" /></div>
+				
+				<div style="margin-bottom: 10px">- prevozna oprema in naprave (visokotlačne naprave za gašenje, rezervoarji za vodo, črpalke z armaturami in cevmi...)</div>
+				
+				<div align="center" style="margin-bottom: 10px"><img style="max-width: 100%" src="slike/19.jpg" /></div>
+				
+				<div>- vozila (GVGP, GCGP …) in druga mehanizacija (buldožer...)</div>
+				<div style="margin-bottom: 10px">- zračne sile (helikopterji, letala)</div>
+				
+				<div align="center" style="margin-bottom: 10px"><img style="max-width: 100%" src="slike/20.jpg" /></div>
+
+				<div style="margin-bottom: 10px">Največkrat uporabljeno sredstvo zračnih sil so helikopterji Slovenske vojske, katerih aktiviranje lahko zahteva vodja intervencije preko pristojnega Regijskega centra za obveščanje. Pred prihodom helikopterjev moramo predvideti mesto pristanka in oskrbo bazena z vodo. Začasni heliodrom mora imeti primerno utrjeno talno površino. Naklon ne sme presegati 5 stopinj in mora biti premera najmanj 50 metrov. V oddaljenosti najmanj 100 metrov od točke pristanka ne sme biti ovire, višje od 10 metrov (daljnovod, drevesa, zgradbe …). Zaželena je urejena komunalna infrastruktura. Za osvetlitev v nočnem času uporabimo luči vozil, ki jih okoli heliodroma postavimo centrično. Zagotoviti moramo konstantno polnjenje bazena z vodo. Bazen praviloma helikopter pripelje s seboj. Pri gašenju z zrakoplovi se moramo zavedati, da je njihovo delovanje omejeno. Še nobena bitka ni bila dosežena samo iz zraka, ampak vedno ob izdatni podpori pehote. In to nam naj bo tudi vodilo pri gašenju ob pomoči zračnih sil.</div>
+
+				<div class="button" align="center" id="nadaljuj" onclick="window.location='nivo4.html'">NADALJUJ</div>
+			</div>
+		</div>
+ 	</body>
+</html>

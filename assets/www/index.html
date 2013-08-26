@@ -18,27 +18,6 @@
 				$("script").attr("src", "js/cordova-2.6.0-wp.js").appendTo("head");
 			}
 			
-			document.addEventListener("deviceready", function() {
-				var z1 = window.localStorage.getItem('elektrika_zakljuceno');
-				var z2 = window.localStorage.getItem('fotovoltaika_zakljuceno');
-				var z3 = window.localStorage.getItem('ida_zakljuceno');
-				var z4 = window.localStorage.getItem('nevarne_snovi_zakljuceno');
-				var z5 = window.localStorage.getItem('notranji_napadi_zakljuceno');
-				var z6 = window.localStorage.getItem('osnove_gorenja_in_gasenja_zakljuceno');
-				var z7 = window.localStorage.getItem('predori_dvocevni_zakljuceno');
-				var z8 = window.localStorage.getItem('predori_enocevni_zakljuceno');
-				var z9 = window.localStorage.getItem('prezracevanje_zakljuceno');
-				var z10 = window.localStorage.getItem('pp_gasilci_zakljuceno');
-				var z11 = window.localStorage.getItem('razrez_osebnih_vozil_zakljuceno');
-				var z12 = window.localStorage.getItem('tovorna_vozila_zakljuceno');
-				var z13 = window.localStorage.getItem('vodenje_intervencije_zakljuceno');
-				var z14 = window.localStorage.getItem('zemeljski_plin_zakljuceno');
-				
-				if(z1 == 1 && z2 == 1 && z3 == 1 && z4 == 1 && z5 == 1 && z6 == 1 && z7 == 1 && z8 == 1 && z9 == 1 && z10 == 1 && z11 == 1 && z12 == 1 && z13 == 1 && z14 == 1) {
-					$('#potrdilo').show();
-				}
-			});
-			
 			function izhod() {
 				navigator.app.exitApp();
 			}
@@ -61,7 +40,7 @@
 				
 				<div class="button" id="potrdilo" style="margin-top: 35px; display: none" onclick="window.location='strani/potrdilo.html'">NATISNI POTRDILO</div>
 				
-				<div class="button" style="margin-top: 35px" onclick="window.location='strani/o_avtorjih.html'">O AVTORJIH</div>
+				<div class="button" style="margin-top: 35px" onclick="window.location='strani/o_avtorjih.html'">O APLIKACIJI</div>
 				<div class="button" style="margin-top: 5px" onclick="window.location='strani/navodila.html'">NAVODILA</div>
 				<div class="button" style="margin-top: 5px" onclick="window.location='strani/viri.html'">VIRI IN LITERATURA</div>
 				

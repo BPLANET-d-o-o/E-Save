@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/myjava.js"></script>
+  		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">	
+			if(isAndroid()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-android.js").appendTo("head");
+			} else if(isiOS()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-ios.js").appendTo("head");
+			} else if(isBlackBerry()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
+			} else {
+				$("script").attr("src", "../../../js/cordova-2.6.0-wp.js").appendTo("head");
+			}
+		</script>
+  	</head>
+  	<body>
+    	<div id="header">
+			<table align="center" width="90%">
+				<tr>
+					<td width="30%" align="left"><a href="pozar_v_naravi.html"><img height="30px" src="../../../img/nazaj.png" /></a></td>
+					<td width="30%" align="center"><img height="50px" src="../../../img/esavelogo.png" /></td>
+					<td width="30%" align="right"><a href="../../../index.html"><img height="30px" src="../../../img/meni.png" /></a></td>
+				</tr>
+			</table>
+		</div>
+		<div id="content">
+			<div style="margin: 30px 0px 30px 0px">
+				<div class="font1">VRSTE POŽAROV</div>
+				<div style="margin-bottom: 10px">Glede na mesto požara razvrščamo požare v podtalne, talne, kompleksne (vršne), debelne, kombinirane, požarne preskoke, požarne viharje in ognjeno ujmo.</div>
+				<div style="margin-bottom: 10px">PODTALNI POŽARI se razvijajo v tleh, največkrat v starih gozdovih in gozdovih, kjer drevesni odpad (iglice, listje …)  zelo počasi razpada. Ker so tla bogata s humusom, se požari širijo pod tlemi, na površini se lahko pojavijo šele čez daljše obdobje, lahko povzročijo požar na mestu, ki je precej oddaljeno od prvotnega požara – skratka, kljub počasnemu širjenju so večinoma zelo problematični za gašenje. Težko namreč odkrijemo žarišče, težko jih nadziramo. Gasimo jih tako, da z robov odstranjujemo gorljive materiale, robove požara prekopavamo in namakamo z velikimi količinami vode.</div>
+				<div style="margin-bottom: 10px">TALNI POŽARI nastajajo in se širijo po tleh. Zelo hitro se širijo po travi, počasneje po listju, mahu in drugih materialih, ki so odpadli z dreves ali še rastejo. Talne požare lahko nadziramo in spremljamo smer njihovega širjenja. Z vodo ali drugimi sredstvi gasimo linije požara, z linije pa odstranjujemo goreče materiale (debla, vejevje...).</div>
+				<div style="margin-bottom: 10px">KOMPLEKSNI POŽARI so požari v vrhovih dreves. V glavnem se pojavljajo v obdobju visokih temperatur poleti, ko je v krošnjah velika koncentracija hlapov eteričnih olj, kar pripomore k hitremu prenosu plamena. V glavnem se kompleksni požari razvijejo iz talnega požara, redkeje je vzrok udar strele ali iskrenje električnih vodnikov. Požari se večinoma širijo zelo hitro, zato je gašenje zelo težavno in brez večjih količin vode skoraj nemogoče.</div>
+				
+				<div align="center" style="margin-bottom: 10px"><img style="max-width: 100%" src="slike/8.jpg" /></div>
+				
+				<div style="margin-bottom: 10px">DEBELNI POŽAR največkrat nastane takrat, ko strela udari v drevo in ga vname. Debelni požar se lahko spremeni v druge oblike požarov.</div>
+				
+				<div align="center" style="margin-bottom: 10px"><img style="max-width: 100%" src="slike/9.jpg" /></div>
+				
+				<div style="margin-bottom: 10px">KOMBINIRANI POŽARI nastanejo takrat, ko sta pri gorenju prisotni najmanj dve vrsti požarov (podtalni–talni, talni–debelni...). O kombiniranem požaru pa govorimo tudi takrat, ko ogenj zajame poslopja ali druge objekte.</div>
+				<div style="margin-bottom: 10px">POŽARNI PRESKOKI nastanejo ob pihanju vetra, ko ta odnaša gorljive dele in nastanejo nova žarišča, ki so od linije požara oddaljena tudi več kot 100 metrov. Požarne preskoke na strmih terenih lahko povzročijo tudi kotaleči se ali z vetrom leteči goreči storži.</div>
+				<div style="margin-bottom: 10px">POŽARNI VIHAR nastane ob kompleksnem požaru, močnem vetru in hudi vročini, ko je v zraku v gozdu veliko hlapov eteričnih olj. Vročina povzroči še dodatno gibanje zračnih mas in s tem tudi zračnih vetrov. Požarni viharji se zelo hitro širijo, zato je gašenje takšnih požarov skoraj nemogoče. Osredotočiti se moramo na varovanje posameznih objektov in naselij ter po potrebi ukazati evakuacijo ogroženega prebivalstva. Požar se lahko upočasni ali ustavi ob spremembi vetrov ali naletu na veliko oviro (široka reka...).</div>
+				
+				<div align="center" style="margin-bottom: 10px"><img style="max-width: 100%" src="slike/10.jpg" /></div>
+				
+				<div style="margin-bottom: 10px">OGNJENA UJMA nastane, ko zaradi požara nastajajo vetrovi, ki povzročijo še bolj vroče gorenje in s tem še več vetra. Če v tem procesu sodeluje velika količina gorljive mase, se lahko sproži konvekcijska celica dimnih produktov, ki prevlada lokalne vetrove. Omenjeni proces povzroči, da se segreti plini vnemajo sami od sebe in zelo hitro napredujejo. Požar pustoši vse pred seboj, skoraj nemogoče ga je ustaviti, zgorijo lahko celotna naselja...</div>
+				
+				<div class="button" align="center" id="nadaljuj" onclick="window.location='nivo2.html'">NADALJUJ</div>
+			</div>
+		</div>
+ 	</body>
+</html>

@@ -63,6 +63,13 @@
 				
 				var z15 = window.localStorage.getItem('pozarna_straza_zakljuceno');
 				if(z15 == 1) $('#pozarna_straza').attr('class', 'button_success');
+				
+				var z16 = window.localStorage.getItem('pozar_v_naravi_zakljuceno');
+				if(z16 == 1) $('#pozar_v_naravi').attr('class', 'button_success');
+				
+				if(z1 == 1 && z2 == 1 && z3 == 1 && z4 == 1 && z5 == 1 && z6 == 1 && z7 == 1 && z8 == 1 && z9 == 1 && z10 == 1 && z11 == 1 && z12 == 1 && z13 == 1 && z14 == 1 && z15 == 1 && z16 == 1) {
+					$('#potrdilo').show();
+				}
 			});
 		</script>
   	</head>
@@ -79,21 +86,24 @@
 		<div id="content">
 			<div class="opis">IZBERI TEMO</div>
 			
+			<div id="potrdilo" class="opis" style="display: none; margin: 40px auto 40px auto">Čestitamo! Predelali ste vse sklope za gasilce. Za zaključni kviz in izdajo potrdila pojdite na http://www.esave.si/kviz/gasilci</div>
+			
 			<div id="razrez_osebnih_vozil" class="button" onclick="window.location='razrez_osebnih_vozil/nivo1.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/rezanje.png" /> REŠEVANJE OB PROMETNIH NESREČAH</div>
 			<div id="notranji_napadi" class="button" onclick="window.location='notranji_napadi/notranji_napadi.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/notranjinapadi.png" /> GAŠENJE NOTRANJIH POŽAROV</div>
 			<div id="prezracevanje" class="button" onclick="window.location='prezracevanje/prezracevanje.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/prezracevanje.png" /> PREZRAČEVANJE PROSTOROV</div>
 			<div id="predori_enocevni" class="button" onclick="window.location='predori_enocevni/predori_enocevni.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/enocevni.png" /> POSREDOVANJE V ENOCEVNIH TUNELIH</div>
 			<div id="predori_dvocevni" class="button" onclick="window.location='predori_dvocevni/predori_dvocevni.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/dvocevni.png" /> POSREDOVANJE V DVOCEVNIH TUNELIH</div>
-			<div id="osnove_gorenja_in_gasenja" class="button" onclick="window.location='osnove_gorenja_in_gasenja/osnove_gorenja_in_gasenja.html'">OSNOVE GORENJA IN GAŠENJA</div>
-			<div id="pozarna_straza" class="button" onclick="window.location='pozarna_straza/pozarna_straza.html'">POŽARNA STRAŽA</div>
+			<div id="osnove_gorenja_in_gasenja" class="button" onclick="window.location='osnove_gorenja_in_gasenja/osnove_gorenja_in_gasenja.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/pozar.png" /> OSNOVE GORENJA IN GAŠENJA</div>
+			<div id="pozar_v_naravi" class="button" onclick="window.location='pozar_v_naravi/pozar_v_naravi.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/narava.png" /> GAŠENJE POŽAROV V NARAVI</div>
+			<div id="pozarna_straza" class="button" onclick="window.location='pozarna_straza/pozarna_straza.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/pozarnastraza.png" /> POŽARNA STRAŽA</div>
 			<div id="ida" class="button" onclick="window.location='ida/ida.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/ida.png" /> ZAŠČITA TELESA IN DIHAL</div>
-			<div id="fotovoltaika" class="button" onclick="window.location='fotovoltaika/fotovoltaika.html'">FOTOVOLTAIKA</div>
+			<div id="fotovoltaika" class="button" onclick="window.location='fotovoltaika/fotovoltaika.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/elektrika.png" /> FOTOVOLTAIKA</div>
 			<div id="tovorna_vozila" class="button" onclick="window.location='tovorna_vozila/tovorna_vozila.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/tovorna.png" /> PROMETNE NEZGODE VOZIL VEČJIH DIMENZIJ</div>
-			<div id="nevarne_snovi" class="button" onclick="window.location='nevarne_snovi/nevarne_snovi.html'">NEVARNE SNOVI</div>
-			<div id="zemeljski_plin" class="button" onclick="window.location='zemeljski_plin/zemeljski_plin.html'">ZEMELJSKI PLIN</div>
-			<div id="elektrika" class="button" onclick="window.location='elektrika/elektrika.html'">ELEKTRIKA</div>
+			<div id="nevarne_snovi" class="button" onclick="window.location='nevarne_snovi/nevarne_snovi.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/nevarnesnovi.png" /> NEVARNE SNOVI</div>
+			<div id="zemeljski_plin" class="button" onclick="window.location='zemeljski_plin/zemeljski_plin.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/plin.png" /> ZEMELJSKI PLIN</div>
+			<div id="elektrika" class="button" onclick="window.location='elektrika/elektrika.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/elektrika1.png" /> ELEKTRIKA</div>
 			<div id="pp_gasilci" class="button" onclick="window.location='prva_pomoc/prva_pomoc.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/prvapomoc.png" /> PP ZA GASILCE</div>
-			<div id="vodenje_intervencije" class="button" onclick="window.location='vodenje_intervencije/vodenje_intervencije.html'">VODENJE INTERVENCIJ</div>
+			<div id="vodenje_intervencije" class="button" onclick="window.location='vodenje_intervencije/vodenje_intervencije.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/vodenje.png" /> VODENJE INTERVENCIJ</div>
 		</div>
  	</body>
 </html>
