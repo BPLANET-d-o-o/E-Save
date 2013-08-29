@@ -31,8 +31,9 @@
 				var odg8 = window.localStorage.getItem('pozarna_preventiva_nivo10_odg12');
 				var odg9 = window.localStorage.getItem('pozarna_preventiva_nivo10_odg17');
 				var odg10 = window.localStorage.getItem('pozarna_preventiva_nivo10_odg18');
+				var odg11 = window.localStorage.getItem('pozarna_preventiva_nivo10_odg15');
 				
-				if(odg1 == 1 && odg2 == 1 && odg3 == 1 && odg4 == 1 && odg5 == 1 && odg6 == 1 && odg7 == 1 && odg8 == 1 && odg9 == 1 && odg10 == 1) {
+				if(odg1 == 1 && odg2 == 1 && odg3 == 1 && odg4 == 1 && odg5 == 1 && odg6 == 1 && odg7 == 1 && odg8 == 1 && odg9 == 1 && odg10 == 1 && odg11 == 1) {
 					$('#nadaljuj').show();
 				}
 			}
@@ -49,6 +50,8 @@
 			</table>
 		</div>
 		<div id="content">
+			<div class="opis" style="margin-bottom: 20px">GASILNIKI</div>
+			
 			<div align="center" style="margin-bottom: 10px"><img style="max-width: 100%" src="slike/4.jpg" /></div>
 			
 			<div>GORLJIVE SNOVI DELIMO PO RAZREDIH:</div>
@@ -58,7 +61,7 @@
 			<div>D: LAHKE KOVINE (ALUMINIJ, MAGNEZIJ...)</div>
 			<div style="margin-bottom: 10px">F: JEDILNA OLJA IN MAŠČOBE</div>
 			
-			<div class="font1">A. GASILNIKI NA VODO SE UPORABLJAJO ZA GAŠENJE POŽAROV RAZREDA:</div>
+			<div class="font1">GASILNIKI NA VODO SE UPORABLJAJO ZA GAŠENJE POŽAROV RAZREDA:</div>
 			
 			<div class="button" id="pozarna_preventiva_nivo10_odg1" 
 				onclick="
@@ -91,7 +94,7 @@
 					window.localStorage.setItem('pozarna_preventiva_nivo10_odg5', '1');
 				">F</div>
 			
-			<div class="font1">B. GASILNIKI NA PRASKE SE UPORABLJAJO ZA GASENJE POZAROV RAZREDA:</div>
+			<div class="font1">GASILNIKI NA PRASKE SE UPORABLJAJO ZA GASENJE POZAROV RAZREDA:</div>
 			
 			<div class="button" id="pozarna_preventiva_nivo10_odg6" 
 				onclick="
@@ -119,16 +122,16 @@
 					$('#pozarna_preventiva_nivo10_odg9').attr('class', 'button_success');
 					window.localStorage.setItem('pozarna_preventiva_nivo10_odg9', '1');
 					preveriOdgovore();
-				">D (POSEBEJ PRILAGOJNI PRASKI)</div>
+				">D (POSEBEJ PRILAGOJENI PRAŠKI)</div>
 				
 			<div class="button" id="pozarna_preventiva_nivo10_odg10" 
 				onclick="
 					$('#pozarna_preventiva_nivo10_odg10').attr('class', 'button_success');
 					window.localStorage.setItem('pozarna_preventiva_nivo10_odg10', '1');
 					preveriOdgovore();
-				">F (POSEBEJ PRILAGOJNI PRASKI)</div>
+				">F (POSEBEJ PRILAGOJENI PRAŠKI)</div>
 				
-			<div class="font1">C. GASILNIK NA PENO JE NAMENJEN ZA GAŠENJE POŽAROV RAZREDA:</div>
+			<div class="font1">GASILNIK NA PENO JE NAMENJEN ZA GAŠENJE POŽAROV RAZREDA:</div>
 			
 			<div class="button" id="pozarna_preventiva_nivo10_odg11" 
 				onclick="
@@ -158,15 +161,16 @@
 				
 			<div class="button" id="pozarna_preventiva_nivo10_odg15" 
 				onclick="
-					$('#pozarna_preventiva_nivo10_odg15').attr('class', 'button_error');
+					$('#pozarna_preventiva_nivo10_odg15').attr('class', 'button_success');
 					window.localStorage.setItem('pozarna_preventiva_nivo10_odg15', '1');
-				">F</div>
+					preveriOdgovore();
+				">F (POSEBEJ PRILAGOJENI PRAŠKI)</div>
 				
-			<div class="font1">E. GASILNIKI S PLINSKIMI GASILI (PRIMER GASILNIK NA CO2) SO NAMENJENI ZA GAŠENJE POŽAROV RAZREDA:</div>
+			<div class="font1">GASILNIKI S PLINSKIMI GASILI (PRIMER GASILNIK NA CO2) SO NAMENJENI ZA GAŠENJE POŽAROV RAZREDA:</div>
 			
 			<div class="button" id="pozarna_preventiva_nivo10_odg16" 
 				onclick="
-					$('#pozarna_preventiva_nivo10_odg16').attr('class', 'button_error');
+					$('#pozarna_preventiva_nivo10_odg16').attr('class', 'button_ok');
 					window.localStorage.setItem('pozarna_preventiva_nivo10_odg16', '1');
 				">A</div>
 				
@@ -192,7 +196,7 @@
 				
 			<div class="button" id="pozarna_preventiva_nivo10_odg20" 
 				onclick="
-					$('#pozarna_preventiva_nivo10_odg20').attr('class', 'button_error');
+					$('#pozarna_preventiva_nivo10_odg20').attr('class', 'button_ok');
 					window.localStorage.setItem('pozarna_preventiva_nivo10_odg20', '1');
 				">F</div>
 			

@@ -21,10 +21,13 @@
 			}
 			
 			function preveriOdgovore() {
-				var odg1 = window.localStorage.getItem('pozarna_preventiva_nivo8_odg1');
-				var odg2 = window.localStorage.getItem('pozarna_preventiva_nivo8_odg3');
+				var odg1 = window.localStorage.getItem('pozarna_preventiva_nivo9_odg1');
+				var odg2 = window.localStorage.getItem('pozarna_preventiva_nivo9_odg2');
+				var odg3 = window.localStorage.getItem('pozarna_preventiva_nivo9_odg4');
+				var odg4 = window.localStorage.getItem('pozarna_preventiva_nivo9_odg6');
+				var odg5 = window.localStorage.getItem('pozarna_preventiva_nivo9_odg7');
 				
-				if(odg1 == 1 && odg2 == 1) {
+				if(odg1 == 1 && odg2 == 1 && odg3 == 1 && odg4 == 1 && odg5 == 1) {
 					$('#nadaljuj').show();
 				}
 			}
@@ -41,11 +44,11 @@
 			</table>
 		</div>
 		<div id="content">
-			<div class="opis" style="margin-bottom: 20px">3. GASILNIKI</div>
+			<div class="opis" style="margin-bottom: 20px">GASILNIKI</div>
 			
-			<div>GASILNIK SPADA MED NAPRAVE ZA ZAČETNO GAŠENJE POŽAROV. GASILNIKE DELIMO GLEDE NA VRSTO IN KOLIČINO GASILA, KI JE V GASILNIKU IN NAČIN DELOVANJA GASILNIKA GLEDE NA TLAK V GASILNIKU. PO TLAKU V GASILNIKU DELIMO GASILNIKE NA TISTE S STALNIM TLAKOM IN GASILNIKE, KI VSEBUJEJO POTISNO JEKLENKO S STISNJENIM PLINOM, KI V PRIMERU GAŠENJE PREDSTAVLJA POTISNI PLIN.</div>
+			<div style="margin-bottom: 10px">GASILNIK SPADA MED NAPRAVE ZA ZAČETNO GAŠENJE POŽAROV. GASILNIKE DELIMO GLEDE NA VRSTO IN KOLIČINO GASILA, KI JE V GASILNIKU IN NAČIN DELOVANJA GASILNIKA GLEDE NA TLAK V GASILNIKU. PO TLAKU V GASILNIKU DELIMO GASILNIKE NA TISTE S STALNIM TLAKOM IN GASILNIKE, KI VSEBUJEJO POTISNO JEKLENKO S STISNJENIM PLINOM, KI V PRIMERU GAŠENJE PREDSTAVLJA POTISNI PLIN.</div>
 			
-			<div class="font1" style="margin-bottom: 20px">GASILNIKI SO LAHKO GLEDE NA GASILNI MEDIJ NAPOLNJENI Z:</div>
+			<div class="font1">GASILNIKI SO LAHKO GLEDE NA GASILNI MEDIJ NAPOLNJENI Z:</div>
 			
 			<div class="button" id="pozarna_preventiva_nivo9_odg1" 
 				onclick="
