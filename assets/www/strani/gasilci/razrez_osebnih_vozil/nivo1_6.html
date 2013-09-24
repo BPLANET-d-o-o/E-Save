@@ -26,9 +26,10 @@
 				var odg3 = window.localStorage.getItem('razrez_osebnih_vozil_nivo1_6_odg4');
 				var odg4 = window.localStorage.getItem('razrez_osebnih_vozil_nivo1_6_odg5');
 				var odg5 = window.localStorage.getItem('razrez_osebnih_vozil_nivo1_6_odg7');
-				var odg6 = window.localStorage.getItem('razrez_osebnih_vozil_nivo1_6_odg12');
+				var odg6 = window.localStorage.getItem('razrez_osebnih_vozil_nivo1_6_odg10');
+				var odg7 = window.localStorage.getItem('razrez_osebnih_vozil_nivo1_6_odg12');
 				
-				if(odg1 == 1 && odg2 == 1 && odg3 == 1 && odg4 == 1 && odg5 == 1 && odg6 == 1) {
+				if(odg1 == 1 && odg2 == 1 && odg3 == 1 && odg4 == 1 && odg5 == 1 && odg6 == 1 && odg7 == 1) {
 					$('#nadaljuj').show();
 				}
 			}
@@ -114,14 +115,13 @@
 				
 			<div class="button" id="razrez_osebnih_vozil_nivo1_6_odg10" 
 				onclick="
-					$('#razrez_osebnih_vozil_nivo1_6_odg10').attr('class', 'button_error');
+					$('#razrez_osebnih_vozil_nivo1_6_odg10').attr('class', 'button_success');
 					window.localStorage.setItem('razrez_osebnih_vozil_nivo1_6_odg10', '1');
-					showAlert('LES', 'NAROBE');
 				">LAHKO SE UPORABLJA ZGOLJ LES</div>
 				
 			<div class="button" id="razrez_osebnih_vozil_nivo1_6_odg11" 
 				onclick="
-					$('#razrez_osebnih_vozil_nivo1_6_odg11').attr('class', 'button_ok');
+					$('#razrez_osebnih_vozil_nivo1_6_odg11').attr('class', 'button_error');
 					window.localStorage.setItem('razrez_osebnih_vozil_nivo1_6_odg11', '1');
 					preveriOdgovore();
 				">KADAR JE VOZILO NA BOKU ALI STREHI STABILIZACIJA NI POTREBNA</div>

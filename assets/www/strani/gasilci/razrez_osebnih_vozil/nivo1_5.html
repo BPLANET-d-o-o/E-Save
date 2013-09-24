@@ -42,18 +42,18 @@
 						$('#razrez_osebnih_vozil_nivo1_5_odg2').attr('class', 'button_success');
 					}
 				} else if(odg == 3) {
-					if(odg1 != 1 || odg2 != 1 || odg5 != 1) {
+					if(odg1 != 1 || odg2 != 1 || odg4 != 1 || odg5 != 1) {
 						window.localStorage.setItem('razrez_osebnih_vozil_nivo1_5_odg3', '0');
 						showAlert('GASILNO SREDSTVO', 'KATERO JE BOLJ PRIMERNO?');
 					} else {
+						$('#nadaljuj').show();
 						$('#razrez_osebnih_vozil_nivo1_5_odg3').attr('class', 'button_success');
 					}
 				} else if(odg == 4) {
-					if(odg1 != 1 || odg2 != 1 || odg3 != 1 || odg5 != 1) {
+					if(odg1 != 1 || odg2 != 1 || odg5 != 1) {
 						window.localStorage.setItem('razrez_osebnih_vozil_nivo1_5_odg4', '0');
 						showAlert('GASILNO SREDSTVO', 'KATERO JE BOLJ PRIMERNO?');
 					} else {
-						$('#nadaljuj').show();
 						$('#razrez_osebnih_vozil_nivo1_5_odg4').attr('class', 'button_success');
 					}
 				} else if(odg == 5) {

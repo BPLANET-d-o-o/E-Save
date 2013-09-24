@@ -26,10 +26,12 @@
 				var odg3 = window.localStorage.getItem('razrez_osebnih_vozil_nivo2_odg7');
 				var odg4 = window.localStorage.getItem('razrez_osebnih_vozil_nivo2_odg9');
 				var odg5 = window.localStorage.getItem('razrez_osebnih_vozil_nivo2_odg11');
-				var odg6 = window.localStorage.getItem('razrez_osebnih_vozil_nivo2_odg14');
-				var odg7 = window.localStorage.getItem('razrez_osebnih_vozil_nivo2_odg16');
+				var odg6 = window.localStorage.getItem('razrez_osebnih_vozil_nivo2_odg12');
+				var odg7 = window.localStorage.getItem('razrez_osebnih_vozil_nivo2_odg14');
+				var odg8 = window.localStorage.getItem('razrez_osebnih_vozil_nivo2_odg16');
+				var odg9 = window.localStorage.getItem('razrez_osebnih_vozil_nivo2_odg17');
 				
-				if(odg1 == 1 && odg2 == 1 && odg3 == 1 && odg4 == 1 && odg5 == 1 && odg6 == 1 && odg7 == 1) {
+				if(odg1 == 1 && odg2 == 1 && odg3 == 1 && odg4 == 1 && odg5 == 1 && odg6 == 1 && odg7 == 1 && odg8 == 1 && odg9 == 1) {
 					$('#nadaljuj').show();
 				}
 			}
@@ -135,10 +137,9 @@
 				
 			<div class="button" id="razrez_osebnih_vozil_nivo2_odg12" 
 				onclick="
-					$('#razrez_osebnih_vozil_nivo2_odg12').attr('class', 'button_error');
+					$('#razrez_osebnih_vozil_nivo2_odg12').attr('class', 'button_success');
 					window.localStorage.setItem('razrez_osebnih_vozil_nivo2_odg12', '1');
-					showAlert('STEKLENI PRAH', 'NAROBE');
-				">STEKLENI PRAH JE STRUPEN</div>
+				">STEKLENI PRAH JE NEVAREN ZA DIHALA</div>
 				
 			<div class="button" id="razrez_osebnih_vozil_nivo2_odg13" 
 				onclick="
@@ -167,6 +168,12 @@
 					window.localStorage.setItem('razrez_osebnih_vozil_nivo2_odg16', '1');
 					preveriOdgovore();
 				">STRANSKA STEKLA SE RAZBIJEJO NA KOŠČKE</div>
+				
+			<div class="button" id="razrez_osebnih_vozil_nivo2_odg17" 
+				onclick="
+					$('#razrez_osebnih_vozil_nivo2_odg17').attr('class', 'button_success');
+					window.localStorage.setItem('razrez_osebnih_vozil_nivo2_odg17', '1');
+				">VDIHAVANJE PRAHU  NI PRIPOROČLJIVO</div>
 		
 			<div class="button" id="nadaljuj" style="display: none" onclick="window.location='nivo3.html'">NADALJUJ</div>
 		</div>
