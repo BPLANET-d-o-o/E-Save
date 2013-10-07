@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/mediaelement/mediaelement-and-player.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/myjava.js"></script>
+  		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../../../js/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">	
+			if(isAndroid()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-android.js").appendTo("head");
+			} else if(isiOS()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-ios.js").appendTo("head");
+			} else if(isBlackBerry()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
+			} else {
+				$("script").attr("src", "../../../js/cordova-2.6.0-wp.js").appendTo("head");
+			}
+			
+			function zakljuci() {
+				window.localStorage.setItem('voda_zakljuceno', '1');
+				showAlert('ČESTITAMO', 'PREDELAL SI POGLAVJE - REŠEVANJE IZ VODE! IZBERI DRUGO POGLAVJE.');
+				
+				window.location = "../zacetek.html";
+			}
+		</script>
+  	</head>
+  	<body>
+    	<div id="header">
+			<table align="center" width="90%">
+				<tr>
+					<td width="30%" align="left"><a href="../zacetek.html"><img height="30px" src="../../../img/nazaj.png" /></a></td>
+					<td width="30%" align="center"><img height="50px" src="../../../img/esavelogo.png" /></td>
+					<td width="30%" align="right"><a href="../../../index.html"><img height="30px" src="../../../img/meni.png" /></a></td>
+				</tr>
+			</table>
+		</div>
+		<div id="content">
+			<div style="margin: 30px 0px 30px 0px">
+				<div class="font1">REŠEVANJE IZ VODE</div>
+				<div style="margin-bottom: 10px">V naslednjih nekaj točkah sledi kratek opis reševanja na vodi. V Sloveniji in tujini se imamo možnost izobraževati praktično in teoretično za tovrstno reševanje zato naj bodo naslednje točke le okviren plan reševanja na vodi oziroma kako naj se lotimo pravilnega reševanja kot naključni očividec utapljajoče osebe ter na katere nevarnosti moramo biti pozorni.</div>
+				
+				<div class="font1">1. Kako postopamo, če vidimo utapljajočega?</div>
+				<div style="margin-bottom: 10px">Pri utapljajočih osebah moramo posredovati izredno previdno, kajti prehitro se lahko zgodi, da pomoč potrebujemo tudi sami. Reševanja utapljajoče osebe se lotimo po enakem postopku kot reševalci usposobljeni za reševanje na vodi.</div>
+				<div style="margin-bottom: 10px">Zlato pravilo pravi; ne skačite brez pomisleka v vodo, naj bo to morje, reka ali jezero najprej pokličite na pomoč, nato utapljajočega z priročnimi sredstvi poizkušajte rešiti iz vode in šele nazadnje, če ocenite situacijo kot varno in se počutite zmožne, skočite v vodo tudi sami, vendar se zavedajte nevarnosti, ki temu lahko sledijo. Utapljajoči osebi smo kot najbližja oseba priročno sredstvo za dosego brežine to pa pomeni, da se nas taka oseba lahko močno oprime (oseba je v agoniji), želi preko nas na kopno, kar vodi k temu, da se tudi sami začnemo utapljati skupaj s ponesrečencem. Utapljajoča oseba je lahko v agoniji kar je za reševalca zelo nevarno saj ima taka oseba še veliko moči, maha z rokami, kriči in se lahko reševalca tudi močno oklene. V takem primeru dostopa reševalec za hrbet utapljajočega v agoniji in mu čvrsto zvije, prekriža njegovi roki (takoimenovan uklenitveni prijem) na hrbtu, da ga ta ne more prijeti in potopiti.</div>
+				<div style="margin-bottom: 10px">Utapljajoča oseba pa je lahko tudi onemogla (mirna zaradi plavanja, mraza..), pri taki osebi pa reševalec ni v nevarnosti in ne uporabi uklenitvenih prijemov, ampak uporabi transportnega (npr na hrbtu pod obema rokama), da ga čim hitreje transportira do kopnega na suho.</div>
+				<div style="margin-bottom: 10px">Druge nevarnosti pri našem vstopu v vodo so lahko močan tok, podvodne prepreke (veje, skale, odpaden material..), mrzla voda (lahko sproži šok v telesu, pospešen ritem dihanja kar vodi do zadihanosti), onesnažena voda, pokanje ledu pozimi itd. Če se odločimo za reševanje z vstopom v globoko vodo si prej slecimo debelejše dele oblačil in sezujmo čevlje, ker napojeni z vodo postanejo okorni za plavanje ter na nas delujejo kot utež, ki nas vleče na dno.</div>
+				
+				<div class="font1">2. Kdaj pokličemo 112?</div>
+				<div style="margin-bottom: 10px">Na številko za nujne primere 112 pokličemo vedno, ko opazimo ponesrečenca v vodi. Tudi če ponesrečenca opazimo pri zdrsu v reko, jezero ali morje ter mu takoj pomagamo na kopno je zelo priporočljivo, da ponesrečenca pregleda zdravniško osebje, ker je takšna oseba lahko podhlajena, v šoku in ima udarce, ki jih zaradi šoka še ne čuti. Taka oseba- ponesrečenec je lahko tudi vdihnila vodo v pljuča, ki lahko zapre alveole in otrdi pljuča kar pomeni, da telo ne dobi več kisika. Do takšnega stanja lahko pride tudi več ur po vstopu vode v pljuča. Nenazadnje pa je lahko voda tudi onesnažena.</div>
+				<div style="margin-bottom: 10px">Pri klicu na številko 112 bodimo kratki in povejmo kaj se je zgodilo, kje in koliko je udeleženih v nesreči, posebnosti nesreče ter omenimo tudi morebitne ovire do kraja nesreče (zožana pot, gozdna pot, travnik, led…), kar reševalcem omogoča lažjo, hitro, predvsem pa ustrezno izbiro reševalne posadke ter opreme, avto, motor, helikopter, čoln… Pri klicu na številko 112 povemo operaterju vse informacije, ne prekinemo pogovora, ampak počakamo na morebitna vprašanja ali navodila operaterja.</div>
+				
+				<div class="font1">3.1 Kako se lotimo reševanja?</div>
+				<div style="margin-bottom: 10px">Kot naključno prisotni verjetno s seboj ne bomo imeli vrhunske opreme za reševanje na vodi kot so metalna plavajoča vrv, metalna podkev ali obroč… imamo pa veliko možnosti, da v naravi najdemo vejo, ki jo lahko podamo utapljajočemu, slečemo pulover za nadomestek kratke vrvi…</div>
+				
+				<div align="center"><img style="max-width: 100%" src="slike/1.jpg" /></div>
+				<div align="center" style="margin-bottom: 10px">Slika 1: V naravi najdena veja, ki jo lahko podamo utapljajočemu...</div>
+				
+				<div align="center"><img style="max-width: 100%" src="slike/2.jpg" /></div>
+				<div align="center" style="margin-bottom: 10px">Slika 2: Pulover za nadomestek kratke vrvi...</div>
+				
+				<div align="center"><img style="max-width: 100%" src="slike/3.jpg" /></div>
+				<div align="center" style="margin-bottom: 10px">Slika 3: Pulover in veja uporabljena pri reševanju.</div>
+				
+				<div style="margin-bottom: 10px">Utapljajočega tudi z glasnimi klici, prigovarjanjem hrabrimo za plavanje k brežini. Kot smo že omenili se na vso moč izogibamo vstopu v vodo za pomoč ponesrečenemu in pokličemo številko 112. Utapljajočo osebo imejmo ves čas na očeh, kajti lahko se zgodi, da oseba izgine pod gladino morja, reke ali jezera in jo reševalci hitreje najdejo, če jim pravilno pokažemo mesto potopitve. Zavedati se moramo, da ima oseba, ki je prenehala dihati  približno tri minute časa za ponoven zagon življenjskih funkcij. Po  treh minutah pa obstaja velika verjetnost, da bo oživljeni človek preživel s hudo možgansko poškodbo. Obstajajo tudi redke izjeme predvsem pri otrokih in nesrečah v ledenih vodah, ko so ponesrečenega oživeli brez možganskih motenj po dvajsetih ali celo trideset minutah.</div>
+				<div style="margin-bottom: 10px">Pri reševanju na ledu moramo biti pozorni predvsem na dve nevarnosti. Prva nevarnost je ledena voda, ki povzroči šok telesa in krčevito dihanje, druga nevarnost je pri padcu v vodo, ko nas lahko ledena plošča pokrije in ne moremo izplavati na površje. Če slučajno opazimo kako se je nekemu drsalcu udrl led in ne more izplavati, bi do njega pravilno dostopili tako, da bi na vrv navezali sebe ter na drugo vrv navezali še lestev, na kopnem pa bi vsak konec vrvi držala pomočnika. Seveda se sami takega reševanja ponavadi ne moremo lotiti, zato naberemo vsaj tri dolge veje, dve položimo na led in se tudi sami uležemo na veji kar zmanjša silo točkovnega pritiska na led, tretjo vejo pa podamo drsalcu v roke za izvlek. Če se drsalec ne more oprijeti veje ali se mu led preveč lomi za izvlek na kopno (led), postavimo vsaj na dva robova udrtine v ledu palice. Te palice povečajo stabilnost ledu na robu preloma, kar omogoča lažji prehod iz vode na debelejši led.</div>
+				
+				<div align="center" style="margin-bottom: 10px"><img style="max-width: 100%" src="slike/4.jpg" /></div>
+				
+				<div align="center" style="margin-bottom: 10px"><img style="max-width: 100%" src="slike/5.jpg" /></div>
+				
+				<div align="center" style="margin-bottom: 10px"><img style="max-width: 100%" src="slike/6.jpg" /></div>
+				
+				<div class="font1">3.2 Primer skoka samomorilca v reko</div>
+				<div style="margin-bottom: 10px">Če smo prisotni pri skoku samomorilca v reko moramo vedeti, da je samoohranitveni človeški nagon močnejši od zavestne odločitve po utopitvi zato obstaja možnost, da samomorilec sam izplava na kopno. Torej se pri taki osebi kot reševalec ne odločimo za takojšen vstop v vodo, ampak sledimo osebi. Če samomorilec ne izstopi sam iz vode in se odločimo za vstop v vodo se najprej slečemo, sezujemo in šele nato vstopimo v vodo. Obstaja velika verjetnost, da je takšna oseba v agoniji, maha z rokami, odriva reševalca, lahko pa se ga tudi čvrsto oprime. V takem primeru uporabimo enega od osvoboditvenih prijemov, torej brca v mednožje samomorilca, zvijanje njegovih prstov na roki, potisk roke v njegovo brado. Vsekakor je bolje uporabiti enega od osvoboditvenih prijemov, kot da se oba potopita – utopita. V kolikor samomorilca obvladate in se le ta umiri, ga z transportnim prijemom (npr. z svojo desno roko greste pod njegovo desno, čez njegov trebuh in čez levo roko) čimprej transportirate na kopno.</div>
+				
+				<div class="font1">4. Kakšna je prva pomoč</div>
+				<div style="margin-bottom: 10px">Prva pomoč utopljencu, ki ne diha je pet vpihov in nato 30/2 na minuto, kar je zelo podobno klasičnemu nudenju prve pomoči. Če opazimo v ustih ali nosu tujek (blato, alge, zobno protezo..) ga odstranimo. Ponesrečenca lahko za kratek čas dvignemo v pasu tako, da glava z oprsjem visi navzdol, da mu odteče voda iz dihal. Če smo uspešni pri nudenju prve pomoči, ponesrečenca <u>toplo pokrijemo</u>, nezavestnega obrnemo na bok, <u>opazujemo</u> dihanje in počakamo na reševalce. Pri nudenju prve pomoči nikoli ne smemo obupati in odnehati, ampak moramo z oživljanjem nadaljevati do prihoda reševalne ekipe.</div>
+				
+				<div class="font1">5. Zaključek</div>
+				<div style="margin-bottom: 10px">Reševanje na vodi zahteva veliko fizično moč reševalca pri plavanju, obvladovanju in transportu utapljajoče osebe, predvsem pa razmislek kako čim bolj varno in hitro rešiti utapljajočega. Zavedati se moramo, da je za ustrezno in varno reševanje na vodi priporočljivo opraviti tečaj za tovrstno posredovanje. Na usposabljanju se tečajnik nauči teorije, praktični del pa se izvaja v bazenu pri idealnih pogojih ter kasneje rekah(brzicah) ali morju. Le pri realnih primerih, simulacijah reševanj v naravnem okolju tečajnik spozna tehnike reševanja, ki mu kasneje lahko pomagajo pri reševanju na vodi.</div>
+				
+				<div class="button" id="zakljuci" onclick="zakljuci();">ZAKLJUČI</div>
+			</div>
+		</div>
+ 	</body>
+</html>

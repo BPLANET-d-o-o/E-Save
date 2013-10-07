@@ -67,7 +67,10 @@
 				var z16 = window.localStorage.getItem('pozar_v_naravi_zakljuceno');
 				if(z16 == 1) $('#pozar_v_naravi').attr('class', 'button_success');
 				
-				if(z1 == 1 && z2 == 1 && z3 == 1 && z4 == 1 && z5 == 1 && z6 == 1 && z7 == 1 && z8 == 1 && z9 == 1 && z10 == 1 && z11 == 1 && z12 == 1 && z13 == 1 && z14 == 1 && z15 == 1 && z16 == 1) {
+				var z17 = window.localStorage.getItem('zrakoplovi_zakljuceno');
+				if(z17 == 1) $('#zrakoplovi').attr('class', 'button_success');
+				
+				if(z1 == 1 && z2 == 1 && z3 == 1 && z4 == 1 && z5 == 1 && z6 == 1 && z7 == 1 && z8 == 1 && z9 == 1 && z10 == 1 && z11 == 1 && z12 == 1 && z13 == 1 && z14 == 1 && z15 == 1 && z16 == 1 && z17 == 1) {
 					$('#potrdilo').show();
 				}
 			});
@@ -104,6 +107,7 @@
 			<div id="elektrika" class="button" onclick="window.location='elektrika/elektrika.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/elektrika1.png" /> ELEKTRIKA</div>
 			<div id="pp_gasilci" class="button" onclick="window.location='prva_pomoc/prva_pomoc.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/prvapomoc1.png" /> PP ZA GASILCE</div>
 			<div id="vodenje_intervencije" class="button" onclick="window.location='vodenje_intervencije/vodenje_intervencije.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/vodenje.png" /> VODENJE INTERVENCIJ</div>
+			<div id="zrakoplovi" class="button" onclick="window.location='zrakoplovi/zrakoplovi.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/zrakoplovi.png" /> NEZGODE Z ZRAKOPLOVI</div>
 		</div>
  	</body>
 </html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/myjava.js"></script>
+  		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">	
+			if(isAndroid()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-android.js").appendTo("head");
+			} else if(isiOS()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-ios.js").appendTo("head");
+			} else if(isBlackBerry()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
+			} else {
+				$("script").attr("src", "../../../js/cordova-2.6.0-wp.js").appendTo("head");
+			}
+			
+			function zakljuci() {
+				window.localStorage.setItem('zrakoplovi_zakljuceno', '1');
+				showAlert('ČESTITAMO', 'PREDELAL SI POGLAVJE - NEZGODE Z ZRAKOPLOVI! IZBERI DRUGO POGLAVJE.');
+				
+				window.location = "../zacetek.html";
+			}
+		</script>
+  	</head>
+  	<body>
+    	<div id="header">
+			<table align="center" width="90%">
+				<tr>
+					<td width="30%" align="left"><a href="zrakoplovi.html"><img height="30px" src="../../../img/nazaj.png" /></a></td>
+					<td width="30%" align="center"><img height="50px" src="../../../img/esavelogo.png" /></td>
+					<td width="30%" align="right"><a href="../../../index.html"><img height="30px" src="../../../img/meni.png" /></a></td>
+				</tr>
+			</table>
+		</div>
+		<div id="content">
+			<div style="margin: 30px 0px 30px 0px">
+				<div class="opis" style="margin-bottom: 10px">POSREDOVANJE GASILCEV V (VEČJI) LETALSKI NESREČI</div>
+				
+				<div align="center"><img style="max-width: 100%" src="slike/4.jpg" /></div>
+				<div style="margin-bottom: 10px" align="center">Vir: http://www.adria.si/</div>
+				
+				<div class="font1">Ključne naloge</div>
+				<div style="margin-bottom: 10px">Naloge gašenja in reševanja v letalu ali na letališču skladno z načrti zaščite in reševanja posameznega letališča opravljajo gasilske službe letališč, ki so usposobljene za gašenje in reševanje iz posameznih tipov letal, in gasilske enote širšega pomena skupaj s pristojnimi gasilskimi društvi.</div>
+				
+				<div>Ključne naloge gasilskih enot pri letalski nesreči so:</div>
+				<div>- lokalizacija nesreče, iskanje zrakoplova</div>
+				<div>- gašenje požarov</div>
+				<div>- reševanje ukleščenih in drugih potnikov</div>
+				<div>- pomoč pri prenosu ponesrečencev s kraja nesreče in s težje dostopnih območij</div>
+				<div>- pomoč pri pripravi ponesrečencev za nadaljnji transport</div>
+				<div>- po potrebi reševanje na vodi in iz vode</div>
+				<div>- po potrebi reševanje iz ruševin</div>
+				<div style="margin-bottom: 10px">- nudenje prve pomoči in druge splošne reševalne naloge</div>
+				
+				<div style="margin-bottom: 10px">Za gašenje in reševanje na težko dostopnih območjih se lahko sile in sredstva za reševanje do kraja nesreče pripeljejo tudi s helikopterjem policije ali slovenske vojske. Pri približevanju na kraj nesreče moramo biti še posebno pozorni na morebitne ponesrečence, ki bi bili v okolici nezgode, zlasti če se približujemo z vozilom. Paziti je treba tudi na razbitine in morebitne rotacijske mehanske dele.</div>
+				
+				<div class="font1">Pristop do nesreče, zavarovanje kraja</div>
+				<div style="margin-bottom: 10px">Gasilci z nameščeno osebno zaščitno opremo v kombinaciji z izolirnim dihalnim aparatom do nesreče zaradi velike nevarnosti – požara/eksplozije, pogonskega goriva letala, kerozina – dostopamo do maksimalno 50 metrov od letala. Prva enota na mestu mora takoj začeti nanos težke pene na krila in pod njih, na mesta v okolici motorjev in pod letalo. V kolikor implementacija pene ni mogoča, lahko gasimo z vodnimi topovi ali B-ročniki, z uporabo razpršenega curka. Pozor! Uporaba razpršene vode za gašenje požara mogoče ne bo učinkovita zaradi zelo nizke temperature vrelišča kerozina. Upoštevati moramo, da lahko ogenj prodre v notranjost letala skozi trup v zgolj 60 sekundah. Odeja s peno mora biti neprestano nadzirana – nanos pene/hlajenje se ne sme prenehati, vsaj dve skupini gasilcev morata biti vedno ob ročnikih, da lahko takoj ukrepata ob morebitnem izbruhu požara. Pozor! Pri nanašanju pene moramo biti pazljivi, da je ne nanašamo v polnem curku neposredno v razlito gorivo ali obstoječi nanos pene, saj s tem nanos razbijemo.</div>
+				
+				<div class="font1">Zavarovanje notranjosti letala</div>
+				<div style="margin-bottom: 10px">Gasilci imajo hkrati nalogo, da čim prej vstopijo v letalo z linijo – če je le možno, skozi novo odprtino, da ne zaprejo evakuacijskih poti potnikom. Za izdelavo odprtin lahko uporabimo žage, razpirala, škarje, hidravlične cilindre ipd. Izogibati se skušamo orodju, ki povzroča iskrenje. Poleg previdnosti pri uporabi orodja moramo paziti na prerez električnih vodov, ki največkrat potekajo ob spodnji in zgornji stranici trupa letala, saj lahko poškodba le-teh zaradi nizke vnetljivosti kerozina hitro povzroči požar. Posebno previdnost moramo nameniti preprečitvi potencialnim iskram in njihov stik z vnetljivim gorivom. Uporabljati je treba zaščitne prevleke oziroma se prepričati, da delamo v območju, kjer je nanos pene že zadovoljiva zaščita. V najkrajšem možnem času je treba vzpostaviti prezračevanje z ventilatorji, da v letalu vzpostavimo nadtlak in s tem zmanjšamo možnost vžiga v notranjosti, če zagori na zunanjem delu letala. Za vstop v letalo in aplikacijo prezračevanja uporabimo dvo- ali tridelne ali stikalne lestve, odvisno od višine letala.</div>
+				
+				<div class="font1">Evakuacija, reševanje</div>
+				<div style="margin-bottom: 10px">Evakuacijo začnemo izvajati šele, ko smo vzpostavili preventivno nanašanje pene ali ohlajanje rezervoarjev goriva in ko imamo v letalu svojo ekipo gasilcev. Če je potrebna pomoč pri evakuaciji v letalu, se uporabljajo prosti zasilni izhodi spredaj, nad krili ali zadaj. Opcijsko je lahko aktivirana tudi spustnica/tobogan. Evakuirali naj bi ponesrečence/udeležence v vseh smereh, v radiju 300 metrov od letala. Skladno z naravo dogodka opravimo hitri iznos ali postopno evakuacijo z imobilizacijo potnikov.</div>
+				
+				<div align="center"><img style="max-width: 100%" src="slike/5.jpg" /></div>
+				<div style="margin-bottom: 10px" align="center">Slika: Zasilni izhodi in rezervoarji</div>
+				
+				<div class="font1">Gašenje v primeru požara</div>
+				<div style="margin-bottom: 10px">Če zagori, moramo ogenj, podobno kot pri požarih v predorih, prioritetno pogasiti. Šele za lokalizacijo ali celostno pogasitvijo požara začnemo reševati ponesrečence. Ob gašenju z vodnimi topovi moramo čim prej vzpostaviti dotok vode v cisterno iz drugih virov. Na letališčih je po navadi več bazenov/ploščadi (primer: Letališče Jožeta Pučnika ima na voljo bazen s 300 m3 vode, hidrantno mrežo okoli ploščadi ter črpališče z možnostjo črpanja 6 m3/min.). V primeru nesreče zrakoplova zunaj letaliških con pa je treba v najkrajšem možnem času priskrbeti dodatno oskrbo vode.</div>
+				
+				<div style="margin-bottom: 10px">Oglejmo si primer napada z repa v smeri vetra, napad z vodo in vstop v letalo, napad s peno:</div>
+				<div align="center" style="margin-bottom: 10px"><img style="max-width: 100%" src="slike/6.jpg" /></div>
+				
+				<div>S slike je razviden osnovni taktični pristop ob nesreči:</div>
+				<div>1.	vozilo, namenjeno samo nanašanju pene</div>
+				<div>2.	vozilo, namenjeno vstopu v letalo, gašenju z notranje strani, prezračevanju (minimalno dve skupini)</div>
+				<div style="margin-bottom: 10px">3.	gasilsko vozilo – cisterna, ki skrbi za nemoteno oskrbo z vodo</div>
+				
+				<div style="margin-bottom: 10px">V omenjenem ožjem območju v začetni fazi ne sme biti nobeno drugo reševalno vozilo, saj se moramo konstantno zavedati nevarnosti eksplozije.</div>
+				
+				<div class="font1">ZAKLJUČEK</div>
+				<div style="margin-bottom: 10px">Ob nesreči potniškega letala je mogoče pričakovati večje število mrtvih ali težko poškodovanih. Zato morajo predvsem vodje intervencij poleg posebne previdnosti upoštevati tudi standardne postopke ukrepanja pri množični nesreči, sektorizacijo, vodenje več enot/skupin in zahtevno logistiko. Ob morebitni najavi zasilnega pristanka ali ob nesreči z zrakoplovi je smotrno aktivirati in uporabiti vsa razpoložljiva sredstva, tako moštvo kot vozila, ter jih poslati na kraj dogodka, obenem pa se morajo vsi sodelujoči zavedati psihofizičnega napora, ki ga tako posredovanje prinaša. Upoštevajoč nevarnosti in postopke, navedene v tem sklopu, lahko gasilci kljub vsemu varneje in učinkoviteje ukrepamo v nesreči zrakoplova.</div>
+				
+				<div class="button" id="zakljuci" onclick="zakljuci();">ZAKLJUČI</div>
+			</div>
+		</div>
+ 	</body>
+</html>

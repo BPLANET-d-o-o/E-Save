@@ -43,7 +43,10 @@
 				var zo8 = window.localStorage.getItem('rga_zakljuceno');
 				if(zo8 == 1) $('#rga').attr('class', 'button_success');
 				
-				if(zo1 == 1 && zo2 == 1 && zo3 == 1 && zo4 == 1 && zo5 == 1 && zo6 == 1 && zo7 == 1 && zo8 == 1) {
+				var zo9 = window.localStorage.getItem('voda_zakljuceno');
+				if(zo9 == 1) $('#voda').attr('class', 'button_success');
+				
+				if(zo1 == 1 && zo2 == 1 && zo3 == 1 && zo4 == 1 && zo5 == 1 && zo6 == 1 && zo7 == 1 && zo8 == 1 && zo9 == 1) {
 					$('#potrdilo').show();
 				}
 			});
@@ -72,6 +75,7 @@
 			<div id="tpo_otroka" class="button" onclick="window.location='tpo_otroka/tpo_otroka.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/prvapomoc.png" /> PP ZA DOJENČKE IN OTROKE</div>
 			<div id="vppm" class="button" onclick="window.location='vppm/vppm.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/mladina.png" /> VARSTVO PRED POŽAROM ZA MLADINO</div>
 			<div id="prometne_nezgode" class="button" onclick="window.location='prometne_nezgode/prometne_nezgode.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/cestnipromet.png" /> UKREPANJE OB DOGODKIH V CESTNEM PROMETU</div>
+			<div id="voda" class="button" onclick="window.location='voda/voda.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/izvode.png" /> REŠEVANJE IZ VODE</div>
 		</div>
  	</body>
 </html>
