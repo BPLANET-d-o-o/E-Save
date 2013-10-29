@@ -65,7 +65,17 @@
 <widget>
 	<gap:platform name="ios" />
 	<gap:platform name="android" />
-	
+	<!--
+	<icon src="icon/ios/classic.png" gap:platform="ios" width="57" height="57" />
+	<icon src="icon/ios/ipad.png" gap:platform="ios" width="72" height="72" />
+	<icon src="icon/ios/retina.png" gap:platform="ios" width="114" height="114" />
+	<icon src="icon/ios/retina_ipad.png" gap:platform="ios" width="144" height="144" />
+    <!-- retina iPad support: PhoneGap 2.5.0+ only -->
+	<icon src="icons/ios/icon.png" gap:platform="ios" width="57" height="57" />
+    <icon src="icons/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="icons/ios/icon_at_2x.png" gap:platform="ios" width="114" height="114" />
+    <icon src="icons/ios/icon-72_at_2x.png" gap:platform="ios" width="144" height="144" />
+			
 	<gap:splash src="splash/ios/Default.png" width="320" height="480" />
 	<gap:splash src="splash/ios/Default_at_2x.png" width="640" height="960" />
 	<gap:splash src="splash/ios/Default_iphone5.png" width="640" height="1136" />
@@ -73,11 +83,6 @@
 	<gap:splash src="splash/ios/Default-Portrait.png" width="768" height="1024" />
 	<gap:splash src="splash/ios/Default-Landscape_at_2x.png" width="2048" height="1496" />
 	<gap:splash src="splash/ios/Default-Portrait_at_2x.png" width="1536" height="2008" />
-
-	<icon src="icon/ios/classic.png" gap:platform="ios" width="57" height="57" />
-	<icon src="icon/ios/ipad.png" gap:platform="ios" width="72" height="72" />
-	<icon src="icon/ios/retina.png" gap:platform="ios" width="114" height="114" />
-	<icon src="icon/ios/retina_ipad.png" gap:platform="ios" width="144" height="144" />
 
     <preference name="KeyboardDisplayRequiresUserAction" value="true" />
     <preference name="SuppressesIncrementalRendering" value="false" />
