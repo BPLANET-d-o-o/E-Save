@@ -23,6 +23,9 @@
         version   = "1.0.1">
 	
     <name>e-Save</name>
+	
+	<gap:platform name="ios" />
+	<gap:platform name="android" />
 
 	<!-- DEFAULT -->
     <icon src="icon.png" />
