@@ -20,6 +20,9 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         id        = "com.bplanet.esave"
         version   = "2.0.0">
+	<gap:platform name="ios" />
+	<gap:platform name="android" />
+	
     <name>e-Save</name>
 
     <description>
@@ -34,7 +37,7 @@
 
     <!-- <content src="http://mysite.com/myapp.html" /> for external pages -->
     <content src="index.html" />
-
+	<preference name="phonegap-version" value="2.5.0" />
     <preference name="loglevel" value="DEBUG" />
     <!--
       <preference name="splashscreen" value="resourceName" />
@@ -44,8 +47,7 @@
       <preference name="disallowOverscroll" value="true" />
     -->
 	
-	<gap:platform name="ios" />
-	<gap:platform name="android" />
+	
 
     <feature name="App">
       <param name="android-package" value="org.apache.cordova.App"/>
