@@ -20,8 +20,6 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         id        = "com.bplanet.esave"
         version   = "2.0.0">
-	<gap:platform name="ios" />
-	<gap:platform name="android" />
 	
     <name>e-Save</name>
 
