@@ -18,6 +18,8 @@
        under the License.
 -->
 <cordova>
+	<gap:platform name="ios" />
+	<gap:platform name="android" />
     <!--
     access elements control the Android whitelist.
     Domains are assumed blocked unless set otherwise
