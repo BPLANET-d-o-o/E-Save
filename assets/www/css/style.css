@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'Conv_dosis.light';
 	src: url('fonts/dosis.light.eot');
-	src: local('¢'), url('fonts/dosis.light.woff') format('woff'), url('fonts/dosis.light.ttf') format('truetype'), url('fonts/dosis.light.svg') format('svg');
+	src: local('¢'), url('fonts/dosis.light.woff') format('woff'), url('fonts/dosis.light.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
