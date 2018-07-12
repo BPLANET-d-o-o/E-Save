@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script type="text/javascript" charset="utf-8" src="../../cordova.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../js/myjava.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../js/mediaelement/mediaelement-and-player.js"></script>
+		<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">
+			/*if(isAndroid()) {
+				$("script").attr("src", "../../js/cordova-2.6.0-android.js").appendTo("head");
+			} else if(isiOS()) {
+				$("script").attr("src", "../../js/cordova-2.6.0-ios.js").appendTo("head");
+			} else if(isBlackBerry()) {
+				$("script").attr("src", "../../js/cordova-2.6.0-blackberry.js").appendTo("head");
+			} else {
+				$("script").attr("src", "../../js/cordova-2.6.0-wp.js").appendTo("head");
+			}*/
+			
+			document.addEventListener("deviceready", function() {
+				var zo1 = window.localStorage.getItem('okc_zakljuceno');
+				if(zo1 == 1) $('#okc').attr('class', 'button_success');
+				
+				var zo2 = window.localStorage.getItem('pp_obcani_zakljuceno');
+				if(zo2 == 1) $('#pp_obcani').attr('class', 'button_success');
+				
+				var zo3 = window.localStorage.getItem('reco_zakljuceno');
+				if(zo3 == 1) $('#reco').attr('class', 'button_success');
+				
+				var zo4 = window.localStorage.getItem('tpo_otroka_zakljuceno');
+				if(zo4 == 1) $('#tpo_otroka').attr('class', 'button_success');
+				
+				var zo5 = window.localStorage.getItem('vppm_zakljuceno');
+				if(zo5 == 1) $('#vppm').attr('class', 'button_success');
+				
+				var zo6 = window.localStorage.getItem('pozarna_preventiva_zakljuceno');
+				if(zo6 == 1) $('#pozarna_preventiva').attr('class', 'button_success');
+				
+				var zo7 = window.localStorage.getItem('prometne_nezgode_zakljuceno');
+				if(zo7 == 1) $('#prometne_nezgode').attr('class', 'button_success');
+				
+				var zo8 = window.localStorage.getItem('rga_zakljuceno');
+				if(zo8 == 1) $('#rga').attr('class', 'button_success');
+				
+				var zo9 = window.localStorage.getItem('voda_zakljuceno');
+				if(zo9 == 1) $('#voda').attr('class', 'button_success');
+				
+				if(zo1 == 1 && zo2 == 1 && zo3 == 1 && zo4 == 1 && zo5 == 1 && zo6 == 1 && zo7 == 1 && zo8 == 1 && zo9 == 1) {
+					$('#potrdilo').show();
+				}
+			});
+		</script>
+  	</head>
+  	<body>
+    	<div id="header">
+			<table align="center" width="90%">
+				<tr>
+					<td width="30%" align="left"><a href="../../index.html"><img height="30px" src="../../img/nazaj.png" /></a></td>
+					<td width="30%" align="center"><img height="50px" src="../../img/esavelogo.png" /></td>
+					<td width="30%" align="right"><a href="../../index.html"><img height="30px" src="../../img/meni.png" /></a></td>
+				</tr>
+			</table>
+		</div>
+		<div id="content">
+			<div class="opis">IZBERI TEMO</div>
+			
+			<div id="potrdilo" class="opis" style="display: none; margin: 40px auto 40px auto">Čestitamo! Predelali ste vse sklope za občane. Za zaključni kviz in izdajo potrdila pojdite na http://www.e-save.si/kviz/obcani</div>
+			
+			<div id="pozarna_preventiva" class="button" onclick="window.location='pozarna_preventiva/pozarna_preventiva.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/doma.png" /> POŽARNA PREVENTIVA ZA DOMAČO RABO</div>
+			<div id="rga" class="button" onclick="window.location='rga/rga.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/rga.png" /> GAŠENJE Z GASILNIMI APARATI</div>
+			<div id="reco" class="button" onclick="window.location='reco/reco.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/112.png" /> OBVEŠČANJE OB DOGODKIH 112</div>
+			<div id="okc" class="button" onclick="window.location='okc/okc.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/113.png" /> OBVEŠČANJE OB DOGODKIH 113</div>
+			<div id="pp_obcani" class="button" onclick="window.location='prva_pomoc/prva_pomoc.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/prvapomoc1.png" /> PP ZA DOMAČO RABO</div>
+			<div id="tpo_otroka" class="button" onclick="window.location='tpo_otroka/tpo_otroka.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/prvapomoc.png" /> PP ZA DOJENČKE IN OTROKE</div>
+			<div id="vppm" class="button" onclick="window.location='vppm/vppm.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/mladina.png" /> VARSTVO PRED POŽAROM ZA MLADINO</div>
+			<div id="prometne_nezgode" class="button" onclick="window.location='prometne_nezgode/prometne_nezgode.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/cestnipromet.png" /> UKREPANJE OB DOGODKIH V CESTNEM PROMETU</div>
+			<div id="voda" class="button" onclick="window.location='voda/voda.html'"><img style="max-height: 15px; max-width: 20px" src="../../img/izvode.png" /> REŠEVANJE IZ VODE</div>
+		</div>
+ 	</body>
+</html>

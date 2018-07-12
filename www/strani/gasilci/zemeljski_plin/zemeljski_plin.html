@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script type="text/javascript" charset="utf-8" src="../../../cordova.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/myjava.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/mediaelement/mediaelement-and-player.js"></script>
+  		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../../../js/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">	
+			function zakljuci() {
+				window.localStorage.setItem('zemeljski_plin_zakljuceno', '1');
+				showAlert('ČESTITAMO', 'PREDELAL SI POGLAVJE - ZEMELJSKI PLIN! IZBERI DRUGO POGLAVJE.');
+				
+				window.location = "../zacetek.html";
+			}
+		</script>
+  	</head>
+  	<body>
+    	<div id="header">
+			<table align="center" width="90%">
+				<tr>
+					<td width="30%" align="left"><a href="../zacetek.html"><img height="30px" src="../../../img/nazaj.png" /></a></td>
+					<td width="30%" align="center"><img height="50px" src="../../../img/esavelogo.png" /></td>
+					<td width="30%" align="right"><a href="../../../index.html"><img height="30px" src="../../../img/meni.png" /></a></td>
+				</tr>
+			</table>
+		</div>
+		<div id="content">
+			<div style="margin: 30px 0px 30px 0px">
+				<div align="center"><img style="max-width: 100%" src="slike/1.jpg" /> <img style="max-width: 100%; max-height: 200px" src="slike/1_1.jpg" /></div>
+
+				<div class="font1">1. Oskrba z zemeljskim plinom v Evropi in Sloveniji</div>
+				
+				<div align="center"><img style="max-width: 100%" src="slike/2.jpg" /></div>
+				<div align="center">Razvejanost zemeljskega plina v letu 2007</div>
+				<div align="center" style="margin-bottom: 10px">Vir: E.ON Ruhrgas</div>
+				
+				<div align="center"><img style="max-width: 100%" src="slike/3.jpg" /></div>
+				<div align="center">Pregled koncesij zemeljskega plina v Sloveniji v letu 2013</div>
+				<div align="center" style="margin-bottom: 10px">Vir: GIZ DZP</div>
+				
+				<div style="margin-bottom: 10px">Zemeljski plin je fosilno gorivo, ki ga uporablja iz dneva v dan več odjemalcev. Razširjenost omrežja v Sloveniji in Evropi, predvsem pa načrti za širitev omrežja v prihodnje napeljujejo na to, da bo v prihodnje uporabljan še bolj in na več področjih. Tako ga že danes poleg kuhanja in ogrevanja s koristjo uporabljamo za gorivo za prevozna sredstva, soproizvodnjo toplote in elektrike, najavljajo se še mnoge tehnologije, ki ga bodo v prihodnosti uporabljale. Pomembno je predvsem dejstvo, da ga je v naravi v izobilju. Pred kratkim so razvili tehnologijo luščenja zemeljskega plina iz plasti skrilavcev, kar je zelo povečalo predvidene zaloge. Pomembno je, da ga narava vseskozi proizvaja in da lahko pri zemeljskem plinu govorimo o obnovljivem viru. Prav z vidika uporabnosti danes in v prihodnje moramo poskrbeti za varnost. Prav tako  je pomembno, da gasilci v primeru nesreč pri rabi zemeljskega plina poznamo njegove lastnosti, nevarnosti in da poznamo pravilne postopke ob intervencijah, povezanih s tovrstnimi nesrečami.</div>
+				
+				<div class="font1">2. Osnovna tehnika plinskih naprav in napeljav</div>
+				<div style="margin-bottom: 10px">Zemeljski plin pride do končnega uporabnika v več fazah. Od območja, kjer je proizveden, potuje po plinskih daljnovodih, ki so zgrajeni iz jekla. V njih je plin pod visokim pritiskom, praviloma do 80 barov. Nato tlak v reducirnih postajah zmanjšamo do 16 barov in ga vodimo po transportnem omrežju do distribucijskih merilno-regulacijskih naprav. Tam se tlak zmanjša do pet barov,  nato ga vodimo do končnih porabnikov. Ti plinovodi so bili nekoč grajeni iz jekla, danes se uporabljajo večinoma razvodna omrežja iz polietilenskih (PE) materialov, spoji pa se izvajajo s posebnimi postopki varjenja z uporovnimi objemkami. Postopek se je izkazal za zelo zanesljiv in trajen.  Morebitne poškodbe omrežja se zgodijo izključno zaradi  zunanjih vplivov. Pred vstopom v objekt je treba tlak plina še dodatno znižati, saj porabniki delujejo na tlakih do maksimalno 100 milibarov. Vsak objekt, ki ima plinsko inštalacijo, mora imeti na vidnem mestu plinsko požarno pipo, ki mora biti primerno zaščitena in zavarovana. Po navadi je v pločevinasti omarici, ki se lahko preprosto ob kakršnikoli potrebi odpre. Takoj za vstopom v objekt in pred trošili so plinomeri, ki so namenjeni za odčitavanje porabe. Razvod znotraj objekta se izvede z različnimi materiali, nekoč z izključno varjeno spojenimi jeklenimi cevmi, danes pa z bakrom, nerjavnimi inštalacijami, ki so spojene na stisk, pa tudi s sodobnimi cevmi iz PE-materialov. Vse inštalacije morajo biti narejene pri pooblaščenih izvajalcih tako, kot to določa nemško združenje DVGW v svojem delovnem zvezku G600 TRGI-2008. Pomembno je, da je pred vsakim trošilom obvezno izveden zaporni organ primerne kakovosti, ki mora vsebovati termični element, katerega lastnost je, da pri povečani temperaturi okolice nepovratno zapre plinsko inštalacijo za najmanj 90 minut. Ta ukrep je potreben, da ob morebitnem požaru plinska inštalacija ne predstavlja dodatne nevarnosti.</div>
+				
+				<div class="font1">3. Sestava in lastnosti zemeljskega plina</div>
+				<div>Sestavljen je iz:</div>
+				<div>- Metan 80 do 99 volumskih odstotkov</div>
+				<div>- Etan < 12 volumskih odstotkov</div>
+				<div>- Propan < 4 volumske odstotke</div>
+				<div>- Butan < 1 volumski odstotek</div>
+				<div>- Pentan < 0,5 volumskega odstotka</div>
+				<div>- Dušik < 15 volumskih odstotkov</div>
+				<div style="margin-bottom: 10px">- CO2 < 6 volumskih odstotkov</div>
+				
+				<div>Je:</div>
+				<div>- brezbarven</div>
+				<div>- nestrupen</div>
+				<div>- v naravi ter distribucijskih in transportnih omrežjih brez vonja, vonj dodajo v razvodnih omrežjih proti končnim porabnikom zaradi varnosti – tipičen vonj v primeru morebitnih uhajanj (lažja zaznava plina – voh)</div>
+				<div>- vzgonski, lažji od zraka, razmerje zemeljski plin–zrak približno 0,6</div>
+				<div style="margin-bottom: 10px">- gorljiv in eksploziven v območju mešanja z zrakom 4–17 volumskih odstotkov</div>
+				
+				<div style="margin-bottom: 10px">Za zemeljski plin ima značilen nevarnostni kvadrat, sestavljen iz gorljive snovi (zemeljski plin), zraka (O2), vira vžiga in mešalnega razmerja. V primeru vzpostavitve le-tega govorimo o vžigu, eksploziji in vzbuhu. Če zemeljski plin iz zaprtega prostora izrine kisik pod mejo 15 odstotkov, se lahko zadušimo.</div>
+			
+				<div class="font1">4. Varnost pri distribuciji zemeljskega plina</div>
+				<div style="margin-bottom: 10px">Varnost pri distribuciji zemeljskega plina delimo na ukrepe, ki se opravljajo ob izvedbi. Govorimo predvsem o kvalitetnem in strokovnem načrtovanju plinovodnega omrežja, izvedbi po minimalnih tehničnih kriterijih, ki zagotavljajo najvišjo možno varnost uporabe, in zadovoljivem nadzoru v vseh izvedbenih fazah. Plinovodi morajo v določenih segmentih vsebovati vse varnostne elemente, ki preprečujejo kasnejše fizične poškodbe v primeru posegov v bližini omrežja. Opremljeni morajo biti s segmentnimi zapornimi in odzračnimi elementi, s katerimi lahko omejimo oziroma prekinemo dotok plina v posamezne dele omrežja. Ves plin, namenjen za gospodinjsko uporabo, mora biti opremljen z vonjem, ki ga zazna uporabnik v nenevarnih količinah puščanja, in tako pravočasno odreagira. Na plinovodnem omrežju se morajo opravljati periodični pregled plinovoda in občasni tlačni in testni preizkusi, ki jih opravlja pooblaščeno podjetje, vsi uporabniki pa morajo biti seznanjeni s pravilno uporabo svojega sekundarnega omrežja. Zakon določa, da je za plinovodno omrežje za glavno požarno pipo odgovoren izključno uporabnik – lastnik.  Odgovarja tudi za vso morebitno škodo, ki bi nastala zaradi nepravilne uporabe ali kakršnihkoli drugih vzrokov, povezanih s plinovodnim omrežjem. Statistika nesreč neusmiljeno kaže na to, da je najbolj pogost vzrok za nesreče prav uporabnik z nepooblaščenimi posegi v omrežje, uporabnik in izvajalec inštalacij zaradi tehničnih pomanjkljivosti in uporabnik zaradi neizvedenih ukrepov, povezanih z vzdrževanjem. Tovrstne nezgode je treba preprečevati z zadostnim izobraževanjem izvajalcev inštalacij in z ozaveščanjem uporabnikov. Seveda pa je pomembno, da pred prvim spuščanjem plina v sistem to preveri strokovnjak, pooblaščen od sistemskega operaterja lokalnega omrežja. Prav tako je treba voditi evidenco posegov in periodičnih pregledov plinovodne inštalacije.</div>
+			
+				<div class="font1">5. Postopki pri nesrečah na napravah in inštalacijah zemeljskega plina</div>
+				<div style="margin-bottom: 10px">Nesreče, povezane z zemeljskim plinom, delimo na več kategorij.</div>
+				
+				<div>a) Požar v objektu, priključenem na plinovodno omrežje, vendar brez puščanja plina. Postopek:</div>
+				<div>- zapremo glavni plinski ventil</div>
+				<div>- obvestimo upravljavca plinovodnega omrežja</div>
+				<div>- rešimo ponesrečence, pogasimo požar</div>
+				<div style="margin-bottom: 10px">- upoštevamo navodila upravljavca plinovodnega omrežja</div>
+				
+				<div>b)	Požar uhajajočega plina znotraj objekta:</div>
+				<div>- obvestimo upravljavca plinovodnega omrežja</div>
+				<div>- zapremo glavni plinski ventil</div>
+				<div>- ne gasimo – izjemoma z namenom reševanja življenja</div>
+				<div style="margin-bottom: 10px">- upoštevamo navodila upravljavca plinovodnega omrežja</div>
+				
+				<div>c)	Uhajanje plina znotraj objekta, brez ognja ali eksplozije:</div>
+				<div>- obvestimo upravljavca plinovodnega omrežja</div>
+				<div>- zapremo glavni plinski ventil</div>
+				<div>- stavbo evakuiramo</div>
+				<div>- omejimo dostop v območju uhajanja</div>
+				<div>- stavbo navzkrižno prezračimo, pazimo na morebitne žepe</div>
+				<div>- preverjamo koncentracijo plina</div>
+				<div>- odstranimo in preprečimo vse morebitne vire vžiga</div>
+				<div>- če je mogoče, izklopimo električno omrežje</div>
+				<div style="margin-bottom: 10px">- upoštevamo navodila upravljavca plinovodnega omrežja</div>
+				
+				<div>d)	Vžig plina, ki uhaja na prostem:</div>
+				<div>- obvestimo upravljavca plinovodnega omrežja</div>
+				<div>- omejimo dostop do mesta nesreče</div>
+				<div>- ogrožene objekte varujemo in hladimo</div>
+				<div>- ne gasimo, razen če je ogroženo življenje</div>
+				<div style="margin-bottom: 10px">- upoštevamo navodila upravljavca plinovodnega omrežja</div>
+				
+				<div>e)	Uhajanje plina na prostem brez ognja:</div>
+				<div>- obvestimo upravljavca plinovodnega omrežja</div>
+				<div>- vse vire vžiga odstranimo</div>
+				<div>- območje nevarnosti zavarujemo in označimo</div>
+				<div>- evakuiramo ljudi iz objekta</div>
+				<div>- opazujemo morebitne plinske žepe</div>
+				<div>- preprečimo vdor plina znotraj objektov</div>
+				<div style="margin-bottom: 10px">- upoštevamo navodila upravljavca plinovodnega omrežja</div>
+				
+				<div>Ponovitev najbolj pomembnih ukrepov:</div>
+				<div>- obvestimo upravljavca plinovodnega omrežja preko centra za obveščanje</div>
+				<div>- zapremo plinski ventil:</div>
+				<div style="padding-left: 20px">> glavni ventil na objektu, če je to mogoče</div>
+				<div style="padding-left: 20px">> ventil, ki zapira ogroženo območje</div>
+				<div style="padding-left: 20px">> ventile, ki so na distribucijskem omrežju lahko zapira le upravljavec</div>
+				<div>- zaprtih ventilov ne smemo odpirati</div>
+				<div style="margin-bottom: 10px">- gorljivega plina ne gasimo, ker lahko nastane eksplozija – izjema je le reševanje človekovega življenja, vendar moramo upoštevati vse možnosti za preprečitev ponovnega vžiga</div>
+				
+				<div class="button" id="zakljuci" onclick="zakljuci();">ZAKLJUČI</div>
+			</div>
+		</div>
+ 	</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script type="text/javascript" charset="utf-8" src="../../../cordova.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/myjava.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/mediaelement/mediaelement-and-player.js"></script>
+  		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../../../js/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">
+			/*if(isAndroid()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-android.js").appendTo("head");
+			} else if(isiOS()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-ios.js").appendTo("head");
+			} else if(isBlackBerry()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
+			} else {
+				$("script").attr("src", "../../../js/cordova-2.6.0-wp.js").appendTo("head");
+			}*/
+			
+			function preveriOdgovore() {
+				var odg1 = window.localStorage.getItem('prva_pomoc_obcani_nivo2_odg2');
+				var odg2 = window.localStorage.getItem('prva_pomoc_obcani_nivo2_odg5');
+				var odg3 = window.localStorage.getItem('prva_pomoc_obcani_nivo2_odg8');
+				
+				if(odg1 == 1 && odg2 == 1 && odg3 == 1) {
+					$('#nadaljuj').show();
+				}
+			}
+		</script>
+  	</head>
+  	<body>
+    	<div id="header">
+			<table align="center" width="90%">
+				<tr>
+					<td width="30%" align="left"><a href="nivo1.html"><img height="30px" src="../../../img/nazaj.png" /></a></td>
+					<td width="30%" align="center"><img height="50px" src="../../../img/esavelogo.png" /></td>
+					<td width="30%" align="right"><a href="../../../index.html"><img height="30px" src="../../../img/meni.png" /></a></td>
+				</tr>
+			</table>
+		</div>
+		<div id="content">
+			<div style="margin: 30px 0px 30px 0px">
+				<div class="font1" style="margin-bottom: 10px">UPORABA AVTOMATSKEGA ZUNANJEGA DEFIBRILATORJA</div>
+				
+				<div style="margin-bottom: 10px">Avtomatski zunanji defibrilator (AED) je naprava, ki jo uporabimo za zdravljenje motenj srca, ki vodijo v zastoj srca. Zaradi svoje preproste zasnove je njegova uporaba varna in preprosta tudi za ljudi, ki nimajo zdravstvene izobrazbe. Uporaba AED brez temeljnih postopkov oživljanja (masaža srca in umetno dihanje) ni učinkovita.</div>
+			
+				<div align="center"><img style="max-width: 100%" src="slike/1_1.jpg" /></div>
+				<div align="center" style="margin-bottom: 10px">Slika 9. Različni modeli AED, vsi z istim namenom</div>
+				
+				<div align="center"><img style="max-width: 100%" src="slike/1_2.jpg" /></div>
+				<div align="center" style="margin-bottom: 10px">Slika 10. Uradna oznaka, ki označuje prisotnost AED</div>
+				
+				<div style="margin-bottom: 10px">AED je zaradi dokazane učinkovitosti zdravljenja motenj srčnega ritma z elektriko postal sestavni del smernic za oživljanje. Njegova preprosta uporaba in varnost sta pri tem v veliko pomoč. Preko elektrod, nameščenih na goli prsni koš, analizira ritem bolnika, ki potrebuje oživljanje, in se na podlagi analize odloči, ali je električni sunek potreben ali ne. Daje nam jasna, enostavna glasovna navodila in nas vodi skozi potek oživljanja. V primeru težav ali okvare nas aparat na to opozarja že v stanju pripravljenosti.</div>
+				
+				<div class="font1" style="margin-bottom: 10px">POSTOPEK UPORABE AED</div>
+				
+				<div style="margin-bottom: 10px">Ko ugotovimo, da je pri bolniku potrebno oživljanje (se ne odziva, ne kaže nikakršnih znakov življenja in ne zaznamo dihanja), vedno pomislimo na AED. O tem lahko povprašamo tudi na številki 112. Takoj ko imamo AED na razpolago, ga vključimo in na bolnika namestimo elektrode na goli prsni koš.</div>
+				
+				<div align="center"><img style="max-width: 100%" src="slike/1_3.jpg" /></div>
+				<div align="center" style="margin-bottom: 10px">Slika 11. Vklop AED</div>
+				
+				<div style="margin-bottom: 10px">Eno elektrodo namestimo pod desno ključnico, drugo pa na levo stransko steno prsnega koša pod levo prsno mišico oziroma dojko. V kolikor je bolnik močno poraščen, ga obrijemo z britvico, ki je priložena k AED. Če ima bolnik moker prsni koš, ga je treba obrisati, preden nalepimo elektrode.</div>
+				
+				<div align="center"><img style="max-width: 100%" src="slike/1_4.jpg" /> <img style="max-width: 100%" src="slike/1_5.jpg" /></div>
+				<div align="center" style="margin-bottom: 10px">Sliki 12 in 13. Namestitev elektrod</div>
+				
+				<div style="margin-bottom: 10px">Ko AED zazna nalepljene elektrode, začne analizo ritma. Ob tem se bolnika ne smemo dotikati. Glede na analizo nam lahko predlaga dve možnosti. Šok je priporočen ali šok ni priporočen.</div>
+				
+				<div align="center"><img style="max-width: 100%" src="slike/1_6.jpg" /></div>
+				<div align="center" style="margin-bottom: 10px">Slika 14. Med analizo ritma se bolnika ne dotikamo.</div>
+				
+				<div><u>ŠOK JE PRIPOROČEN</u></div>
+				<div style="margin-bottom: 10px">V tem primeru se bo aparat pripravil za sproženje električnega sunka. Človek, ki upravlja AED, mora poskrbeti, da se ob proženju nihče ne dotika poškodovanca, in mora glasno opozoriti vse v okolici, naj se ne dotikajo bolnika. Aparat se zaradi varnosti ne bo nikoli sprožil sam, ampak je treba pritisniti gumb za sproženje električnega sunka. Ta gumb ima narisano tako imenovano strelo in utripa. Po opravljeni defibrilaciji takoj nadaljujemo oživljanje, dokler nas AED ponovno ne opozori, da bo začel analizo ritma (na dve minuti).</div>
+				
+				<div align="center"><img style="max-width: 100%" src="slike/1_7.jpg" /></div>
+				<div align="center" style="margin-bottom: 10px">Slika 15. Zagotovi varnost in pritisni gumb za sproženje.</div>
+				
+				<div><u>ŠOK NI PRIPOROČEN</u></div>
+				<div style="margin-bottom: 10px">Takoj nadaljujemo postopke oživljanja, dokler nas AED ponovno ne opozori, da bo začel analizo ritma (na dve minuti).</div>
+				
+				<div align="center"><img style="max-width: 100%; max-height: 301px" src="slike/1_8.jpg" /> <img style="max-width: 100%" src="slike/1_9.jpg" /></div>
+				<div align="center" style="margin-bottom: 10px">Sliki 16 in 17: Nadaljujemo oživljanje.</div>
+				
+				<div style="margin-bottom: 10px">Na dve minuti bo pri bolniku potekala analiza ritma, na podlagi katere se bo aparat odločil o potrebi po električnem sunku. Ves čas oživljanja nam bo AED dajal navodila za oživljanje.</div>
+				<div style="margin-bottom: 10px">Ko pri bolniku opazimo zanesljive znake življenja (dihanje, premikanje …), ga namestimo v bočni stabilni položaj. Elektrode ostanejo nalepljene na prsnem košu, mi smo z njim in ga opazujemo.</div>
+				
+				<div align="center"><img style="max-width: 100%" src="slike/1_10.jpg" /></div>
+				<div align="center" style="margin-bottom: 10px">Slika 18. Bočni stabilni položaj. Elektrode so pričvrščene na prsnem košu.</div>
+				
+				<div style="margin-bottom: 10px">*AED je kratica za Avtomatic External Defibrilator.</div>
+				
+				<div class="opis" style="margin-bottom: 10px; margin-top: 10px">Kdo vse lahko uporabi AED?</div>
+				
+				<div class="button" id="prva_pomoc_obcani_nivo2_odg1" 
+				onclick="
+					$('#prva_pomoc_obcani_nivo2_odg1').attr('class', 'button_error');
+					window.localStorage.setItem('prva_pomoc_obcani_nivo2_odg1', '1');
+				">Samo zdravstveni delavci.</div>
+				
+				<div class="button" id="prva_pomoc_obcani_nivo2_odg2" 
+				onclick="
+					$('#prva_pomoc_obcani_nivo2_odg2').attr('class', 'button_success');
+					window.localStorage.setItem('prva_pomoc_obcani_nivo2_odg2', '1');
+					preveriOdgovore();
+				">Vsakdo, saj je varen in učinkovit pripomoček za oživljanje.</div>
+				
+				<div class="button" id="prva_pomoc_obcani_nivo2_odg3" 
+				onclick="
+					$('#prva_pomoc_obcani_nivo2_odg3').attr('class', 'button_error');
+					window.localStorage.setItem('prva_pomoc_obcani_nivo2_odg3', '1');
+				">Vsi, ki imajo opravljen poseben izpit za upravljanje AED.</div>
+				
+				<div class="opis" style="margin-bottom: 10px; margin-top: 10px">Komu lahko namestimo AED?</div>
+				
+				<div class="button" id="prva_pomoc_obcani_nivo2_odg4" 
+				onclick="
+					$('#prva_pomoc_obcani_nivo2_odg4').attr('class', 'button_error');
+					window.localStorage.setItem('prva_pomoc_obcani_nivo2_odg4', '1');
+				">Vsakomur.</div>
+				
+				<div class="button" id="prva_pomoc_obcani_nivo2_odg5" 
+				onclick="
+					$('#prva_pomoc_obcani_nivo2_odg5').attr('class', 'button_success');
+					window.localStorage.setItem('prva_pomoc_obcani_nivo2_odg5', '1');
+					preveriOdgovore();
+				">Vsem, ki so nezavestni, ne dihajo, ne kažejo znakov življenja in jih je treba oživljati.</div>
+				
+				<div class="button" id="prva_pomoc_obcani_nivo2_odg6" 
+				onclick="
+					$('#prva_pomoc_obcani_nivo2_odg6').attr('class', 'button_error');
+					window.localStorage.setItem('prva_pomoc_obcani_nivo2_odg6', '1');
+				">Vsem nezavestnim.</div>
+				
+				<div class="opis" style="margin-bottom: 10px; margin-top: 10px">Kdaj lahko sprožim AED?</div>
+				
+				<div class="button" id="prva_pomoc_obcani_nivo2_odg7" 
+				onclick="
+					$('#prva_pomoc_obcani_nivo2_odg7').attr('class', 'button_error');
+					window.localStorage.setItem('prva_pomoc_obcani_nivo2_odg7', '1');
+				">Kadarkoli želim.</div>
+				
+				<div class="button" id="prva_pomoc_obcani_nivo2_odg8" 
+				onclick="
+					$('#prva_pomoc_obcani_nivo2_odg8').attr('class', 'button_success');
+					window.localStorage.setItem('prva_pomoc_obcani_nivo2_odg8', '1');
+					preveriOdgovore();
+				">Ko AED predlaga električni sunek, opozorim vse, naj se odmaknejo od bolnika, in sprožim AED.</div>
+				
+				<div class="button" id="prva_pomoc_obcani_nivo2_odg9" 
+				onclick="
+					$('#prva_pomoc_obcani_nivo2_odg9').attr('class', 'button_error');
+					window.localStorage.setItem('prva_pomoc_obcani_nivo2_odg9', '1');
+				">Ko AED predlaga električni sunek, takoj sprožim napravo.</div>
+				
+				<div class="button" id="nadaljuj" style="display: none" onclick="window.location='nivo3.html'">NADALJUJ</div>
+			</div>
+		</div>
+ 	</body>
+</html>

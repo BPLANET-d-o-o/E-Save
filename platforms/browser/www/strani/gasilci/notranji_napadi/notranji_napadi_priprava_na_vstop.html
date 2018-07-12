@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script type="text/javascript" charset="utf-8" src="../../../cordova.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/myjava.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/mediaelement/mediaelement-and-player.js"></script>
+  		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../../../js/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">
+			function preveriOdgovore() {
+				var odg1 = window.localStorage.getItem('nn_pnv_odg1');
+				var odg2 = window.localStorage.getItem('nn_pnv_odg3');
+				var odg3 = window.localStorage.getItem('nn_pnv_odg5');
+				var odg4 = window.localStorage.getItem('nn_pnv_odg7');
+				var odg5 = window.localStorage.getItem('nn_pnv_odg8');
+				var odg6 = window.localStorage.getItem('nn_pnv_odg9');
+				
+				if(odg1 == 1 && odg2 == 1 && odg3 == 1 && odg4 == 1 && odg5 == 1 && odg6 == 1) {
+					$('#nadaljuj').show();
+				} else {
+					$('#nadaljuj').hide();
+				}
+			}
+		</script>
+  	</head>
+  	<body>
+    	<div id="header">
+			<table align="center" width="90%">
+				<tr>
+					<td width="30%" align="left"><a href="notranji_napadi.html"><img height="30px" src="../../../img/nazaj.png" /></a></td>
+					<td width="30%" align="center"><img height="50px" src="../../../img/esavelogo.png" /></td>
+					<td width="30%" align="right"><a href="../../../index.html"><img height="30px" src="../../../img/meni.png" /></a></td>
+				</tr>
+			</table>
+		</div>
+		<div id="content">
+			<!--<div width="60%" align="center">
+				<video width="400px" height="200px" src="http://bplanet.si/esave/oceans.mp4" type="video/mp4" id="player1" poster="../../../img/filmi/oceans.jpg" controls="controls" preload="none"></video>
+				<script>$('audio,video').mediaelementplayer({});</script>
+			</div>-->
+			<div class="opis" style="margin-bottom: 20px">Gasilske cevi in armature</div>
+			
+			<div style="margin: 30px 0px 30px 0px">
+				Pogoj za uspešno delo so tudi pravilna izbira gasilskih armatur in gasilnega sredstva. V osnovi lahko gasilec izbira visokotlačne sisteme, ki so nekoliko lažji za rokovanje in zaradi visokih tlakov gašenje porabijo manjšo količino vode. Ali pa se odloči za izbiro klasični cevi z normalnimi tlaki kjer je delo morda nekoliko težje vendar ob pravilni rabi izredno učinkovito.
+				Za gasilni mediji se najpogosteje priporoča uporaba vode saj je dostopna, cenovno ugodna in enostavna za uporabo. Vsak notranji napadalec bi moral uporabljati univerzalne ročnike (možnost prehajanja iz polnega curka v razpršen in nazaj) z pretokom med 200 in 300 litri in vstopnim tlakom 5 do 7 barov. Ob takšni uporabi je učinkovitost najboljša in hkrati najlažja.
+			</div>
+			
+			<div style="margin-bottom: 10px" align="center"><img style="max-width: 100%" src="slike/2.jpg" /></div>
+			<div style="margin-bottom: 10px" align="center"><img style="max-width: 100%" src="slike/3.jpg" /></div>
+			<div style="margin-bottom: 30px" align="center">Slika 2 in 3: Oblike curkov</div>
+			
+			<div class="opis">IZBERI PRAVILNE ODGOVORE</div>
+			
+			<div class="button" id="nn_pnv_odg1"
+				onclick="
+					$('#nn_pnv_odg1').attr('class', 'button_success');
+					window.localStorage.setItem('nn_pnv_odg1', '1');
+					preveriOdgovore();
+				">CEVI POLOŽI V LINIJI Z VSTOPNO ODPRTINO</div>
+				
+			<div class="button" id="nn_pnv_odg2" 
+				onclick="
+					$('#nn_pnv_odg2').attr('class', 'button_error');
+					window.localStorage.setItem('nn_pnv_odg2', '1');
+					showAlert('POLAGANJE CEVI', 'CEVI SE PRI TAKŠNEM POLAGANJU ZATIKAJO OB VRATA');
+				">CEV POLOŽI VZPOREDNO Z OBJEKTOM</div>
+				
+			<div class="button" id="nn_pnv_odg3" 
+				onclick="
+					$('#nn_pnv_odg3').attr('class', 'button_success');
+					window.localStorage.setItem('nn_pnv_odg3', '1');
+					preveriOdgovore();
+				">ROČNIK NASTAVI NA 200-300L</div>
+				
+			<div class="button" id="nn_pnv_odg4" 
+				onclick="
+					$('#nn_pnv_odg4').attr('class', 'button_error');
+					window.localStorage.setItem('nn_pnv_odg4', '1');
+					showAlert('GASILSKA SEKIRA', 'PRVI NAPADALEC IMA ŽE ROČNIK!');
+				">PRVI NAPADELC VZAME SEKIRO</div>
+				
+			<div class="button" id="nn_pnv_odg5" 
+				onclick="
+					$('#nn_pnv_odg5').attr('class', 'button_success');
+					window.localStorage.setItem('nn_pnv_odg5', '1');
+					preveriOdgovore();
+				">ODPRI ROČNIK IN PREVERI DELOVANJE IN OBLIKO CURKA</div>
+				
+			<div class="button" id="nn_pnv_odg6" 
+				onclick="
+					$('#nn_pnv_odg6').attr('class', 'button_error');
+					window.localStorage.setItem('nn_pnv_odg6', '1');
+					showAlert('TLAK NA ROČNIKU', 'CEV JE PREMEHKA IN ROČNIK NE DA PRAVE OBLIKE CURKA');
+				">TLAK NA ROČNKU NAJ BO 3-5 BAROV</div>
+				
+			<div class="button" id="nn_pnv_odg7" 
+				onclick="
+					$('#nn_pnv_odg7').attr('class', 'button_success');
+					window.localStorage.setItem('nn_pnv_odg7', '1');
+					preveriOdgovore();
+				">DRUGI NAPADALEC VZAME SEKIRO IN VRV</div>
+				
+			<div class="button" id="nn_pnv_odg8" 
+				onclick="
+					$('#nn_pnv_odg8').attr('class', 'button_success');
+					window.localStorage.setItem('nn_pnv_odg8', '1');
+					preveriOdgovore();
+				">DRUGI PREVERI SMER ODPIRNJA VRAT</div>
+				
+			<div class="button" id="nn_pnv_odg9" 
+				onclick="
+					$('#nn_pnv_odg9').attr('class', 'button_success');
+					window.localStorage.setItem('nn_pnv_odg9', '1');
+					preveriOdgovore();
+				">TLAK NA ROČNIKU NAJ BO VSAJ 5-7 BAROV</div>
+			
+			<div class="button" id="nadaljuj" style="display: none" onclick="window.location='notranji_napadi_preverjanje_vrat.html'">NADALJUJ</div>
+		</div>
+ 	</body>
+</html>

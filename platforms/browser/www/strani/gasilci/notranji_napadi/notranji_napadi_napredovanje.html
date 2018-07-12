@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script type="text/javascript" charset="utf-8" src="../../../cordova.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/myjava.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/mediaelement/mediaelement-and-player.js"></script>
+  		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../../../js/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">
+			function preveriOdgovore() {
+				var odg1 = window.localStorage.getItem('nn_n_odg1');
+				var odg2 = window.localStorage.getItem('nn_n_odg3');
+				var odg3 = window.localStorage.getItem('nn_n_odg6');
+				var odg4 = window.localStorage.getItem('nn_n_odg8');
+				var odg5 = window.localStorage.getItem('nn_n_odg10');
+				var odg6 = window.localStorage.getItem('nn_n_odg12');
+				var odg7 = window.localStorage.getItem('nn_n_odg13');
+				var odg8 = window.localStorage.getItem('nn_n_odg16');
+				
+				if(odg1 == 1 && odg2 == 1 && odg3 == 1 && odg4 == 1 && odg5 == 1 && odg6 == 1 && odg7 == 1 && odg8 == 1) {
+					$('#nadaljuj').show();
+				}
+			}
+		</script>
+  	</head>
+  	<body>
+    	<div id="header">
+			<table align="center" width="90%">
+				<tr>
+					<td width="30%" align="left"><a href="notranji_napadi_preverjanje_vrat.html"><img height="30px" src="../../../img/nazaj.png" /></a></td>
+					<td width="30%" align="center"><img height="50px" src="../../../img/esavelogo.png" /></td>
+					<td width="30%" align="right"><a href="../../../index.html"><img height="30px" src="../../../img/meni.png" /></a></td>
+				</tr>
+			</table>
+		</div>
+		<div id="content">
+			<div style="margin: 30px 0px 30px 0px">
+				Ko napadalci uspešno vstopijo, med gibanjem po prostoru »po potrebi« pod strop v različne strani gasijo z kratkimi razpršenimi curki. S tem dejanjem ohlajujejo tako prostor, kakor tudi vroče dimne mase pod stropom. Vroče dimne mase so namreč ključne za prenos energije v obliki sevanja iz jedra požara, na požar po celotnem prostoru v obliki požarnega preskoka. V kolikor se napadalne skupina znajde v požarnem preskoku je edina prava rešitev »nagel«  umik iz objekta.
+			</div>
+			
+			<div class="opis" style="margin-bottom: 20px">IZBERI PRAVILNI ODGOVOR</div>
+			
+			<div class="button1" id="nn_n_odg1"
+				onclick="
+					$('#nn_n_odg1').attr('class', 'button1_success');
+					window.localStorage.setItem('nn_n_odg1', '1');
+					preveriOdgovore();
+				"><span style="color: #e47b41">A:</span> NAPADALCI SE ODLOČIJO  ZA SMER GIBANJA LEVO ALI DESNO TER SE TEGA DRŽIJO</div>
+				
+			<div class="button1" style="margin-bottom: 20px" id="nn_n_odg2" 
+				onclick="
+					$('#nn_n_odg2').attr('class', 'button1_error');
+					window.localStorage.setItem('nn_n_odg2', '1');
+					showAlert('SMER GIBANJA', 'LAHKO SE IZGUBIŠ IN IZPUSTIŠ PROSTORE - NIKOLI  NE SKAČI SEM TER TJA');
+				"><span style="color: #e47b41">B:</span> SMER GIBANJA NI POMEMBNA SAJ SO PROSTORI NEENEKOMERNI</div>
+				
+			<div class="button1" id="nn_n_odg3" 
+				onclick="
+					$('#nn_n_odg3').attr('class', 'button1_success');
+					window.localStorage.setItem('nn_n_odg3', '1');
+					preveriOdgovore();
+				"><span style="color: #e47b41">A:</span> OPTIMALNO RAZMERJE ZA OHLAJEVANJE JE 30 NA STENE 70 V PROSTOR</div>
+				
+			<div class="button1" style="margin-bottom: 20px" id="nn_n_odg4" 
+				onclick="
+					$('#nn_n_odg4').attr('class', 'button1_error');
+					window.localStorage.setItem('nn_n_odg4', '1');
+					showAlert('RAZMERJE OHLAJEVANJA', 'PRI TAKŠNEM RAZMERJU JE PREMALO OHLAJEVALNEGA UČINKA');
+				"><span style="color: #e47b41">B:</span> OPTIMALNO RAZMERJE ZA OHLAJEVANJE JE 70 NA STENE 30 V PROSTOR</div>
+				
+			<div class="button1" id="nn_n_odg5" 
+				onclick="
+					$('#nn_n_odg5').attr('class', 'button1_error');
+					window.localStorage.setItem('nn_n_odg5', '1');
+					showAlert('OHLAJEVANJE', 'OHLAJEVANJE IMA ZELO MAJHEN VPLIV NA VIDLJIVOST');
+				"><span style="color: #e47b41">A:</span> OHLAJEVANJE VSEPOVSOD, POMEMBNO JE IZBOLJŠATI VIDLJIVOST</div>
+				
+			<div class="button1" style="margin-bottom: 20px" id="nn_n_odg6" 
+				onclick="
+					$('#nn_n_odg6').attr('class', 'button1_success');
+					window.localStorage.setItem('nn_n_odg6', '1');
+					preveriOdgovore();
+				"><span style="color: #e47b41">B:</span> OHLAJEVANJE POD STROP V RAZLIČNE SMERI GLEDE NA VELIKOST IN OBLIKO PROSTORA</div>
+				
+			<div class="button1" id="nn_n_odg7" 
+				onclick="
+					$('#nn_n_odg7').attr('class', 'button1_error');
+					window.localStorage.setItem('nn_n_odg7', '1');
+					showAlert('PREZRAČEVANJE', 'PREZRAČEVANJE JE POTREBNO');
+				"><span style="color: #e47b41">A:</span> OBJEKT NI VARNO PREZRAČEVATI</div>
+				
+			<div class="button1" style="margin-bottom: 20px" id="nn_n_odg8" 
+				onclick="
+					$('#nn_n_odg8').attr('class', 'button1_success');
+					window.localStorage.setItem('nn_n_odg8', '1');
+					preveriOdgovore();
+				"><span style="color: #e47b41">B:</span> OBJEKT PREZRAČUJEMO Z KOMBINACIJO ODPTIH OKEN IN VRAT</div>
+				
+			<div class="button1" id="nn_n_odg9" 
+				onclick="
+					$('#nn_n_odg9').attr('class', 'button1_error');
+					window.localStorage.setItem('nn_n_odg9', '1');
+					showAlert('HIDRAVLIČNO PREZRAČEVANJE', 'NE BO DRŽALO');
+				"><span style="color: #e47b41">A:</span> HIDRAVLIČNO PREZRAČEVANJE S POMOČJO VODNEGA CURKA POVZROČA VELIKO ŠKODO IN IMA MAJHEN UČINEK NA PROSTOR</div>
+				
+			<div class="button1" style="margin-bottom: 20px" id="nn_n_odg10" 
+				onclick="
+					$('#nn_n_odg10').attr('class', 'button1_success');
+					window.localStorage.setItem('nn_n_odg10', '1');
+					preveriOdgovore();
+				"><span style="color: #e47b41">B:</span> HIDRAVLIČNO PREZRAČEVANJE S POMOČJO VODNEGA CURKA IZBOLJŠUJE VIDLJIVOST PREDVSEM LOKALNO</div>
+				
+			<div class="button1" id="nn_n_odg11" 
+				onclick="
+					$('#nn_n_odg11').attr('class', 'button1_error');
+					window.localStorage.setItem('nn_n_odg11', '1');
+					showAlert('GLOBINSKO OHLAJEVANJE', 'BODI VESEL DA SI CEL, KAJTI SLABO HLADIŠ');
+				"><span style="color: #e47b41">A:</span> GLOBINSKO NI POTREBNO OHLJEVATI, CUREK PA JE LAHKO STRNJEN ALI POLEN</div>
+				
+			<div class="button1" style="margin-bottom: 20px" id="nn_n_odg12" 
+				onclick="
+					$('#nn_n_odg12').attr('class', 'button1_success');
+					window.localStorage.setItem('nn_n_odg12', '1');
+					preveriOdgovore();
+				"><span style="color: #e47b41">B:</span> ZA GLOBINSKO OHLAJEVANJE UPORABI STRNEJŠI CUREK (45 STOPINJ)</div>
+				
+			<div class="button1" id="nn_n_odg13" 
+				onclick="
+					$('#nn_n_odg13').attr('class', 'button1_success');
+					window.localStorage.setItem('nn_n_odg13', '1');
+					preveriOdgovore();
+				"><span style="color: #e47b41">A:</span> GIBANJE V NIZKI PREŽI IN OB STENI</div>
+				
+			<div class="button1" style="margin-bottom: 20px" id="nn_n_odg14" 
+				onclick="
+					$('#nn_n_odg14').attr('class', 'button1_error');
+					window.localStorage.setItem('nn_n_odg14', '1');
+					showAlert('GIBANJE', 'POKONČNO GIBANJE VODI DO NEVARNOSTI PADCEV, PREGREVANJA IN SLABE VIDLJIVOSTI');
+				"><span style="color: #e47b41">B:</span> GIBANJE NORMALNO ALI POLPOKONČNO</div>
+				
+			<div class="button1" id="nn_n_odg15" 
+				onclick="
+					$('#nn_n_odg15').attr('class', 'button1_error');
+					window.localStorage.setItem('nn_n_odg15', '1');
+					showAlert('GLOBINSKO OHLAJEVANJE', 'PREMISLI PONOVNO, ČE BI RAD POGASIL POŽAR');
+				"><span style="color: #e47b41">A:</span> VROČINA IN TOPLOTA, KI JO ČUTIŠ SKOZI OBLEKO JE ZNAK DA JE TVOJA OBLEKA SLABA IN NIMAŠ KONDICIJE</div>
+				
+			<div class="button1" style="margin-bottom: 20px" id="nn_n_odg16" 
+				onclick="
+					$('#nn_n_odg16').attr('class', 'button1_success');
+					window.localStorage.setItem('nn_n_odg16', '1');
+					preveriOdgovore();
+				"><span style="color: #e47b41">B:</span> VROČINA IN TOPLOTA, KI JO ČUTIŠ SKOZI OBLEKO, JE ZNAK, DA JE PROSTOR PREGRET IN OBSTAJA NEVARNOST POŽARNEGA PRESKOKA</div>
+			
+			<div class="button" align="center" id="nadaljuj" style="display: none" onclick="window.location='notranji_napadi_gasenje.html'">NADALJUJ</div>
+		</div>
+ 	</body>
+</html>

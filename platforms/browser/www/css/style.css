@@ -1,0 +1,192 @@
+@font-face {
+	font-family: 'Conv_dosis.light';
+	src: url('fonts/dosis.light.eot');
+	src: local('¢'), url('fonts/dosis.light.woff') format('woff'), url('fonts/dosis.light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image: url('../img/bg.png');
+	font-family: 'Conv_dosis.light', Sans-Serif;
+	color: #ffffff;
+	text-align: center;
+	font-size: 100%;
+}
+
+#header {
+	width: 100%;
+	padding: 10px 0px 10px 0px;
+	background-image: url('../img/buttonbg.png');
+	font-size: 200%;
+}
+
+#content {
+	margin: 10px auto 10px auto;
+	width: 90%;
+	text-align: left;
+}
+
+#footer {
+	width: 100%;
+	padding: 10px 0px 10px 0px;
+	background-image: url('../img/buttonbg.png');
+	font-size: 200%;
+}
+
+#footer a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.font1 {
+	color: #e47b41;
+}
+
+.opis {
+	color: #e47b41;
+	padding: 15px 0px 15px 0px;
+	background-image: url('../img/buttonbg.png');
+	text-align: center;
+	margin: 5px auto 5px auto;
+	width: 90%;
+}
+
+.box {
+	margin: auto;
+	width: 90%;
+}
+
+.button {
+	color: #ffffff;
+	padding: 15px 0px 15px 0px;
+	background-image: url('../img/buttonbg.png');
+	text-align: center;
+	margin: 5px auto 5px auto;
+	width: 90%;
+}
+
+.button a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.button_success {
+	color: #ffffff;
+	padding: 15px 0px 15px 0px;
+	background-image: url('../img/buttonbgsuccess.png');
+	text-align: center;
+	margin: 5px auto 5px auto;
+	width: 90%;
+}
+
+.button_error {
+	color: #ffffff;
+	padding: 15px 0px 15px 0px;
+	background-image: url('../img/buttonbgwrong.png');
+	text-align: center;
+	margin: 5px auto 5px auto;
+	width: 90%;
+}
+
+.button_ok {
+	color: #ffffff;
+	padding: 15px 0px 15px 0px;
+	background-image: url('../img/buttonbgok.png');
+	text-align: center;
+	margin: 5px auto 5px auto;
+	width: 90%;
+}
+
+.button1 {
+	color: #ffffff;
+	padding: 15px 0px 15px 0px;
+	background-image: url('../img/buttonbg.png');
+	margin: 5px auto 5px auto;
+	width: 90%;
+}
+
+.button1 a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.button1_success {
+	color: #ffffff;
+	padding: 15px 0px 15px 0px;
+	background-image: url('../img/buttonbgsuccess.png');
+	margin: 5px auto 5px auto;
+	width: 90%;
+}
+
+.button1_error {
+	color: #ffffff;
+	padding: 15px 0px 15px 0px;
+	background-image: url('../img/buttonbgwrong.png');
+	margin: 5px auto 5px auto;
+	width: 90%;
+}
+
+.button1_ok {
+	color: #ffffff;
+	padding: 15px 0px 15px 0px;
+	background-image: url('../img/buttonbgok.png');
+	margin: 5px auto 5px auto;
+	width: 90%;
+}
+
+.button2 {
+	width: 46%;
+	color: #ffffff;
+	padding: 15px 0px 15px 0px;
+	background-image: url('../img/buttonbg.png');
+	text-align: center;
+}
+
+.button2 a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.attention {
+	color: #4c4c4c;
+	border: 1px solid #c8c800;
+	background-color: #f8ebae;
+	padding: 2px 5px 2px 5px;
+	margin: 5px auto 5px auto;
+	width: 90%;
+}
+
+.success {
+	color: #4c4c4c;
+	border: 1px solid #3d590e;
+	background-color: #adc47d;
+	padding: 2px 5px 2px 5px;
+	margin: 5px auto 5px auto;
+	width: 90%;
+}
+
+.error {
+	color: #4c4c4c;
+	border: 1px solid #ff0000;
+	background-color: #ffb5b5;
+	padding: 2px 5px 2px 5px;
+	margin: 5px auto 5px auto;
+	width: 90%;
+}
+
+h1 {
+	color: #4c4c4c;
+	font-size: 12px;
+	border: 1px solid #ff0000;
+	background-color: #ffb5b5;
+	padding: 2px 5px 2px 5px;
+	margin: 5px auto 5px auto;
+	width: 90%;
+}
+
+img {
+	border: 0px;
+}

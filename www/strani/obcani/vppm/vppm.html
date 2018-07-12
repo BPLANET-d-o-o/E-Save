@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>E-Save</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script type="text/javascript" charset="utf-8" src="../../../cordova.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/myjava.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../js/mediaelement/mediaelement-and-player.js"></script>
+  		<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../../../js/mediaelement/mediaelementplayer.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" charset="utf-8">	
+			/*if(isAndroid()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-android.js").appendTo("head");
+			} else if(isiOS()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-ios.js").appendTo("head");
+			} else if(isBlackBerry()) {
+				$("script").attr("src", "../../../js/cordova-2.6.0-blackberry.js").appendTo("head");
+			} else {
+				$("script").attr("src", "../../../js/cordova-2.6.0-wp.js").appendTo("head");
+			}*/
+			
+			function zakljuci() {
+				window.localStorage.setItem('vppm_zakljuceno', '1');
+				showAlert('ČESTITAMO', 'PREDELAL SI POGLAVJE - VARSTVO PRED POŽAROM ZA MLADINO! IZBERI DRUGO POGLAVJE.');
+				
+				window.location = "../zacetek.html";
+			}
+		</script>
+  	</head>
+  	<body>
+    	<div id="header">
+			<table align="center" width="90%">
+				<tr>
+					<td width="30%" align="left"><a href="../zacetek.html"><img height="30px" src="../../../img/nazaj.png" /></a></td>
+					<td width="30%" align="center"><img height="50px" src="../../../img/esavelogo.png" /></td>
+					<td width="30%" align="right"><a href="../../../index.html"><img height="30px" src="../../../img/meni.png" /></a></td>
+				</tr>
+			</table>
+		</div>
+		<div id="content">
+			<div style="margin: 30px 0px 30px 0px">
+				<div class="font1">POŽARI V BIVALNEM OKOLJU</div>
+				<div style="margin-bottom: 10px">Požari v bivalnem okolju so posledica številnih okoliščin. Najpogostejši vzroki za požar v bivalnem okolju so človekova neprevidnost, malomarnost in nestrokovno ravnanje pri različnih opravilih posameznikov. Najpogostejši požari se zgodijo v bivalnem okolju, kar je tudi razumljivo, saj v njem človek preživi največ časa. Poleg tega so ti prostori najbolj izpostavljeni požarni nevarnosti, ki se v mrzlem zimskem času le še stopnjuje, predvsem zaradi večje uporabe grelnih naprav. Analize najpogostejših vzrokov požarov v bivalnem prostoru opozarjajo na to, da ti večinoma nastanejo takrat, ko človek pri delu doma uporablja nevarne snovi, pline, vnetljive tekočine ali aparate z električno napetostjo.</div>
+				
+				<div class="font1">NAJPOGOSTEJŠI VZROKI POŽAROV V BIVALNEM OKOLJU</div>
+				<div>- Človekova malomarnost, neprevidnost in nestrokovno ravnanje.</div>
+				<div>- Nepazljivost pri uporabi električnih, plinskih in grelnih naprav (električnih blazin, kaloriferjev, likalnikov, peči …), njihova dotrajanost, poškodovanost in preobremenjenost.</div>
+				<div>- Kajenje.</div>
+				<div>- Kuhanje brez nadzora.</div>
+				<div>- Nepazljivost pri ravnanju z odprtim ognjem ali nevarnimi snovmi.</div>
+				<div>- Nepravilno odlaganje vročega pepela ali gorljivih materialov.</div>
+				<div>- Vžig saj, iskrenje in neustrezno tehnično stanje dimniških naprav.</div>
+				<div>- Okvara ali poškodba naprav, strojev, motorjev.</div>
+				<div>- Neustrezno tehnično stanje sredstev, prostorov, naprav, strojev.</div>
+				<div>- Vroča dela pri popravilih in vzdrževalnih delih – brušenje, varjenje, trenje, pregrevanje.</div>
+				<div>- Eksplozije plina.</div>
+				<div>- Nepravilno skladiščenje vnetljivih snovi.</div>
+				<div style="margin-bottom: 10px">- Naravne nesreče – strela in samovžig sena.</div>
+				
+				<div style="margin-bottom: 10px">Pomembno je poznavanje preventivnih ukrepov, s katerimi lahko preprečimo nastanek požara in pravilno ravnamo, če zagori.</div>
+			
+				<div class="font1">NASVETI, DA NE BI ZAGORELO</div>
+				<div>- Kletni in strešni prostori morajo biti pospravljeni, brez nepotrebnih stvari, kot so star papir, stari zvezki, stare igrače, krama in podobno.</div>
+
+				
+				<div>- Poti za vstop in izstop na stopnišče morajo biti proste, brez ovir, kot so stoli, mize, regali, omare ali celo zaklenjena vrata z verigami, saj bi jih reševalne enote v primeru požara morale odstranjevati, kar pomeni izgubo časa.</div>
+
+				
+				<div>- Okoli štedilnikov in peči naj ne bo odvečne krame, kot so različni spominski leseni predmeti, bombažne kuhinjske krpe, nogavice, obleke in drugo.</div>
+				<div style="margin-bottom: 10px">- Med kuhanjem se ne oddaljujte od štedilnika, priključen štedilnik ne sme biti brez nadzora. Pregreta maščoba se hitro vžge in tovrstnega požara se <b>NIKOLI NE GASI Z VODO!</b> Ogenj zadušimo s pokrovko ali mokro krpo ter izklopimo plin ali elektriko.</div>
+				
+				<div>- Vključene grelne naprave (likalniki, peči, kaloriferji, svetilna telesa, predvsem žarnice z žarečo nitko …) in prižgane sveče, ki oddajo toploto, nikoli ne smejo biti brez nadzora. Sveče je treba vedno postaviti na negorljivo površino, stojijo naj pokončno, stabilno in ne na prepihu. V njihovo bližino se ne namešča pregrinjal, okenskih zaves, lesenih oblog in drugih gorljivih snovi (knjig, zvezkov, igrač, oblačil, papirja …), ker lahko hitro zagorijo.</div>
+
+				
+				<div>- V električne omarice ne posegamo in počakamo na odraslega oziroma električarja.</div>
+
+				
+				<div>- Poškodovane, dotrajane, preobremenjene in napačno uporabljene električne naprave in aparate, podaljške ali vtičnice se ne uporablja. Na to opozorimo odrasle, da jih je treba zamenjati z novimi.</div>
+
+				
+				<div>- Novoletne luči ne nameščamo oziroma pritrjujemo na gorljive materiale – zavese, lesene obloge...</div>
+
+				
+				<div>- Požara na električnih napravah in instalacijah se nikoli ne gasi z vodo!</div>
+				<div style="margin-bottom: 10px">Otroci ne smejo imeti virov vžiga (vžigalic, vžigalnika …) na dosegu rok.</div>
+				
+				<div>- Kajenje v postelji ali na kavču je smrtno nevarno. Ko praznite pepelnik, se je treba prepričati, da so cigaretni ogorki ugasnjeni. Tleči cigaretni ogorki lahko zelo hitro povzročijo požar, paziti je treba, da jih ne odvržemo v gorljive posode ali v naravo.</div>
+
+				
+				<div>- Goreča sveča ali odprti ogenj naj nikoli ne gorita brez nadzora, poleg tega morata biti vselej zunaj dosega otrok in domačih živali. Gorečo svečo se namesti na negorljivi podstavek, na svečnik ali v primerno posodo, stoji naj pokončno, ne smemo je premikati niti nositi po prostoru in nikoli je ne postavljamo na prepih, v bližino gorljivih snovi (zaves, papirja ipd.) in naprav, ki oddajajo toploto, kot so peči, električni aparati in podobno.</div>
+
+				
+				<div>- Redna čiščenja, vzdrževanja in priključitve različnih kurilnih naprav, peči, dimnikov … prepustimo odraslim oziroma strokovnjakom.</div>
+				<div>- Vroč pepel se odlaga v negorljive posode in ne v plastične oziroma lesene posode.</div>
+				<div>- Otroci in mladoletni naj kamina ali peči ne prižigajo sami!</div>
+				<div>- Preden gremo spat, vedno ugasnemo televizijske in radijske sprejemnike in luči. Prepričamo se, ali so izklopljene grelne naprave na plin, tekoča goriva in elektrika. Ugasniti pa moramo tudi sveče in kamin.</div>
+				<div>- Če se vključi požarni javljalnik ali požarna sirena je treba takoj zapustiti prostor oziroma objekt.</div>
+				<div>- Požarno in eksplozivno nevarne snovi (lepila, čistila, laki, razredčila, premazi …) je treba hraniti na varnih mestih po navodilih proizvajalca. Snovi ne smejo biti v bližini vira toplote in dosegljive otrokom. Nevarne snovi oziroma njene prazne embalaže ter doze pod tlakom se nikoli ne sme odlagati v kurišča, saj eksplozija razmeče žerjavico daleč naokoli in povzroči nadaljnje širjene požara.</div>
+				<div>- Čiščenje in pranje oblačil z lahko vnetljivimi ali celo eksplozivnimi snovmi se ne opravlja v zaprtem prostoru ali ob toplotnem viru, saj lahko že drobna iskra povzroči vžig ali eksplozijo.</div>
+				<div style="margin-bottom: 10px">- Pirotehnična sredstva lahko ob nepravilni uporabi eksplodirajo v roki, iskre, ki nastanejo ob vžigu, pa lahko povzročijo požar. Ravnaje z njimi mora biti nadvse previdno!</div>
+				
+				<div class="font1">KAJ STORITI, ČE ZAGORI?</div>
+				<div>Če zagori, <b>OHRANIMO MIRNO KRI IN TREZNO GLAVO!</b> Poiščemo pomoč najbližjih, pri sosedih ali pri ljudeh, ki so v okolici, in pokličemo 112. Začetni požar lahko pogasimo z gasilnim aparatom (zato je treba imeti gasilni aparat na vidnem mestu) ali priročnimi gasilnimi sredstvi – voda, pokrovka, mokra krpa, pesek, zemlja, mokra žagovina.</div>
+				<div>Če ugotovimo, da požara ne moramo pogasiti, se iz prostora umikamo po varnih, t. i. evakuacijskih poteh do zbirnega mesta in tam počakamo na pomoč gasilcev in reševalcev. Z varnimi evakuacijskimi potmi moramo biti predhodno seznanjeni, te morajo biti proste in prehodne.</div>
+
+				
+				<div style="margin-bottom: 10px">NIKOLI SE NE VRAČAMO v zadimljen ali goreč prostor, da bi rešili živali, otroške igrače, dokumente ali druge vredne predmete.</div>
+				
+				<div class="font1">ZAKLJUČEK</div>
+				<div>Ob upoštevanju vseh zgoraj navedenih varnostnih ukrepih bi lahko preprečili marsikateri požar, ki se je zgodil zaradi človeške malomarnosti, neprevidnosti in nestrokovnosti. Z upoštevanjem teh varnostnih ukrepov bi lahko rešili marsikatero življenje ter zmanjšali materialno škodo in stroške intervencije (reševanje, zdravljenje itd.).</div>
+				
+				<div class="button" id="zakljuci" onclick="zakljuci();">ZAKLJUČI</div>
+			</div>
+		</div>
+ 	</body>
+</html>
